@@ -1,20 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useMousePosition } from '../hooks/useMousePosition';
 
 export default function CursorGlow() {
-  const [pos, setPos] = useState({ x: -500, y: -500 });
-
-  useEffect(() => {
-    const move = (e: MouseEvent) => setPos({ x: e.clientX, y: e.clientY });
-    const touch = (e: TouchEvent) => {
-      if (e.touches[0]) setPos({ x: e.touches[0].clientX, y: e.touches[0].clientY });
-    };
-    window.addEventListener('mousemove', move);
-    window.addEventListener('touchmove', touch, { passive: true });
-    return () => {
-      window.removeEventListener('mousemove', move);
-      window.removeEventListener('touchmove', touch);
-    };
-  }, []);
+  const pos = useMousePosition();
 
   return (
     <div className="pointer-events-none fixed inset-0 z-40 overflow-hidden" aria-hidden="true">
@@ -42,4 +29,4 @@ export default function CursorGlow() {
       />
     </div>
   );
-}}
+}

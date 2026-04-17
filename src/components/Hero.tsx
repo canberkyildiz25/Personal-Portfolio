@@ -1,28 +1,10 @@
-import { useEffect, useState } from 'react';
 import { Icon } from '@iconify/react';
 import { useLanguage } from '../context/LanguageContext';
+import { useNormalizedMousePosition } from '../hooks/useMousePosition';
 
 export default function Hero() {
   const { t } = useLanguage();
-  const [mouse, setMouse] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const calc = (x: number, y: number) => {
-      const cx = window.innerWidth / 2;
-      const cy = window.innerHeight / 2;
-      setMouse({ x: (x - cx) / cx, y: (y - cy) / cy });
-    };
-    const move = (e: MouseEvent) => calc(e.clientX, e.clientY);
-    const touch = (e: TouchEvent) => {
-      if (e.touches[0]) calc(e.touches[0].clientX, e.touches[0].clientY);
-    };
-    window.addEventListener('mousemove', move);
-    window.addEventListener('touchmove', touch, { passive: true });
-    return () => {
-      window.removeEventListener('mousemove', move);
-      window.removeEventListener('touchmove', touch);
-    };
-  }, []);
+  const mouse = useNormalizedMousePosition();
 
   return (
     <section className="relative py-20 md:py-32 flex flex-col items-center text-center overflow-hidden">

@@ -1,5 +1,6 @@
 import { ThemeProvider } from './context/ThemeContext';
 import { LanguageProvider } from './context/LanguageContext';
+import ErrorBoundary from './components/ErrorBoundary';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stack from './components/Stack';
@@ -8,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 function App() {
   return (
+    <ErrorBoundary>
     <LanguageProvider>
     <ThemeProvider>
       <div
@@ -25,6 +27,7 @@ function App() {
       </div>
     </ThemeProvider>
     </LanguageProvider>
+    </ErrorBoundary>
   );
 }
 
