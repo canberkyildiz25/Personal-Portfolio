@@ -51,9 +51,10 @@ html {
   }
 }
 
-/* Smooth transitions */
-* {
-  @apply transition-all duration-300;
+/* Smooth transitions — applied selectively to avoid layout jank */
+button, a[href], [role="button"], input, select, textarea,
+.theme-transition {
+  @apply transition-colors duration-300;
 }
 
 /* Button enhancements */

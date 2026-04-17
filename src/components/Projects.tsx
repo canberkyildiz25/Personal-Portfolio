@@ -23,7 +23,7 @@ const projects: {
     icon: 'solar:heart-linear',
     liveUrl: 'https://resilient-salmiakki-c08a67.netlify.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Psychologist-Services',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fresilient-salmiakki-c08a67.netlify.app%2F?w=1200&h=675',
+    previewUrl: '/previews/psychologist.webp',
   },
   {
     title: 'PetLove',
@@ -34,7 +34,7 @@ const projects: {
     icon: 'solar:paw-linear',
     liveUrl: 'https://pet-love-1.onrender.com/',
     githubUrl: 'https://github.com/canberkyildiz25/Pet-Love',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fpet-love-1.onrender.com?w=1200&h=675',
+    previewUrl: '/previews/petlove.webp',
   },
   {
     title: 'E-Pharmacy',
@@ -43,9 +43,9 @@ const projects: {
     gradient: 'from-teal-400',
     hoverColor: 'group-hover:text-teal-400',
     icon: 'solar:pills-2-linear',
-    liveUrl: 'https://e-pharmacy-1.onrender.com/home',
+    liveUrl: 'https://e-pharmacy-1.onrender.com/',
     githubUrl: 'https://github.com/canberkyildiz25/E-Pharmacy',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fe-pharmacy-1.onrender.com%2Fhome?w=1200&h=675',
+    previewUrl: '/previews/epharmacy.webp',
   },
   {
     title: 'Purr Pedia',
@@ -56,7 +56,7 @@ const projects: {
     icon: 'solar:cat-2-linear',
     liveUrl: 'https://purr-pedia.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Purr-Pedia',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fpurr-pedia.vercel.app%2F?w=1200&h=675',
+    previewUrl: '/previews/purrpedia.webp',
   },
   {
     title: 'TravelTrucks',
@@ -67,7 +67,7 @@ const projects: {
     icon: 'solar:bus-linear',
     liveUrl: 'https://travel-trucks-eight-theta.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Travel-Trucks',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Ftravel-trucks-eight-theta.vercel.app%2F?w=1200&h=675',
+    previewUrl: '/previews/traveltrucks.webp',
   },
   {
     title: 'Cinemania',
@@ -78,7 +78,7 @@ const projects: {
     icon: 'solar:clapperboard-play-linear',
     liveUrl: 'https://canberkyildiz25.github.io/Cinemania/',
     githubUrl: 'https://github.com/canberkyildiz25/Cinemania',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fcanberkyildiz25.github.io%2FCinemania%2F?w=1200&h=675',
+    previewUrl: '/previews/cinemania.webp',
   },
   {
     title: 'Book-Shelf',
@@ -89,7 +89,7 @@ const projects: {
     icon: 'solar:book-linear',
     liveUrl: 'https://book-shelf-brown.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Book-Shelf',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fbook-shelf-brown.vercel.app%2F?w=1200&h=675',
+    previewUrl: '/previews/bookshelf.webp',
   },
   {
     title: 'Tasty Treats',
@@ -100,7 +100,7 @@ const projects: {
     icon: 'solar:dish-linear',
     liveUrl: 'https://tasty-treats-six.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Tasty-Treats',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Ftasty-treats-six.vercel.app%2F?w=1200&h=675',
+    previewUrl: '/previews/tastytreats.webp',
   },
   {
     title: 'Money Guard',
@@ -111,7 +111,7 @@ const projects: {
     icon: 'solar:wallet-linear',
     liveUrl: 'https://money-guard-pi.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Money-Guard',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fmoney-guard-pi.vercel.app%2F?w=1200&h=675',
+    previewUrl: '/previews/moneyguard.webp',
   },
   {
     title: 'Focus Frame',
@@ -122,7 +122,7 @@ const projects: {
     icon: 'solar:camera-linear',
     liveUrl: 'https://canberkyildiz25.github.io/Focus-Frame-Project/',
     githubUrl: 'https://github.com/canberkyildiz25/Focus-Frame-Project',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fcanberkyildiz25.github.io%2FFocus-Frame-Project%2F?w=1200&h=675',
+    previewUrl: '/previews/focusframe.webp',
   },
   {
     title: 'Green Harvest',
@@ -133,7 +133,7 @@ const projects: {
     icon: 'solar:leaf-linear',
     liveUrl: 'https://green-harvest-project.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/green-harvest-project',
-    previewUrl: 'https://s0.wordpress.com/mshots/v1/https%3A%2F%2Fgreen-harvest-project.vercel.app%2F?w=1200&h=675',
+    previewUrl: '/previews/greenharvest.webp',
   },
 ];
 
@@ -169,7 +169,7 @@ export default function Projects() {
                   <img
                     src={project.previewUrl}
                     alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).style.display = 'none';
                       (e.currentTarget.nextElementSibling as HTMLElement)?.style.setProperty('display', 'flex');
