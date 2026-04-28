@@ -12,18 +12,16 @@ const projects: {
   icon: string;
   liveUrl: string;
   githubUrl: string;
-  previewUrl: string;
 }[] = [
   {
-    title: 'Psychologist Services',
-    descKey: 'project_psychologist',
-    tags: ['React 19', 'Vite', 'React Router v7', 'Firebase', 'React Hook Form', 'Yup'],
-    gradient: 'from-purple-400',
-    hoverColor: 'group-hover:text-purple-400',
-    icon: 'solar:heart-linear',
-    liveUrl: 'https://resilient-salmiakki-c08a67.netlify.app/',
-    githubUrl: 'https://github.com/canberkyildiz25/Psychologist-Services',
-    previewUrl: '/previews/psychologist.webp',
+    title: 'PokéDuel',
+    descKey: 'project_pokeduel',
+    tags: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Framer Motion'],
+    gradient: 'from-yellow-400',
+    hoverColor: 'group-hover:text-yellow-400',
+    icon: 'solar:gamepad-linear',
+    liveUrl: 'https://pokedueltr.netlify.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/PokeDuel',
   },
   {
     title: 'PetLove',
@@ -34,7 +32,6 @@ const projects: {
     icon: 'solar:paw-linear',
     liveUrl: 'https://pet-love-1.onrender.com/',
     githubUrl: 'https://github.com/canberkyildiz25/Pet-Love',
-    previewUrl: '/previews/petlove.webp',
   },
   {
     title: 'E-Pharmacy',
@@ -45,7 +42,6 @@ const projects: {
     icon: 'solar:pills-2-linear',
     liveUrl: 'https://e-pharmacy-1.onrender.com/',
     githubUrl: 'https://github.com/canberkyildiz25/E-Pharmacy',
-    previewUrl: '/previews/epharmacy.webp',
   },
   {
     title: 'Purr Pedia',
@@ -56,7 +52,6 @@ const projects: {
     icon: 'solar:cat-2-linear',
     liveUrl: 'https://purr-pedia.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Purr-Pedia',
-    previewUrl: '/previews/purrpedia.webp',
   },
   {
     title: 'TravelTrucks',
@@ -67,7 +62,6 @@ const projects: {
     icon: 'solar:bus-linear',
     liveUrl: 'https://travel-trucks-eight-theta.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Travel-Trucks',
-    previewUrl: '/previews/traveltrucks.webp',
   },
   {
     title: 'Cinemania',
@@ -78,7 +72,6 @@ const projects: {
     icon: 'solar:clapperboard-play-linear',
     liveUrl: 'https://canberkyildiz25.github.io/Cinemania/',
     githubUrl: 'https://github.com/canberkyildiz25/Cinemania',
-    previewUrl: '/previews/cinemania.webp',
   },
   {
     title: 'Book-Shelf',
@@ -89,7 +82,6 @@ const projects: {
     icon: 'solar:book-linear',
     liveUrl: 'https://book-shelf-brown.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Book-Shelf',
-    previewUrl: '/previews/bookshelf.webp',
   },
   {
     title: 'Tasty Treats',
@@ -100,7 +92,6 @@ const projects: {
     icon: 'solar:dish-linear',
     liveUrl: 'https://tasty-treats-six.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Tasty-Treats',
-    previewUrl: '/previews/tastytreats.webp',
   },
   {
     title: 'Money Guard',
@@ -111,7 +102,6 @@ const projects: {
     icon: 'solar:wallet-linear',
     liveUrl: 'https://money-guard-pi.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Money-Guard',
-    previewUrl: '/previews/moneyguard.webp',
   },
   {
     title: 'Focus Frame',
@@ -122,7 +112,6 @@ const projects: {
     icon: 'solar:camera-linear',
     liveUrl: 'https://canberkyildiz25.github.io/Focus-Frame-Project/',
     githubUrl: 'https://github.com/canberkyildiz25/Focus-Frame-Project',
-    previewUrl: '/previews/focusframe.webp',
   },
   {
     title: 'Green Harvest',
@@ -133,7 +122,16 @@ const projects: {
     icon: 'solar:leaf-linear',
     liveUrl: 'https://green-harvest-project.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/green-harvest-project',
-    previewUrl: '/previews/greenharvest.webp',
+  },
+  {
+    title: 'Psychologist Services',
+    descKey: 'project_psychologist',
+    tags: ['React 19', 'Vite', 'React Router v7', 'Firebase', 'React Hook Form', 'Yup'],
+    gradient: 'from-purple-400',
+    hoverColor: 'group-hover:text-purple-400',
+    icon: 'solar:heart-linear',
+    liveUrl: 'https://resilient-salmiakki-c08a67.netlify.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/Psychologist-Services',
   },
 ];
 
@@ -164,33 +162,24 @@ export default function Projects() {
             onClick={() => window.open(project.liveUrl, '_blank')}
           >
             <div className="aspect-video w-full rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-hidden relative mb-6 transition-all duration-500 group-hover:border-indigo-500/50 dark:group-hover:border-indigo-500/50">
-              {project.previewUrl ? (
-                <>
-                  <img
-                    src={project.previewUrl}
-                    alt={project.title}
-                    className="absolute inset-0 w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.display = 'none';
-                      (e.currentTarget.nextElementSibling as HTMLElement)?.style.setProperty('display', 'flex');
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
-                  {/* Fallback hidden by default */}
-                  <div className="absolute inset-0 items-center justify-center hidden">
-                    <Icon icon={project.icon} className="text-4xl text-zinc-400 dark:text-zinc-700" />
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div
-                    className={`absolute inset-0 opacity-30 dark:opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] ${project.gradient} via-transparent to-transparent group-hover:opacity-50 transition-opacity duration-500`}
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Icon icon={project.icon} className="text-4xl text-zinc-400 dark:text-zinc-700 group-hover:scale-110 transition-transform duration-500" />
-                  </div>
-                </>
-              )}
+              <img
+                src={`https://s0.wordpress.com/mshots/v1/${encodeURIComponent(project.liveUrl)}?w=1200&h=675`}
+                alt={project.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                onError={(e) => {
+                  const img = e.currentTarget as HTMLImageElement;
+                  img.style.display = 'none';
+                  const fallback = img.parentElement?.querySelector<HTMLElement>('.screenshot-fallback');
+                  if (fallback) fallback.style.display = 'flex';
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+              <div className="screenshot-fallback absolute inset-0 flex-col items-center justify-center" style={{ display: 'none' }}>
+                <div
+                  className={`absolute inset-0 opacity-30 dark:opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] ${project.gradient} via-transparent to-transparent group-hover:opacity-50 transition-opacity duration-500`}
+                />
+                <Icon icon={project.icon} className="text-4xl text-zinc-400 dark:text-zinc-700 group-hover:scale-110 transition-transform duration-500 relative z-10" />
+              </div>
             </div>
             <div className="flex items-start justify-between group/card hover:translate-x-1 transition-transform duration-300">
               <div className="flex-1">
