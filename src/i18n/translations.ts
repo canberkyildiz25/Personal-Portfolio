@@ -49,6 +49,8 @@ export const translations = {
       'Digital pharmacy platform connecting customers with pharmacies. Features location-based pharmacy discovery, order management, and analytics dashboard for pharmacy owners.',
     project_purr_pedia:
       'Cat encyclopedia featuring 60+ breeds with detailed characteristics, temperament scores, and images. Real-time search and smart filtering by energy level, coat length, and child compatibility. Compare up to 3 breeds side-by-side, interactive quiz to find your perfect cat match, and comprehensive care guide. PWA support for mobile app experience. Bilingual: Turkish and English.',
+    project_pokeduel:
+      'Interactive Pokémon TCG dueling game. Select trainers, build 5-card decks, choose dynamic arenas, and battle using type advantages and real stats. Features Framer Motion animations, sound effects, and responsive mobile design.',
     project_psychologist:
       'Psychologist services platform with animated hero, searchable psychologist directory with sorting by name, price, and popularity. Features private favorites page, Firebase authentication, and appointment booking with React Hook Form validation. Fully responsive design.',
     project_petlove:
@@ -98,6 +100,8 @@ export const translations = {
       'Müşterileri eczanelerle buluşturan dijital eczane platformu. Lokasyona göre yakın eczane keşfi, sipariş yönetimi ve eczane sahipleri için analitik paneli sunar.',
     project_purr_pedia:
       'Kedi ırkları ansiklopedisi. 60+ kedi ırkı, detaylı özellikler, mizaç skorları ve görseller. Anlık arama ve akıllı filtreleme (enerji seviyesi, tüy uzunluğu, çocuklarla uyum). En fazla 3 ırkı yan yana karşılaştır, hangi kedi sana uygun bulun (interaktif quiz) ve kedi bakım rehberi. PWA desteği ile mobilde uygulama gibi kullan. Türkçe ve İngilizce.',
+    project_pokeduel:
+      'İnteraktif Pokémon TCG düello oyunu. Antrenör seç, 5 kartlık deste oluştur, dinamik arena seç ve tip avantajları ile gerçek istatistikleri kullanarak savaş. Framer Motion animasyonları, ses efektleri ve responsive mobil tasarım.',
     project_psychologist:
       'Psikolog hizmetleri platformu. Animasyonlu hero bölümü, aranabilir psikolog dizini (ad, fiyat ve popülarite göre sıralanabilir). Özel favoriler sayfası, Firebase kimlik doğrulaması ve React Hook Form doğrulamalı randevu takılı. Tam responsive tasarım.',
     project_petlove:
@@ -147,6 +151,8 @@ export const translations = {
       'Цифровая платформа фармацевтических услуг, соединяющая клиентов с аптеками. Поиск аптек по геолокации, управление заказами и аналитическая панель для владельцев аптек.',
     project_purr_pedia:
       'Энциклопедия кошачьих пород с 60+ породами. Подробные характеристики, оценки характера и изображения. Поиск в реальном времени и умная фильтрация по энергичности, длине шерсти и совместимости с детьми. Сравнение до 3 пород рядом, интерактивная викторина для поиска идеальной кошки, полное руководство по уходу. Поддержка PWA для мобильного приложения. Двуязычный: турецкий и английский.',
+    project_pokeduel:
+      'Интерактивная карточная игра-дуэль в стиле Pokémon TCG. Выбирайте тренеров, создавайте колоды из 5 карт, выбирайте арены и сражайтесь с учётом типовых преимуществ и реальных характеристик. Анимации Framer Motion, звуковые эффекты и адаптивный дизайн.',
     project_psychologist:
       'Платформа психологических услуг с анимированным героем, поисковым каталогом психологов с сортировкой по имени, цене и популярности. Приватная страница избранного, аутентификация Firebase и форма записи на прием с валидацией React Hook Form. Полностью адаптивный дизайн.',
     project_petlove:
@@ -196,6 +202,8 @@ export const translations = {
       'Piattaforma farmaceutica digitale che connette clienti con farmacie. Include ricerca di farmacie per posizione, gestione ordini e pannello analitico per proprietari.',
     project_purr_pedia:
       'Enciclopedia felina con 60+ razze di gatti. Caratteristiche dettagliate, punteggi di temperamento e immagini. Ricerca in tempo reale e filtri intelligenti per livello energetico, lunghezza del mantello e compatibilità con bambini. Confronta fino a 3 razze affiancate, quiz interattivo per trovare il gatto perfetto per te e guida completa alla cura. Supporto PWA per esperienza da app mobile. Bilingue: turco e inglese.',
+    project_pokeduel:
+      'Gioco di duello interattivo ispirato al Pokémon TCG. Seleziona allenatori, costruisci mazzi da 5 carte, scegli arene dinamiche e combatti usando vantaggi di tipo e statistiche reali. Animazioni Framer Motion, effetti sonori e design mobile responsive.',
     project_psychologist:
       'Piattaforma di servizi psicologici con hero animato, directory di psicologi ricercabili con ordinamento per nome, prezzo e popolarità. Pagina preferiti privata, autenticazione Firebase e modulo prenotazione appuntamenti con validazione React Hook Form. Design completamente responsivo.',
     project_petlove:
@@ -245,6 +253,8 @@ export const translations = {
       'Plataforma farmacéutica digital que conecta clientes con farmacias. Incluye búsqueda de farmacias por ubicación, gestión de pedidos y panel analítico para propietarios.',
     project_purr_pedia:
       'Enciclopedia felina con 60+ razas de gatos. Características detalladas, puntuaciones de temperamento e imágenes. Búsqueda en tiempo real y filtrado inteligente por nivel de energía, longitud de pelaje y compatibilidad con niños. Compara hasta 3 razas lado a lado, cuestionario interactivo para encontrar tu gato perfecto y guía completa de cuidado. Soporte PWA para experiencia de app móvil. Bilingüe: turco e inglés.',
+    project_pokeduel:
+      'Juego interactivo de duelos basado en el Pokémon TCG. Selecciona entrenadores, construye mazos de 5 cartas, elige arenas dinámicas y batalla usando ventajas de tipo y estadísticas reales. Animaciones Framer Motion, efectos de sonido y diseño mobile responsive.',
     project_psychologist:
       'Plataforma de servicios psicológicos con hero animado, directorio de psicólogos buscable con clasificación por nombre, precio y popularidad. Página de favoritos privada, autenticación Firebase y formulario de cita con validación React Hook Form. Diseño completamente responsive.',
     project_petlove:
@@ -294,6 +304,8 @@ export const translations = {
       'Digitale Apothekenplattform, die Kunden mit Apotheken verbindet. Standortbasierte Apothekensuche, Bestellverwaltung und Analyse-Dashboard für Apothekeninhaber.',
     project_purr_pedia:
       'Katzenenzyklopädie mit 60+ Katzenrassen. Detaillierte Charakteristiken, Temperaturwerte und Bilder. Echtzeitsucse und intelligente Filter nach Energielevel, Fellänge und Kindergerech. Vergleiche bis zu 3 Rassen nebeneinander, interaktives Quiz zur Findung deiner perfekten Katze und umfassender Pflegeleitfaden. PWA-Unterstützung für Mobile-App-Erlebnis. Zweisprachig: Türkisch und Englisch.',
+    project_pokeduel:
+      'Interaktives Pokémon-TCG-Duellspiel. Wähle Trainer, erstelle 5-Karten-Decks, wähle dynamische Arenen und kämpfe mit Typvorteilen und echten Statistiken. Framer-Motion-Animationen, Soundeffekte und responsives Mobile-Design.',
     project_psychologist:
       'Plattform für psychologische Dienstleistungen mit animiertem Hero, durchsuchbarem Psychologenverzeichnis mit Sortierung nach Name, Preis und Beliebtheit. Private Favoritenseite, Firebase-Authentifizierung und Terminbuchungsformular mit React Hook Form-Validierung. Vollständig responsives Design.',
     project_petlove:
@@ -343,6 +355,8 @@ export const translations = {
       'Plateforme pharmaceutique numérique connectant clients et pharmacies. Recherche de pharmacies par localisation, gestion des commandes et tableau de bord analytique pour propriétaires.',
     project_purr_pedia:
       'Encyclopédie féline avec 60+ races de chats. Caractéristiques détaillées, scores de tempérament et images. Recherche en temps réel et filtrage intelligent par niveau d\'énergie, longueur du pelage et compatibilité avec les enfants. Comparez jusqu\'à 3 races côte à côte, quiz interactif pour trouver votre chat parfait et guide complet de soins. Support PWA pour l\'expérience d\'une application mobile. Bilingue : turc et anglais.',
+    project_pokeduel:
+      'Jeu de duel interactif inspiré du Pokémon TCG. Sélectionnez des dresseurs, construisez des decks de 5 cartes, choisissez des arènes dynamiques et combattez en utilisant les avantages de type et les statistiques réelles. Animations Framer Motion, effets sonores et design mobile responsive.',
     project_psychologist:
       'Plateforme de services psychologiques avec hero animé, répertoire consultable de psychologues avec tri par nom, prix et popularité. Page des favoris privée, authentification Firebase et formulaire de prise de rendez-vous avec validation React Hook Form. Design entièrement réactif.',
     project_petlove:
