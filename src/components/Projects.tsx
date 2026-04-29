@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import { useLanguage } from '../context/LanguageContext';
 import type { TranslationKey } from '../i18n/translations';
@@ -135,6 +136,92 @@ const projects: {
   },
 ];
 
+function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: number }) {
+  const { t } = useLanguage();
+  const [imgState, setImgState] = useState<'loading' | 'loaded' | 'error'>('loading');
+
+  return (
+    <motion.div
+      className="group cursor-pointer"
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-60px' }}
+      transition={{ duration: 0.55, delay: (idx % 2) * 0.1, ease: [0.22, 1, 0.36, 1] }}
+      onClick={() => window.open(project.liveUrl, '_blank')}
+    >
+      {/* Screenshot / thumbnail */}
+      <div className="aspect-video w-full rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-hidden relative mb-6 transition-all duration-500 group-hover:border-indigo-500/50">
+        {imgState === 'loading' && <div className="absolute inset-0 animate-shimmer" />}
+
+        {imgState !== 'error' && (
+          <img
+            src={`https://s0.wordpress.com/mshots/v1/${encodeURIComponent(project.liveUrl)}?w=1200&h=675`}
+            alt={project.title}
+            className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-105 ${
+              imgState === 'loaded' ? 'opacity-100' : 'opacity-0'
+            }`}
+            onLoad={() => setImgState('loaded')}
+            onError={() => setImgState('error')}
+          />
+        )}
+
+        {imgState === 'loaded' && (
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+        )}
+
+        {imgState === 'error' && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <div className={`absolute inset-0 opacity-30 dark:opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] ${project.gradient} via-transparent to-transparent group-hover:opacity-50 transition-opacity duration-500`} />
+            <Icon icon={project.icon} className="text-4xl text-zinc-400 dark:text-zinc-700 group-hover:scale-110 transition-transform duration-500 relative z-10" />
+          </div>
+        )}
+      </div>
+
+      {/* Info row */}
+      <div className="flex items-start justify-between hover:translate-x-1 transition-transform duration-300">
+        <div className="flex-1">
+          <h3 className={`text-lg font-medium text-zinc-900 dark:text-zinc-100 tracking-tight transition-colors duration-300 ${project.hoverColor}`}>
+            {project.title}
+          </h3>
+          <p className="mt-2 text-sm text-zinc-500 max-w-sm">{t(project.descKey)}</p>
+        </div>
+        <div className="flex items-center gap-2 opacity-100 group-hover:scale-110 transition-all duration-300" onClick={(e) => e.stopPropagation()}>
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 rounded-full border border-zinc-300 dark:border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-zinc-900 hover:text-white hover:border-transparent transition-all duration-300 hover:shadow-md"
+            title="GitHub"
+          >
+            <Icon icon="logos:github-icon" className="text-base" />
+          </a>
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 rounded-full border border-zinc-300 dark:border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-indigo-600 hover:text-white hover:border-transparent transition-all duration-300 hover:shadow-md hover:shadow-indigo-500/50"
+            title="Live Demo"
+          >
+            <Icon icon="solar:arrow-right-up-linear" />
+          </a>
+        </div>
+      </div>
+
+      {/* Tags */}
+      <div className="mt-4 flex flex-wrap gap-2">
+        {project.tags.map((tag) => (
+          <span
+            key={tag}
+            className="text-xs font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 px-2.5 py-1 rounded-md hover:bg-indigo-100 dark:hover:bg-indigo-950 hover:border-indigo-300 dark:hover:border-indigo-700 hover:text-indigo-700 dark:hover:text-indigo-300 transition-all duration-300 cursor-default"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+    </motion.div>
+  );
+}
+
 export default function Projects() {
   const { t } = useLanguage();
   const [showAll, setShowAll] = useState(false);
@@ -142,89 +229,39 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-20 border-t border-zinc-200 dark:border-zinc-900">
-      <div className="flex items-center justify-between mb-12">
-        <h2 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">{t('projects_title')}</h2>
+      <motion.div
+        className="flex items-center justify-between mb-12"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-80px' }}
+        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <h2 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+          {t('projects_title')}
+        </h2>
         <button
           onClick={() => setShowAll((v) => !v)}
           className="text-sm font-medium text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 flex items-center gap-1 transition-all duration-300 hover:gap-2"
         >
           {showAll ? t('projects_show_less') : t('projects_view_all')}
-          <Icon icon={showAll ? 'solar:alt-arrow-up-linear' : 'solar:alt-arrow-right-linear'} className="transition-transform group-hover:translate-x-1" />
+          <Icon icon={showAll ? 'solar:alt-arrow-up-linear' : 'solar:alt-arrow-right-linear'} />
         </button>
-      </div>
+      </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {visible.map((project, idx) => (
-          <div 
-            key={project.title} 
-            className="group cursor-pointer" 
-            style={{'--stagger': `${idx * 50}ms`} as React.CSSProperties}
-            onClick={() => window.open(project.liveUrl, '_blank')}
-          >
-            <div className="aspect-video w-full rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-hidden relative mb-6 transition-all duration-500 group-hover:border-indigo-500/50 dark:group-hover:border-indigo-500/50">
-              <img
-                src={`https://s0.wordpress.com/mshots/v1/${encodeURIComponent(project.liveUrl)}?w=1200&h=675`}
-                alt={project.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                onError={(e) => {
-                  const img = e.currentTarget as HTMLImageElement;
-                  img.style.display = 'none';
-                  const fallback = img.parentElement?.querySelector<HTMLElement>('.screenshot-fallback');
-                  if (fallback) fallback.style.display = 'flex';
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
-              <div className="screenshot-fallback absolute inset-0 flex-col items-center justify-center" style={{ display: 'none' }}>
-                <div
-                  className={`absolute inset-0 opacity-30 dark:opacity-20 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] ${project.gradient} via-transparent to-transparent group-hover:opacity-50 transition-opacity duration-500`}
-                />
-                <Icon icon={project.icon} className="text-4xl text-zinc-400 dark:text-zinc-700 group-hover:scale-110 transition-transform duration-500 relative z-10" />
-              </div>
-            </div>
-            <div className="flex items-start justify-between group/card hover:translate-x-1 transition-transform duration-300">
-              <div className="flex-1">
-                <h3
-                  className={`text-lg font-medium text-zinc-900 dark:text-zinc-100 tracking-tight transition-colors duration-300 ${project.hoverColor}`}
-                >
-                  {project.title}
-                </h3>
-                <p className="mt-2 text-sm text-zinc-500 max-w-sm">{t(project.descKey)}</p>
-              </div>
-              <div className="flex items-center gap-2 opacity-100 group-hover:scale-110 transition-all duration-300" onClick={(e) => e.stopPropagation()}>
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full border border-zinc-300 dark:border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-zinc-900 hover:text-white hover:border-transparent transition-all duration-300 hover:shadow-md"
-                  title="GitHub"
-                >
-                  <Icon icon="logos:github-icon" className="text-base" />
-                </a>
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-full border border-zinc-300 dark:border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-indigo-600 hover:text-white hover:border-transparent transition-all duration-300 hover:shadow-md hover:shadow-indigo-500/50"
-                  title="Live Demo"
-                >
-                  <Icon icon="solar:arrow-right-up-linear" className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                </a>
-              </div>
-            </div>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {project.tags.map((tag, tagIdx) => (
-                <span
-                  key={tag}
-                  className="text-xs font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 px-2.5 py-1 rounded-md hover:bg-indigo-100 dark:hover:bg-indigo-950 hover:border-indigo-300 dark:hover:border-indigo-700 hover:text-indigo-700 dark:hover:text-indigo-300 transition-all duration-300 cursor-default"
-                  style={{'--tag-delay': `${tagIdx * 30}ms`} as React.CSSProperties}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={showAll ? 'all' : 'partial'}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+        >
+          {visible.map((project, idx) => (
+            <ProjectCard key={project.title} project={project} idx={idx} />
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </section>
   );
 }

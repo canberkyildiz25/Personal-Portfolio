@@ -25,6 +25,19 @@ export const translations = {
       'I build robust, scalable, and intuitive web applications by bridging the gap between pixel-perfect interfaces and complex backend architectures.',
     hero_cta_projects: 'View Projects',
     hero_cta_github: 'GitHub Profile',
+    hero_cta_cv: 'Download CV',
+    about_title: 'About Me',
+    about_p1:
+      "I'm a full-stack developer who enjoys building complete digital products — from architecting scalable backends to crafting fluid, responsive interfaces. My goal is always the same: ship software that's reliable, maintainable, and genuinely useful.",
+    about_p2:
+      "With a background spanning React, Node.js, and cloud infrastructure, I'm comfortable owning a feature from database to deployment. I thrive in cross-functional teams and love the challenge of turning complex requirements into clean, elegant solutions.",
+    about_exp_label: 'Years of Experience',
+    about_projects_label: 'Projects Delivered',
+    about_tech_label: 'Technologies Used',
+    about_tag1: 'Problem Solver',
+    about_tag2: 'Clean Code',
+    about_tag3: 'Team Player',
+    about_tag4: 'Remote-Ready',
     stack_title: 'Technical Arsenal',
     stack_desc:
       'A comprehensive suite of tools and technologies to deliver complete solutions from database design to client-side interactivity.',
@@ -60,6 +73,7 @@ export const translations = {
     contact_desc:
       "Currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you.",
     contact_email: 'Send an Email',
+    contact_linkedin: 'LinkedIn Profile',
     footer_rights: '© 2026 FSD. All rights reserved.',
   },
   tr: {
@@ -76,6 +90,19 @@ export const translations = {
       'Piksel mükemmeliyetindeki arayüzler ile karmaşık backend mimarileri arasındaki köprüyü kurarak sağlam, ölçeklenebilir ve sezgisel web uygulamaları geliştiriyorum.',
     hero_cta_projects: 'Projeleri Gör',
     hero_cta_github: 'GitHub Profilim',
+    hero_cta_cv: 'CV İndir',
+    about_title: 'Hakkımda',
+    about_p1:
+      'Ölçeklenebilir backend mimarilerinden akıcı, duyarlı arayüzlere kadar eksiksiz dijital ürünler geliştirmekten keyif alan bir full-stack geliştiriciyim. Hedefim her zaman aynı: güvenilir, sürdürülebilir ve gerçekten işe yarayan yazılımlar üretmek.',
+    about_p2:
+      'React, Node.js ve bulut altyapısı konusundaki deneyimimle bir özelliği veritabanından dağıtıma kadar sahiplenebiliyorum. Çapraz fonksiyonlu ekiplerde çalışmayı ve karmaşık gereksinimleri zarif, temiz çözümlere dönüştürmeyi seviyorum.',
+    about_exp_label: 'Yıllık Deneyim',
+    about_projects_label: 'Teslim Edilen Proje',
+    about_tech_label: 'Kullanılan Teknoloji',
+    about_tag1: 'Çözüm Odaklı',
+    about_tag2: 'Temiz Kod',
+    about_tag3: 'Takım Oyuncusu',
+    about_tag4: 'Uzaktan Çalışmaya Hazır',
     stack_title: 'Teknik Araç Setim',
     stack_desc:
       'Veritabanı tasarımından istemci tarafı etkileşimine kadar eksiksiz çözümler sunan kapsamlı araç ve teknoloji paketi.',
@@ -111,6 +138,7 @@ export const translations = {
     contact_desc:
       'Yeni fırsatlara açığım. Bir sorunuz olsun ya da sadece merhaba demek isteyin, en kısa sürede geri dönmeye çalışacağım.',
     contact_email: 'E-posta Gönder',
+    contact_linkedin: 'LinkedIn Profilim',
     footer_rights: '© 2026 FSD. Tüm hakları saklıdır.',
   },
   ru: {
@@ -127,6 +155,19 @@ export const translations = {
       'Разрабатываю надёжные, масштабируемые и интуитивные веб-приложения, соединяя пиксельно-точные интерфейсы со сложными бэкенд-архитектурами.',
     hero_cta_projects: 'Смотреть проекты',
     hero_cta_github: 'Профиль GitHub',
+    hero_cta_cv: 'Скачать резюме',
+    about_title: 'Обо мне',
+    about_p1:
+      'Я fullstack-разработчик, который получает удовольствие от создания полноценных цифровых продуктов — от проектирования масштабируемых бэкендов до разработки гибких, адаптивных интерфейсов. Моя цель всегда одна: создавать надёжное, поддерживаемое и по-настоящему полезное ПО.',
+    about_p2:
+      'Имея опыт в React, Node.js и облачной инфраструктуре, я готов вести разработку от базы данных до деплоя. Мне нравится работать в кросс-функциональных командах и превращать сложные требования в элегантные решения.',
+    about_exp_label: 'Лет опыта',
+    about_projects_label: 'Реализованных проектов',
+    about_tech_label: 'Технологий в арсенале',
+    about_tag1: 'Решение проблем',
+    about_tag2: 'Чистый код',
+    about_tag3: 'Командный игрок',
+    about_tag4: 'Готов к удалённой работе',
     stack_title: 'Технический арсенал',
     stack_desc:
       'Комплексный набор инструментов и технологий для создания полных решений — от проектирования баз данных до клиентской интерактивности.',
@@ -162,6 +203,7 @@ export const translations = {
     contact_desc:
       'Открыт для новых возможностей. Есть вопрос или просто хотите поздороваться — постараюсь ответить как можно скорее.',
     contact_email: 'Написать письмо',
+    contact_linkedin: 'Профиль LinkedIn',
     footer_rights: '© 2026 FSD. Все права защищены.',
   },
   it: {
@@ -178,6 +220,19 @@ export const translations = {
       'Sviluppo applicazioni web robuste, scalabili e intuitive colmando il divario tra interfacce pixel-perfect e architetture backend complesse.',
     hero_cta_projects: 'Vedi Progetti',
     hero_cta_github: 'Profilo GitHub',
+    hero_cta_cv: 'Scarica CV',
+    about_title: 'Chi sono',
+    about_p1:
+      "Sono uno sviluppatore full-stack che ama creare prodotti digitali completi — dall'architettura di backend scalabili alla realizzazione di interfacce fluide e responsive. Il mio obiettivo è sempre lo stesso: consegnare software affidabile, manutenibile e genuinamente utile.",
+    about_p2:
+      "Con un background che spazia da React a Node.js e all'infrastruttura cloud, sono a mio agio nel gestire una funzionalità dal database al deployment. Prospero nei team cross-funzionali e amo la sfida di trasformare requisiti complessi in soluzioni eleganti.",
+    about_exp_label: 'Anni di esperienza',
+    about_projects_label: 'Progetti consegnati',
+    about_tech_label: 'Tecnologie utilizzate',
+    about_tag1: 'Problem Solver',
+    about_tag2: 'Clean Code',
+    about_tag3: 'Team Player',
+    about_tag4: 'Remote-Ready',
     stack_title: 'Arsenale Tecnico',
     stack_desc:
       "Una suite completa di strumenti e tecnologie per soluzioni complete, dal design del database all'interattività lato client.",
@@ -201,18 +256,19 @@ export const translations = {
     project_epharmacy:
       'Piattaforma farmaceutica digitale che connette clienti con farmacie. Include ricerca di farmacie per posizione, gestione ordini e pannello analitico per proprietari.',
     project_purr_pedia:
-      'Enciclopedia felina con 60+ razze di gatti. Caratteristiche dettagliate, punteggi di temperamento e immagini. Ricerca in tempo reale e filtri intelligenti per livello energetico, lunghezza del mantello e compatibilità con bambini. Confronta fino a 3 razze affiancate, quiz interattivo per trovare il gatto perfetto per te e guida completa alla cura. Supporto PWA per esperienza da app mobile. Bilingue: turco e inglese.',
+      "Enciclopedia felina con 60+ razze di gatti. Caratteristiche dettagliate, punteggi di temperamento e immagini. Ricerca in tempo reale e filtri intelligenti per livello energetico, lunghezza del mantello e compatibilità con bambini. Confronta fino a 3 razze affiancate, quiz interattivo per trovare il gatto perfetto per te e guida completa alla cura. Supporto PWA per esperienza da app mobile. Bilingue: turco e inglese.",
     project_pokeduel:
       'Gioco di duello interattivo ispirato al Pokémon TCG. Seleziona allenatori, costruisci mazzi da 5 carte, scegli arene dinamiche e combatti usando vantaggi di tipo e statistiche reali. Animazioni Framer Motion, effetti sonori e design mobile responsive.',
     project_psychologist:
       'Piattaforma di servizi psicologici con hero animato, directory di psicologi ricercabili con ordinamento per nome, prezzo e popolarità. Pagina preferiti privata, autenticazione Firebase e modulo prenotazione appuntamenti con validazione React Hook Form. Design completamente responsivo.',
     project_petlove:
-      'Piattaforma full-stack di adozione e annunci di animali domestici. Sfoglia animali disponibili per l\'adozione, segnala animali persi/trovati, leggi guide sulla cura degli animali e scopri rifugi e organizzazioni partner.',
+      "Piattaforma full-stack di adozione e annunci di animali domestici. Sfoglia animali disponibili per l'adozione, segnala animali persi/trovati, leggi guide sulla cura degli animali e scopri rifugi e organizzazioni partner.",
     contact_badge: 'Aperto a opportunità',
     contact_title: 'Costruiamo insieme.',
     contact_desc:
       'Attualmente aperto a nuove opportunità. Che tu abbia una domanda o voglia semplicemente salutare, farò del mio meglio per risponderti.',
     contact_email: 'Invia una Email',
+    contact_linkedin: 'Profilo LinkedIn',
     footer_rights: '© 2026 FSD. Tutti i diritti riservati.',
   },
   es: {
@@ -229,6 +285,19 @@ export const translations = {
       'Desarrollo aplicaciones web robustas, escalables e intuitivas uniendo interfaces pixel-perfect con arquitecturas backend complejas.',
     hero_cta_projects: 'Ver Proyectos',
     hero_cta_github: 'Perfil de GitHub',
+    hero_cta_cv: 'Descargar CV',
+    about_title: 'Sobre mí',
+    about_p1:
+      'Soy un desarrollador full-stack que disfruta construyendo productos digitales completos — desde arquitectar backends escalables hasta crear interfaces fluidas y responsivas. Mi objetivo es siempre el mismo: entregar software confiable, mantenible y genuinamente útil.',
+    about_p2:
+      'Con experiencia en React, Node.js e infraestructura cloud, me siento cómodo gestionando una funcionalidad desde la base de datos hasta el deployment. Prospero en equipos multifuncionales y me encanta el desafío de convertir requisitos complejos en soluciones elegantes.',
+    about_exp_label: 'Años de experiencia',
+    about_projects_label: 'Proyectos entregados',
+    about_tech_label: 'Tecnologías utilizadas',
+    about_tag1: 'Resolución de problemas',
+    about_tag2: 'Código limpio',
+    about_tag3: 'Jugador de equipo',
+    about_tag4: 'Listo para trabajo remoto',
     stack_title: 'Arsenal Técnico',
     stack_desc:
       'Una suite completa de herramientas y tecnologías para entregar soluciones completas desde el diseño de bases de datos hasta la interactividad del lado del cliente.',
@@ -264,6 +333,7 @@ export const translations = {
     contact_desc:
       'Actualmente abierto a nuevas oportunidades. Ya sea que tengas una pregunta o solo quieras saludar, haré todo lo posible para responderte.',
     contact_email: 'Enviar un Email',
+    contact_linkedin: 'Perfil de LinkedIn',
     footer_rights: '© 2026 FSD. Todos los derechos reservados.',
   },
   de: {
@@ -280,6 +350,19 @@ export const translations = {
       'Ich entwickle robuste, skalierbare und intuitive Webanwendungen, indem ich pixelgenaue Interfaces mit komplexen Backend-Architekturen verbinde.',
     hero_cta_projects: 'Projekte ansehen',
     hero_cta_github: 'GitHub-Profil',
+    hero_cta_cv: 'Lebenslauf herunterladen',
+    about_title: 'Über mich',
+    about_p1:
+      'Ich bin ein Full-Stack-Entwickler, der es liebt, vollständige digitale Produkte zu erstellen — von der Architektur skalierbarer Backends bis hin zur Gestaltung flüssiger, responsiver Interfaces. Mein Ziel ist immer dasselbe: zuverlässige, wartbare und wirklich nützliche Software zu liefern.',
+    about_p2:
+      'Mit Erfahrung in React, Node.js und Cloud-Infrastruktur bin ich es gewohnt, ein Feature von der Datenbank bis zum Deployment zu verantworten. Ich arbeite gerne in cross-funktionalen Teams und schätze die Herausforderung, komplexe Anforderungen in elegante Lösungen umzuwandeln.',
+    about_exp_label: 'Jahre Erfahrung',
+    about_projects_label: 'Abgeschlossene Projekte',
+    about_tech_label: 'Verwendete Technologien',
+    about_tag1: 'Problemlöser',
+    about_tag2: 'Sauberer Code',
+    about_tag3: 'Teamplayer',
+    about_tag4: 'Remote-bereit',
     stack_title: 'Technisches Arsenal',
     stack_desc:
       'Eine umfassende Suite von Tools und Technologien für vollständige Lösungen — vom Datenbankdesign bis zur clientseitigen Interaktivität.',
@@ -315,6 +398,7 @@ export const translations = {
     contact_desc:
       'Derzeit offen für neue Möglichkeiten. Egal ob du eine Frage hast oder einfach Hallo sagen möchtest — ich versuche so schnell wie möglich zu antworten.',
     contact_email: 'E-Mail senden',
+    contact_linkedin: 'LinkedIn-Profil',
     footer_rights: '© 2026 FSD. Alle Rechte vorbehalten.',
   },
   fr: {
@@ -331,6 +415,19 @@ export const translations = {
       "Je développe des applications web robustes, évolutives et intuitives en faisant le lien entre des interfaces pixel-perfect et des architectures backend complexes.",
     hero_cta_projects: 'Voir les Projets',
     hero_cta_github: 'Profil GitHub',
+    hero_cta_cv: 'Télécharger le CV',
+    about_title: 'À propos',
+    about_p1:
+      "Je suis un développeur full-stack qui prend plaisir à créer des produits numériques complets — de l'architecture de backends évolutifs à la réalisation d'interfaces fluides et responsives. Mon objectif est toujours le même : livrer des logiciels fiables, maintenables et vraiment utiles.",
+    about_p2:
+      "Fort d'une expérience couvrant React, Node.js et l'infrastructure cloud, je suis à l'aise pour prendre en charge une fonctionnalité de la base de données au déploiement. J'aime travailler en équipes pluridisciplinaires et relever le défi de transformer des exigences complexes en solutions élégantes.",
+    about_exp_label: "Ans d'expérience",
+    about_projects_label: 'Projets livrés',
+    about_tech_label: 'Technologies utilisées',
+    about_tag1: 'Résolution de problèmes',
+    about_tag2: 'Code propre',
+    about_tag3: "Joueur d'équipe",
+    about_tag4: 'Prêt pour le travail à distance',
     stack_title: 'Arsenal Technique',
     stack_desc:
       "Une suite complète d'outils et de technologies pour livrer des solutions complètes, de la conception de bases de données à l'interactivité côté client.",
@@ -354,18 +451,19 @@ export const translations = {
     project_epharmacy:
       'Plateforme pharmaceutique numérique connectant clients et pharmacies. Recherche de pharmacies par localisation, gestion des commandes et tableau de bord analytique pour propriétaires.',
     project_purr_pedia:
-      'Encyclopédie féline avec 60+ races de chats. Caractéristiques détaillées, scores de tempérament et images. Recherche en temps réel et filtrage intelligent par niveau d\'énergie, longueur du pelage et compatibilité avec les enfants. Comparez jusqu\'à 3 races côte à côte, quiz interactif pour trouver votre chat parfait et guide complet de soins. Support PWA pour l\'expérience d\'une application mobile. Bilingue : turc et anglais.',
+      "Encyclopédie féline avec 60+ races de chats. Caractéristiques détaillées, scores de tempérament et images. Recherche en temps réel et filtrage intelligent par niveau d'énergie, longueur du pelage et compatibilité avec les enfants. Comparez jusqu'à 3 races côte à côte, quiz interactif pour trouver votre chat parfait et guide complet de soins. Support PWA pour l'expérience d'une application mobile. Bilingue : turc et anglais.",
     project_pokeduel:
       'Jeu de duel interactif inspiré du Pokémon TCG. Sélectionnez des dresseurs, construisez des decks de 5 cartes, choisissez des arènes dynamiques et combattez en utilisant les avantages de type et les statistiques réelles. Animations Framer Motion, effets sonores et design mobile responsive.',
     project_psychologist:
       'Plateforme de services psychologiques avec hero animé, répertoire consultable de psychologues avec tri par nom, prix et popularité. Page des favoris privée, authentification Firebase et formulaire de prise de rendez-vous avec validation React Hook Form. Design entièrement réactif.',
     project_petlove:
-      'Plateforme complète d\'adoption et d\'annonces d\'animaux de compagnie. Explorez les animaux disponibles à l\'adoption, signalez les animaux perdus/trouvés, lisez des guides de soins et découvrez les refuges à proximité.',
+      "Plateforme complète d'adoption et d'annonces d'animaux de compagnie. Explorez les animaux disponibles à l'adoption, signalez les animaux perdus/trouvés, lisez des guides de soins et découvrez les refuges à proximité.",
     contact_badge: 'Ouvert aux opportunités',
     contact_title: 'Construisons ensemble.',
     contact_desc:
       "Actuellement ouvert aux nouvelles opportunités. Que vous ayez une question ou souhaitiez simplement dire bonjour, je ferai de mon mieux pour vous répondre.",
     contact_email: 'Envoyer un Email',
+    contact_linkedin: 'Profil LinkedIn',
     footer_rights: '© 2026 FSD. Tous droits réservés.',
   },
 } as const;
