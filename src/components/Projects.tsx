@@ -15,6 +15,16 @@ const projects: {
   githubUrl: string;
 }[] = [
   {
+    title: 'Spectra CRM',
+    descKey: 'project_spectra_crm',
+    tags: ['Next.js 14', 'React 18', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Zustand'],
+    gradient: 'from-violet-400',
+    hoverColor: 'group-hover:text-violet-400',
+    icon: 'solar:chart-square-linear',
+    liveUrl: 'https://client-xi-three-50.vercel.app',
+    githubUrl: 'https://github.com/canberkyildiz25/Spectra-CRM',
+  },
+  {
     title: 'PokéDuel',
     descKey: 'project_pokeduel',
     tags: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Framer Motion'],

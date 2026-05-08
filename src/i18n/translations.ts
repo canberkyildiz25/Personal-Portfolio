@@ -68,6 +68,8 @@ export const translations = {
       'Psychologist services platform with animated hero, searchable psychologist directory with sorting by name, price, and popularity. Features private favorites page, Firebase authentication, and appointment booking with React Hook Form validation. Fully responsive design.',
     project_petlove:
       'Full-stack pet adoption and listing platform. Browse adoptable pets, report lost/found animals, read pet care guides, and discover nearby shelters and partner organizations.',
+    project_spectra_crm:
+      'Modern full-stack CRM system. Features customer profile and contact management, Kanban-based sales pipeline, professional quote generation with PDF export, team task assignment, and real-time sales dashboards with performance analytics. JWT authentication, built with Next.js, Node.js/Express, and MongoDB.',
     contact_badge: 'Open to opportunities',
     contact_title: "Let's build together.",
     contact_desc:
@@ -133,6 +135,8 @@ export const translations = {
       'Psikolog hizmetleri platformu. Animasyonlu hero bölümü, aranabilir psikolog dizini (ad, fiyat ve popülarite göre sıralanabilir). Özel favoriler sayfası, Firebase kimlik doğrulaması ve React Hook Form doğrulamalı randevu takılı. Tam responsive tasarım.',
     project_petlove:
       'Evcil hayvan sahiplenme ve listeleme platformu. Sahiplenilecek hayvanları keşfet, kayıp/bulunmuş hayvanları bildir, hayvan bakım rehberleri oku ve yakındaki barınakları keşfet.',
+    project_spectra_crm:
+      'Modern tam yığın CRM sistemi. Müşteri profil ve iletişim yönetimi, Kanban tabanlı satış hattı, PDF dışa aktarımlı profesyonel teklif oluşturma, ekip görev takibi ve gerçek zamanlı satış analizleri içerir. JWT kimlik doğrulama, Next.js, Node.js/Express ve MongoDB ile geliştirildi.',
     contact_badge: 'Fırsatlara açığım',
     contact_title: 'Birlikte inşa edelim.',
     contact_desc:
@@ -198,6 +202,8 @@ export const translations = {
       'Платформа психологических услуг с анимированным героем, поисковым каталогом психологов с сортировкой по имени, цене и популярности. Приватная страница избранного, аутентификация Firebase и форма записи на прием с валидацией React Hook Form. Полностью адаптивный дизайн.',
     project_petlove:
       'Полнофункциональная платформа для усыновления и размещения объявлений о домашних животных. Просмотр животных для усыновления, сообщение о потерянных/найденных животных, чтение руководств по уходу и поиск приютов.',
+    project_spectra_crm:
+      'Современная полнофункциональная CRM-система. Управление профилями клиентов и контактами, Kanban-воронка продаж, профессиональное создание коммерческих предложений с экспортом в PDF, постановка задач команде и дашборды аналитики продаж в реальном времени. JWT-аутентификация, стек Next.js, Node.js/Express и MongoDB.',
     contact_badge: 'Открыт для предложений',
     contact_title: 'Давайте создадим вместе.',
     contact_desc:
@@ -263,6 +269,8 @@ export const translations = {
       'Piattaforma di servizi psicologici con hero animato, directory di psicologi ricercabili con ordinamento per nome, prezzo e popolarità. Pagina preferiti privata, autenticazione Firebase e modulo prenotazione appuntamenti con validazione React Hook Form. Design completamente responsivo.',
     project_petlove:
       "Piattaforma full-stack di adozione e annunci di animali domestici. Sfoglia animali disponibili per l'adozione, segnala animali persi/trovati, leggi guide sulla cura degli animali e scopri rifugi e organizzazioni partner.",
+    project_spectra_crm:
+      'Sistema CRM full-stack moderno. Gestione profili clienti e contatti, pipeline di vendita Kanban, generazione di preventivi professionali con esportazione PDF, assegnazione compiti al team e dashboard di analisi vendite in tempo reale. Autenticazione JWT, sviluppato con Next.js, Node.js/Express e MongoDB.',
     contact_badge: 'Aperto a opportunità',
     contact_title: 'Costruiamo insieme.',
     contact_desc:
@@ -328,6 +336,8 @@ export const translations = {
       'Plataforma de servicios psicológicos con hero animado, directorio de psicólogos buscable con clasificación por nombre, precio y popularidad. Página de favoritos privada, autenticación Firebase y formulario de cita con validación React Hook Form. Diseño completamente responsive.',
     project_petlove:
       'Plataforma full-stack de adopción y anuncios de mascotas. Explora mascotas disponibles para adopción, reporta animales perdidos/encontrados, lee guías de cuidado de mascotas y descubre refugios cercanos.',
+    project_spectra_crm:
+      'Sistema CRM full-stack moderno. Gestión de perfiles de clientes y contactos, embudo de ventas Kanban, generación de presupuestos profesionales con exportación PDF, asignación de tareas al equipo y dashboards de análisis de ventas en tiempo real. Autenticación JWT, desarrollado con Next.js, Node.js/Express y MongoDB.',
     contact_badge: 'Abierto a oportunidades',
     contact_title: 'Construyamos juntos.',
     contact_desc:
@@ -393,6 +403,8 @@ export const translations = {
       'Plattform für psychologische Dienstleistungen mit animiertem Hero, durchsuchbarem Psychologenverzeichnis mit Sortierung nach Name, Preis und Beliebtheit. Private Favoritenseite, Firebase-Authentifizierung und Terminbuchungsformular mit React Hook Form-Validierung. Vollständig responsives Design.',
     project_petlove:
       'Vollständige Plattform für Haustieradoption und Inserate. Durchsuchen Sie verfügbare Haustiere zur Adoption, melden Sie verlorene/gefundene Tiere, lesen Sie Pflegeleitfäden und entdecken Sie Tierheime in der Nähe.',
+    project_spectra_crm:
+      'Modernes Full-Stack-CRM-System. Kundenprofil- und Kontaktverwaltung, Kanban-basierte Vertriebspipeline, professionelle Angebotserstellung mit PDF-Export, Team-Aufgabenverteilung und Echtzeit-Vertriebs-Dashboards. JWT-Authentifizierung, entwickelt mit Next.js, Node.js/Express und MongoDB.',
     contact_badge: 'Offen für Angebote',
     contact_title: 'Lass uns gemeinsam bauen.',
     contact_desc:
@@ -458,6 +470,8 @@ export const translations = {
       'Plateforme de services psychologiques avec hero animé, répertoire consultable de psychologues avec tri par nom, prix et popularité. Page des favoris privée, authentification Firebase et formulaire de prise de rendez-vous avec validation React Hook Form. Design entièrement réactif.',
     project_petlove:
       "Plateforme complète d'adoption et d'annonces d'animaux de compagnie. Explorez les animaux disponibles à l'adoption, signalez les animaux perdus/trouvés, lisez des guides de soins et découvrez les refuges à proximité.",
+    project_spectra_crm:
+      'Système CRM full-stack moderne. Gestion des profils clients et contacts, pipeline de ventes Kanban, génération de devis professionnels avec export PDF, assignation de tâches à l\'équipe et tableaux de bord analytiques en temps réel. Authentification JWT, développé avec Next.js, Node.js/Express et MongoDB.',
     contact_badge: 'Ouvert aux opportunités',
     contact_title: 'Construisons ensemble.',
     contact_desc:
