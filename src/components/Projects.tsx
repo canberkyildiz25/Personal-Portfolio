@@ -15,6 +15,16 @@ const projects: {
   githubUrl: string;
 }[] = [
   {
+    title: 'Mystic',
+    descKey: 'project_mystic',
+    tags: ['React 19', 'TypeScript', 'Firebase', 'Framer Motion', 'React Router 7', 'Tailwind CSS 4', 'Vite'],
+    gradient: 'from-fuchsia-400',
+    hoverColor: 'group-hover:text-fuchsia-400',
+    icon: 'solar:stars-linear',
+    liveUrl: 'https://mystic-app-gules.vercel.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/mystic-app',
+  },
+  {
     title: 'Spectra CRM',
     descKey: 'project_spectra_crm',
     tags: ['Next.js 14', 'React 18', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Zustand'],
@@ -167,6 +177,8 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
           <img
             src={`https://s0.wordpress.com/mshots/v1/${encodeURIComponent(project.liveUrl)}?w=1200&h=675`}
             alt={project.title}
+            loading="eager"
+            fetchPriority={idx < 2 ? 'high' : 'auto'}
             className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-105 ${
               imgState === 'loaded' ? 'opacity-100' : 'opacity-0'
             }`}

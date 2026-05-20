@@ -40,7 +40,7 @@ export default function Contact() {
           {t('contact_email')}
         </a>
         <a
-          href="https://linkedin.com/in/canberkyildiz"
+          href="https://www.linkedin.com/in/canberk-y/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-full sm:w-auto flex items-center justify-center gap-2 bg-[#0A66C2] text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-[#004182] hover:shadow-lg hover:shadow-blue-600/30 transition-all duration-300 shadow-lg shadow-blue-600/20 group hover:scale-105"

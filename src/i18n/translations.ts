@@ -25,7 +25,6 @@ export const translations = {
       'I build robust, scalable, and intuitive web applications by bridging the gap between pixel-perfect interfaces and complex backend architectures.',
     hero_cta_projects: 'View Projects',
     hero_cta_github: 'GitHub Profile',
-    hero_cta_cv: 'Download CV',
     about_title: 'About Me',
     about_p1:
       "I'm a full-stack developer who enjoys building complete digital products — from architecting scalable backends to crafting fluid, responsive interfaces. My goal is always the same: ship software that's reliable, maintainable, and genuinely useful.",
@@ -70,6 +69,8 @@ export const translations = {
       'Full-stack pet adoption and listing platform. Browse adoptable pets, report lost/found animals, read pet care guides, and discover nearby shelters and partner organizations.',
     project_spectra_crm:
       'Modern full-stack CRM system. Features customer profile and contact management, Kanban-based sales pipeline, professional quote generation with PDF export, team task assignment, and real-time sales dashboards with performance analytics. JWT authentication, built with Next.js, Node.js/Express, and MongoDB.',
+    project_mystic:
+      'Mystical divination app featuring three fortune-telling experiences: dream interpretation, Turkish coffee reading, and tarot card readings. Built with Firebase for auth and data, smooth Framer Motion animations, and a fully responsive dark-themed design.',
     contact_badge: 'Open to opportunities',
     contact_title: "Let's build together.",
     contact_desc:
@@ -92,7 +93,6 @@ export const translations = {
       'Piksel mükemmeliyetindeki arayüzler ile karmaşık backend mimarileri arasındaki köprüyü kurarak sağlam, ölçeklenebilir ve sezgisel web uygulamaları geliştiriyorum.',
     hero_cta_projects: 'Projeleri Gör',
     hero_cta_github: 'GitHub Profilim',
-    hero_cta_cv: 'CV İndir',
     about_title: 'Hakkımda',
     about_p1:
       'Ölçeklenebilir backend mimarilerinden akıcı, duyarlı arayüzlere kadar eksiksiz dijital ürünler geliştirmekten keyif alan bir full-stack geliştiriciyim. Hedefim her zaman aynı: güvenilir, sürdürülebilir ve gerçekten işe yarayan yazılımlar üretmek.',
@@ -137,6 +137,8 @@ export const translations = {
       'Evcil hayvan sahiplenme ve listeleme platformu. Sahiplenilecek hayvanları keşfet, kayıp/bulunmuş hayvanları bildir, hayvan bakım rehberleri oku ve yakındaki barınakları keşfet.',
     project_spectra_crm:
       'Modern tam yığın CRM sistemi. Müşteri profil ve iletişim yönetimi, Kanban tabanlı satış hattı, PDF dışa aktarımlı profesyonel teklif oluşturma, ekip görev takibi ve gerçek zamanlı satış analizleri içerir. JWT kimlik doğrulama, Next.js, Node.js/Express ve MongoDB ile geliştirildi.',
+    project_mystic:
+      'Mistik fal uygulaması: rüya yorumu, kahve falı ve tarot okuma olmak üzere üç farklı kehanet deneyimi sunar. Firebase ile kimlik doğrulama ve veri yönetimi, Framer Motion animasyonları ve tamamen responsive koyu temalı tasarım.',
     contact_badge: 'Fırsatlara açığım',
     contact_title: 'Birlikte inşa edelim.',
     contact_desc:
@@ -159,7 +161,6 @@ export const translations = {
       'Разрабатываю надёжные, масштабируемые и интуитивные веб-приложения, соединяя пиксельно-точные интерфейсы со сложными бэкенд-архитектурами.',
     hero_cta_projects: 'Смотреть проекты',
     hero_cta_github: 'Профиль GitHub',
-    hero_cta_cv: 'Скачать резюме',
     about_title: 'Обо мне',
     about_p1:
       'Я fullstack-разработчик, который получает удовольствие от создания полноценных цифровых продуктов — от проектирования масштабируемых бэкендов до разработки гибких, адаптивных интерфейсов. Моя цель всегда одна: создавать надёжное, поддерживаемое и по-настоящему полезное ПО.',
@@ -204,6 +205,8 @@ export const translations = {
       'Полнофункциональная платформа для усыновления и размещения объявлений о домашних животных. Просмотр животных для усыновления, сообщение о потерянных/найденных животных, чтение руководств по уходу и поиск приютов.',
     project_spectra_crm:
       'Современная полнофункциональная CRM-система. Управление профилями клиентов и контактами, Kanban-воронка продаж, профессиональное создание коммерческих предложений с экспортом в PDF, постановка задач команде и дашборды аналитики продаж в реальном времени. JWT-аутентификация, стек Next.js, Node.js/Express и MongoDB.',
+    project_mystic:
+      'Мистическое приложение для гадания с тремя видами предсказаний: толкование снов, чтение кофейной гущи и таро. Firebase для аутентификации и данных, плавные анимации Framer Motion и полностью адаптивный тёмный дизайн.',
     contact_badge: 'Открыт для предложений',
     contact_title: 'Давайте создадим вместе.',
     contact_desc:
@@ -226,7 +229,6 @@ export const translations = {
       'Sviluppo applicazioni web robuste, scalabili e intuitive colmando il divario tra interfacce pixel-perfect e architetture backend complesse.',
     hero_cta_projects: 'Vedi Progetti',
     hero_cta_github: 'Profilo GitHub',
-    hero_cta_cv: 'Scarica CV',
     about_title: 'Chi sono',
     about_p1:
       "Sono uno sviluppatore full-stack che ama creare prodotti digitali completi — dall'architettura di backend scalabili alla realizzazione di interfacce fluide e responsive. Il mio obiettivo è sempre lo stesso: consegnare software affidabile, manutenibile e genuinamente utile.",
@@ -271,6 +273,8 @@ export const translations = {
       "Piattaforma full-stack di adozione e annunci di animali domestici. Sfoglia animali disponibili per l'adozione, segnala animali persi/trovati, leggi guide sulla cura degli animali e scopri rifugi e organizzazioni partner.",
     project_spectra_crm:
       'Sistema CRM full-stack moderno. Gestione profili clienti e contatti, pipeline di vendita Kanban, generazione di preventivi professionali con esportazione PDF, assegnazione compiti al team e dashboard di analisi vendite in tempo reale. Autenticazione JWT, sviluppato con Next.js, Node.js/Express e MongoDB.',
+    project_mystic:
+      'App di divinazione mistica con tre esperienze: interpretazione dei sogni, lettura del caffè alla turca e lettura dei tarocchi. Firebase per autenticazione e dati, animazioni Framer Motion e design scuro completamente responsive.',
     contact_badge: 'Aperto a opportunità',
     contact_title: 'Costruiamo insieme.',
     contact_desc:
@@ -293,7 +297,6 @@ export const translations = {
       'Desarrollo aplicaciones web robustas, escalables e intuitivas uniendo interfaces pixel-perfect con arquitecturas backend complejas.',
     hero_cta_projects: 'Ver Proyectos',
     hero_cta_github: 'Perfil de GitHub',
-    hero_cta_cv: 'Descargar CV',
     about_title: 'Sobre mí',
     about_p1:
       'Soy un desarrollador full-stack que disfruta construyendo productos digitales completos — desde arquitectar backends escalables hasta crear interfaces fluidas y responsivas. Mi objetivo es siempre el mismo: entregar software confiable, mantenible y genuinamente útil.',
@@ -338,6 +341,8 @@ export const translations = {
       'Plataforma full-stack de adopción y anuncios de mascotas. Explora mascotas disponibles para adopción, reporta animales perdidos/encontrados, lee guías de cuidado de mascotas y descubre refugios cercanos.',
     project_spectra_crm:
       'Sistema CRM full-stack moderno. Gestión de perfiles de clientes y contactos, embudo de ventas Kanban, generación de presupuestos profesionales con exportación PDF, asignación de tareas al equipo y dashboards de análisis de ventas en tiempo real. Autenticación JWT, desarrollado con Next.js, Node.js/Express y MongoDB.',
+    project_mystic:
+      'App de adivinación mística con tres experiencias: interpretación de sueños, lectura de posos de café turco y lectura de tarot. Firebase para autenticación y datos, animaciones Framer Motion y diseño oscuro totalmente responsive.',
     contact_badge: 'Abierto a oportunidades',
     contact_title: 'Construyamos juntos.',
     contact_desc:
@@ -360,7 +365,6 @@ export const translations = {
       'Ich entwickle robuste, skalierbare und intuitive Webanwendungen, indem ich pixelgenaue Interfaces mit komplexen Backend-Architekturen verbinde.',
     hero_cta_projects: 'Projekte ansehen',
     hero_cta_github: 'GitHub-Profil',
-    hero_cta_cv: 'Lebenslauf herunterladen',
     about_title: 'Über mich',
     about_p1:
       'Ich bin ein Full-Stack-Entwickler, der es liebt, vollständige digitale Produkte zu erstellen — von der Architektur skalierbarer Backends bis hin zur Gestaltung flüssiger, responsiver Interfaces. Mein Ziel ist immer dasselbe: zuverlässige, wartbare und wirklich nützliche Software zu liefern.',
@@ -405,6 +409,8 @@ export const translations = {
       'Vollständige Plattform für Haustieradoption und Inserate. Durchsuchen Sie verfügbare Haustiere zur Adoption, melden Sie verlorene/gefundene Tiere, lesen Sie Pflegeleitfäden und entdecken Sie Tierheime in der Nähe.',
     project_spectra_crm:
       'Modernes Full-Stack-CRM-System. Kundenprofil- und Kontaktverwaltung, Kanban-basierte Vertriebspipeline, professionelle Angebotserstellung mit PDF-Export, Team-Aufgabenverteilung und Echtzeit-Vertriebs-Dashboards. JWT-Authentifizierung, entwickelt mit Next.js, Node.js/Express und MongoDB.',
+    project_mystic:
+      'Mystische Wahrsage-App mit drei Erfahrungen: Traumdeutung, türkische Kaffeesatz-Lesung und Tarot-Legung. Firebase für Authentifizierung und Daten, flüssige Framer-Motion-Animationen und vollständig responsives dunkles Design.',
     contact_badge: 'Offen für Angebote',
     contact_title: 'Lass uns gemeinsam bauen.',
     contact_desc:
@@ -427,7 +433,6 @@ export const translations = {
       "Je développe des applications web robustes, évolutives et intuitives en faisant le lien entre des interfaces pixel-perfect et des architectures backend complexes.",
     hero_cta_projects: 'Voir les Projets',
     hero_cta_github: 'Profil GitHub',
-    hero_cta_cv: 'Télécharger le CV',
     about_title: 'À propos',
     about_p1:
       "Je suis un développeur full-stack qui prend plaisir à créer des produits numériques complets — de l'architecture de backends évolutifs à la réalisation d'interfaces fluides et responsives. Mon objectif est toujours le même : livrer des logiciels fiables, maintenables et vraiment utiles.",
@@ -472,6 +477,8 @@ export const translations = {
       "Plateforme complète d'adoption et d'annonces d'animaux de compagnie. Explorez les animaux disponibles à l'adoption, signalez les animaux perdus/trouvés, lisez des guides de soins et découvrez les refuges à proximité.",
     project_spectra_crm:
       'Système CRM full-stack moderne. Gestion des profils clients et contacts, pipeline de ventes Kanban, génération de devis professionnels avec export PDF, assignation de tâches à l\'équipe et tableaux de bord analytiques en temps réel. Authentification JWT, développé avec Next.js, Node.js/Express et MongoDB.',
+    project_mystic:
+      'Application de divination mystique avec trois expériences : interprétation des rêves, lecture du marc de café turc et lecture de tarot. Firebase pour l\'authentification et les données, animations Framer Motion et design sombre entièrement responsive.',
     contact_badge: 'Ouvert aux opportunités',
     contact_title: 'Construisons ensemble.',
     contact_desc:
