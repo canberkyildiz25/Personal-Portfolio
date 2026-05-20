@@ -21,7 +21,7 @@ const highlights: {
   },
   {
     icon: 'solar:rocket-bold',
-    value: '12+',
+    value: '14+',
     labelKey: 'about_projects_label',
     color: 'text-violet-500',
     bg: 'bg-violet-50 dark:bg-violet-950/40',
