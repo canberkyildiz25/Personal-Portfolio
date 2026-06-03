@@ -15,6 +15,16 @@ const projects: {
   githubUrl: string;
 }[] = [
   {
+    title: 'Apex Engineering',
+    descKey: 'project_apex_engineering',
+    tags: ['React 18', 'Three.js', 'React Three Fiber', 'React Three Drei', 'Framer Motion', 'Tailwind CSS', 'Vite'],
+    gradient: 'from-sky-400',
+    hoverColor: 'group-hover:text-sky-400',
+    icon: 'solar:3d-square-linear',
+    liveUrl: 'https://apex-engineering-two.vercel.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/apex-engineering',
+  },
+  {
     title: 'Mystic',
     descKey: 'project_mystic',
     tags: ['React 19', 'TypeScript', 'Firebase', 'Framer Motion', 'React Router 7', 'Tailwind CSS 4', 'Vite'],
