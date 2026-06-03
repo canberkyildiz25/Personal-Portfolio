@@ -16,6 +16,8 @@ const skills = [
       { name: 'TypeScript', logo: 'logos:typescript-icon' },
       { name: 'Tailwind', logo: 'logos:tailwindcss-icon' },
       { name: 'Redux Toolkit', logo: 'logos:redux' },
+      { name: 'Three.js', logo: 'logos:threejs' },
+      { name: 'React Three Fiber', logo: 'simple-icons:threedotjs' },
     ],
   },
   {
