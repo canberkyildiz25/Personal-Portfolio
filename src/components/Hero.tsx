@@ -1,16 +1,16 @@
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import { useLanguage } from '../context/LanguageContext';
 import { useNormalizedMousePosition } from '../hooks/useMousePosition';
 
-const container = {
+const container: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.11, delayChildren: 0.15 } },
 };
 
-const item = {
+const item: Variants = {
   hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] } },
 };
 
 export default function Hero() {
@@ -18,7 +18,7 @@ export default function Hero() {
   const mouse = useNormalizedMousePosition();
 
   return (
-    <section className="relative py-10 md:py-32 flex flex-col items-center text-center overflow-hidden">
+    <section className="relative py-10 md:py-24 overflow-hidden">
       {/* Parallax background orbs */}
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
         <div
@@ -40,13 +40,13 @@ export default function Hero() {
       </div>
 
       <motion.div
-        className="flex flex-col items-center w-full"
+        className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 w-full"
         variants={container}
         initial="hidden"
         animate="visible"
       >
         {/* Text content */}
-        <div className="flex flex-col items-center text-center w-full">
+        <div className="flex flex-col items-center text-center md:items-start md:text-left w-full md:flex-1">
           {/* Badge */}
           <motion.div
             variants={item}
@@ -59,7 +59,7 @@ export default function Hero() {
           {/* Heading */}
           <motion.h1
             variants={item}
-            className="text-4xl sm:text-6xl md:text-7xl font-semibold tracking-tight max-w-4xl leading-tight"
+            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight max-w-2xl leading-tight"
           >
             <span className="text-zinc-900 dark:text-zinc-100">{t('hero_h1_1')}</span>
             <span className="bg-gradient-to-r from-indigo-500 via-violet-500 to-purple-500 bg-clip-text text-transparent">
@@ -75,7 +75,7 @@ export default function Hero() {
           {/* Description */}
           <motion.p
             variants={item}
-            className="mt-6 text-base sm:text-lg text-zinc-500 dark:text-zinc-400 max-w-xl font-normal"
+            className="mt-6 text-base sm:text-lg text-zinc-500 dark:text-zinc-400 max-w-lg font-normal"
           >
             {t('hero_desc')}
           </motion.p>
@@ -100,6 +100,27 @@ export default function Hero() {
             </a>
           </motion.div>
         </div>
+
+        {/* Avatar */}
+        <motion.div
+          variants={item}
+          className="flex-shrink-0 flex items-end justify-center relative md:-mt-28 w-full md:w-auto -mx-4 md:mx-0 px-0"
+        >
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="absolute w-[350px] h-[520px] rounded-[60%_40%_55%_45%/40%_60%_50%_50%] bg-gradient-to-b from-indigo-500/20 via-violet-400/20 to-purple-500/25 blur-2xl translate-y-10" />
+            <div className="absolute w-[250px] h-[400px] rounded-[40%_60%_45%_55%/50%_40%_60%_50%] bg-gradient-to-b from-violet-400/10 to-indigo-300/20 blur-xl translate-x-6 translate-y-16" />
+          </div>
+          <img
+            src="/avatar.png"
+            alt="Canberk Yıldız"
+            className="relative w-full md:w-auto md:h-[600px] max-h-[420px] md:max-h-none object-contain object-bottom"
+            style={{
+              filter: 'brightness(0.78) saturate(0.6) drop-shadow(0 20px 40px rgba(0,0,0,0.15))',
+              maskImage: 'linear-gradient(to right, black 48%, transparent 88%)',
+              WebkitMaskImage: 'linear-gradient(to right, black 48%, transparent 88%)',
+            }}
+          />
+        </motion.div>
       </motion.div>
     </section>
   );
