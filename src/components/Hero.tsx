@@ -104,7 +104,7 @@ export default function Hero() {
         {/* Avatar */}
         <motion.div
           variants={item}
-          className="flex-shrink-0 flex items-end justify-center relative md:-mt-28 w-full md:w-auto -mx-4 md:mx-0 px-0"
+          className="flex-shrink-0 flex items-end justify-center relative md:-mt-16 w-full md:w-auto"
         >
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="absolute w-[350px] h-[520px] rounded-[60%_40%_55%_45%/40%_60%_50%_50%] bg-gradient-to-b from-indigo-500/20 via-violet-400/20 to-purple-500/25 blur-2xl translate-y-10" />
