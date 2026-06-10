@@ -23,7 +23,7 @@ function App() {
           >
             <CursorGlow />
             <Navbar />
-            <main className="mx-auto max-w-5xl px-6 pt-32 pb-24">
+            <main className="mx-auto max-w-5xl px-6 pt-16 pb-24">
               <Hero />
               <About />
               <Stack />
