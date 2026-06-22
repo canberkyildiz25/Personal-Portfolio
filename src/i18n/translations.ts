@@ -70,6 +70,12 @@ export const translations = {
       'Psychologist services platform with animated hero, searchable psychologist directory with sorting by name, price, and popularity. Features private favorites page, Firebase authentication, and appointment booking with React Hook Form validation. Fully responsive design.',
     project_petlove:
       'Full-stack pet adoption and listing platform. Browse adoptable pets, report lost/found animals, read pet care guides, and discover nearby shelters and partner organizations.',
+    project_spectra_crm:
+      'Modern full-stack CRM system. Features customer profile and contact management, Kanban-based sales pipeline, professional quote generation with PDF export, team task assignment, and real-time sales dashboards with performance analytics. JWT authentication, built with Next.js, Node.js/Express, and MongoDB.',
+    project_apex_engineering:
+      'Dark industrial 3D showcase site for an aerospace/defense/automotive engineering company. Built with React Three Fiber and Three.js for immersive WebGL scenes, post-processing visual effects, and smooth section transitions powered by Framer Motion.',
+    project_mystic:
+      'Mystical divination app featuring three fortune-telling experiences: dream interpretation, Turkish coffee reading, and tarot card readings. Built with Firebase for auth and data, smooth Framer Motion animations, and a fully responsive dark-themed design.',
     contact_badge: 'Open to opportunities',
     contact_title: "Let's build together.",
     contact_desc:
@@ -137,6 +143,12 @@ export const translations = {
       'Psikolog hizmetleri platformu. Animasyonlu hero bölümü, aranabilir psikolog dizini (ad, fiyat ve popülarite göre sıralanabilir). Özel favoriler sayfası, Firebase kimlik doğrulaması ve React Hook Form doğrulamalı randevu takılı. Tam responsive tasarım.',
     project_petlove:
       'Evcil hayvan sahiplenme ve listeleme platformu. Sahiplenilecek hayvanları keşfet, kayıp/bulunmuş hayvanları bildir, hayvan bakım rehberleri oku ve yakındaki barınakları keşfet.',
+    project_spectra_crm:
+      'Modern tam yığın CRM sistemi. Müşteri profil ve iletişim yönetimi, Kanban tabanlı satış hattı, PDF dışa aktarımlı profesyonel teklif oluşturma, ekip görev takibi ve gerçek zamanlı satış analizleri içerir. JWT kimlik doğrulama, Next.js, Node.js/Express ve MongoDB ile geliştirildi.',
+    project_apex_engineering:
+      'Havacılık/savunma/otomotiv mühendislik firması için geliştirilmiş karanlık temalı endüstriyel 3D vitrin sitesi. React Three Fiber ve Three.js ile sürükleyici WebGL sahneleri, post-processing görsel efektler ve Framer Motion ile akıcı bölüm geçişleri.',
+    project_mystic:
+      'Mistik fal uygulaması: rüya yorumu, kahve falı ve tarot okuma olmak üzere üç farklı kehanet deneyimi sunar. Firebase ile kimlik doğrulama ve veri yönetimi, Framer Motion animasyonları ve tamamen responsive koyu temalı tasarım.',
     contact_badge: 'Fırsatlara açığım',
     contact_title: 'Birlikte inşa edelim.',
     contact_desc:
@@ -204,6 +216,12 @@ export const translations = {
       'Платформа психологических услуг с анимированным героем, поисковым каталогом психологов с сортировкой по имени, цене и популярности. Приватная страница избранного, аутентификация Firebase и форма записи на прием с валидацией React Hook Form. Полностью адаптивный дизайн.',
     project_petlove:
       'Полнофункциональная платформа для усыновления и размещения объявлений о домашних животных. Просмотр животных для усыновления, сообщение о потерянных/найденных животных, чтение руководств по уходу и поиск приютов.',
+    project_spectra_crm:
+      'Современная полнофункциональная CRM-система. Управление профилями клиентов и контактами, Kanban-воронка продаж, профессиональное создание коммерческих предложений с экспортом в PDF, постановка задач команде и дашборды аналитики продаж в реальном времени. JWT-аутентификация, стек Next.js, Node.js/Express и MongoDB.',
+    project_apex_engineering:
+      'Тёмный индустриальный 3D-сайт для аэрокосмической/оборонной/автомобильной инженерной компании. React Three Fiber и Three.js для иммерсивных WebGL-сцен, эффекты постобработки и плавные переходы между секциями на Framer Motion.',
+    project_mystic:
+      'Мистическое приложение для гадания с тремя видами предсказаний: толкование снов, чтение кофейной гущи и таро. Firebase для аутентификации и данных, плавные анимации Framer Motion и полностью адаптивный тёмный дизайн.',
     contact_badge: 'Открыт для предложений',
     contact_title: 'Давайте создадим вместе.',
     contact_desc:
@@ -271,6 +289,12 @@ export const translations = {
       'Piattaforma di servizi psicologici con hero animato, directory di psicologi ricercabili con ordinamento per nome, prezzo e popolarità. Pagina preferiti privata, autenticazione Firebase e modulo prenotazione appuntamenti con validazione React Hook Form. Design completamente responsivo.',
     project_petlove:
       "Piattaforma full-stack di adozione e annunci di animali domestici. Sfoglia animali disponibili per l'adozione, segnala animali persi/trovati, leggi guide sulla cura degli animali e scopri rifugi e organizzazioni partner.",
+    project_spectra_crm:
+      'Sistema CRM full-stack moderno. Gestione profili clienti e contatti, pipeline di vendita Kanban, generazione di preventivi professionali con esportazione PDF, assegnazione compiti al team e dashboard di analisi vendite in tempo reale. Autenticazione JWT, sviluppato con Next.js, Node.js/Express e MongoDB.',
+    project_apex_engineering:
+      'Sito 3D industriale in stile dark per una società di ingegneria aerospaziale/difesa/automotive. Realizzato con React Three Fiber e Three.js per scene WebGL immersive, effetti di post-processing e transizioni fluide tra sezioni con Framer Motion.',
+    project_mystic:
+      'App di divinazione mistica con tre esperienze: interpretazione dei sogni, lettura del caffè alla turca e lettura dei tarocchi. Firebase per autenticazione e dati, animazioni Framer Motion e design scuro completamente responsive.',
     contact_badge: 'Aperto a opportunità',
     contact_title: 'Costruiamo insieme.',
     contact_desc:
@@ -338,6 +362,12 @@ export const translations = {
       'Plataforma de servicios psicológicos con hero animado, directorio de psicólogos buscable con clasificación por nombre, precio y popularidad. Página de favoritos privada, autenticación Firebase y formulario de cita con validación React Hook Form. Diseño completamente responsive.',
     project_petlove:
       'Plataforma full-stack de adopción y anuncios de mascotas. Explora mascotas disponibles para adopción, reporta animales perdidos/encontrados, lee guías de cuidado de mascotas y descubre refugios cercanos.',
+    project_spectra_crm:
+      'Sistema CRM full-stack moderno. Gestión de perfiles de clientes y contactos, embudo de ventas Kanban, generación de presupuestos profesionales con exportación PDF, asignación de tareas al equipo y dashboards de análisis de ventas en tiempo real. Autenticación JWT, desarrollado con Next.js, Node.js/Express y MongoDB.',
+    project_apex_engineering:
+      'Sitio 3D industrial de estilo oscuro para una empresa de ingeniería aeroespacial/defensa/automoción. Construido con React Three Fiber y Three.js para escenas WebGL inmersivas, efectos de post-procesado y transiciones suaves entre secciones con Framer Motion.',
+    project_mystic:
+      'App de adivinación mística con tres experiencias: interpretación de sueños, lectura de posos de café turco y lectura de tarot. Firebase para autenticación y datos, animaciones Framer Motion y diseño oscuro totalmente responsive.',
     contact_badge: 'Abierto a oportunidades',
     contact_title: 'Construyamos juntos.',
     contact_desc:
@@ -405,6 +435,12 @@ export const translations = {
       'Plattform für psychologische Dienstleistungen mit animiertem Hero, durchsuchbarem Psychologenverzeichnis mit Sortierung nach Name, Preis und Beliebtheit. Private Favoritenseite, Firebase-Authentifizierung und Terminbuchungsformular mit React Hook Form-Validierung. Vollständig responsives Design.',
     project_petlove:
       'Vollständige Plattform für Haustieradoption und Inserate. Durchsuchen Sie verfügbare Haustiere zur Adoption, melden Sie verlorene/gefundene Tiere, lesen Sie Pflegeleitfäden und entdecken Sie Tierheime in der Nähe.',
+    project_spectra_crm:
+      'Modernes Full-Stack-CRM-System. Kundenprofil- und Kontaktverwaltung, Kanban-basierte Vertriebspipeline, professionelle Angebotserstellung mit PDF-Export, Team-Aufgabenverteilung und Echtzeit-Vertriebs-Dashboards. JWT-Authentifizierung, entwickelt mit Next.js, Node.js/Express und MongoDB.',
+    project_apex_engineering:
+      'Dunkle, industrielle 3D-Showcase-Site für ein Luft- und Raumfahrt-/Verteidigungs-/Automobilingenieurunternehmen. Mit React Three Fiber und Three.js für immersive WebGL-Szenen, Postprocessing-Effekte und flüssige Abschnittsübergänge mit Framer Motion.',
+    project_mystic:
+      'Mystische Wahrsage-App mit drei Erfahrungen: Traumdeutung, türkisches Kaffeesatzlesen und Tarot-Legen. Firebase für Authentifizierung und Daten, Framer Motion-Animationen und vollständig responsives dunkles Design.',
     contact_badge: 'Offen für Angebote',
     contact_title: 'Lass uns gemeinsam bauen.',
     contact_desc:
@@ -472,6 +508,12 @@ export const translations = {
       'Plateforme de services psychologiques avec hero animé, répertoire consultable de psychologues avec tri par nom, prix et popularité. Page des favoris privée, authentification Firebase et formulaire de prise de rendez-vous avec validation React Hook Form. Design entièrement réactif.',
     project_petlove:
       "Plateforme complète d'adoption et d'annonces d'animaux de compagnie. Explorez les animaux disponibles à l'adoption, signalez les animaux perdus/trouvés, lisez des guides de soins et découvrez les refuges à proximité.",
+    project_spectra_crm:
+      'Système CRM full-stack moderne. Gestion des profils clients et des contacts, pipeline de vente Kanban, génération de devis professionnels avec export PDF, attribution de tâches à l\'équipe et tableaux de bord des ventes en temps réel. Authentification JWT, développé avec Next.js, Node.js/Express et MongoDB.',
+    project_apex_engineering:
+      'Site 3D industriel sombre pour une société d\'ingénierie aérospatiale/défense/automobile. Construit avec React Three Fiber et Three.js pour des scènes WebGL immersives, des effets de post-traitement et des transitions fluides entre sections avec Framer Motion.',
+    project_mystic:
+      'Application de divination mystique avec trois expériences : interprétation des rêves, lecture du marc de café turc et lecture du tarot. Firebase pour l\'authentification et les données, animations Framer Motion et design sombre entièrement responsive.',
     contact_badge: 'Ouvert aux opportunités',
     contact_title: 'Construisons ensemble.',
     contact_desc:
