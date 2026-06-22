@@ -15,25 +15,25 @@ const highlights: {
     icon: 'solar:calendar-bold',
     value: '2+',
     labelKey: 'about_exp_label',
-    color: 'text-indigo-500',
-    bg: 'bg-indigo-50 dark:bg-indigo-950/40',
-    border: 'border-indigo-200/80 dark:border-indigo-900/50',
+    color: 'text-rose-500',
+    bg: 'bg-rose-50 dark:bg-rose-950/30',
+    border: 'border-rose-200/80 dark:border-rose-900/40',
   },
   {
     icon: 'solar:rocket-bold',
-    value: '14+',
+    value: '16+',
     labelKey: 'about_projects_label',
-    color: 'text-violet-500',
-    bg: 'bg-violet-50 dark:bg-violet-950/40',
-    border: 'border-violet-200/80 dark:border-violet-900/50',
+    color: 'text-zinc-400',
+    bg: 'bg-zinc-50 dark:bg-zinc-900/40',
+    border: 'border-zinc-200 dark:border-zinc-800/60',
   },
   {
     icon: 'solar:code-bold',
     value: '20+',
     labelKey: 'about_tech_label',
     color: 'text-emerald-500',
-    bg: 'bg-emerald-50 dark:bg-emerald-950/40',
-    border: 'border-emerald-200/80 dark:border-emerald-900/50',
+    bg: 'bg-emerald-50 dark:bg-emerald-950/30',
+    border: 'border-emerald-200/80 dark:border-emerald-900/40',
   },
 ];
 
@@ -52,7 +52,7 @@ export default function About() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="py-20 border-t border-zinc-200 dark:border-zinc-900">
+    <section id="about" className="py-20 border-t border-zinc-200 dark:border-zinc-800/60">
       <div className="flex flex-col md:flex-row gap-12 md:gap-20">
         {/* Text side */}
         <motion.div
@@ -62,7 +62,11 @@ export default function About() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h2 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-rose-800/40 bg-rose-950/30 text-xs font-medium text-rose-400 mb-4">
+            <Icon icon="solar:user-rounded-linear" className="text-sm" />
+            About
+          </div>
+          <h2 className="text-2xl font-black tracking-tight text-zinc-900 dark:text-zinc-100 mb-6">
             {t('about_title')}
           </h2>
           <div className="space-y-4 text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
@@ -73,7 +77,7 @@ export default function About() {
             {tagKeys.map((key) => (
               <span
                 key={key}
-                className="text-xs font-medium px-3 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-indigo-300 dark:hover:border-indigo-700 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/40 transition-all duration-300 cursor-default"
+                className="text-xs font-medium px-3 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-rose-400/50 dark:hover:border-rose-700 hover:text-rose-600 dark:hover:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-all duration-300 cursor-default"
               >
                 {t(key)}
               </span>
@@ -97,7 +101,7 @@ export default function About() {
                 <Icon icon={h.icon} className={`${h.color} text-xl`} />
               </div>
               <div>
-                <div className="text-2xl font-bold text-zinc-900 dark:text-zinc-100 leading-none">
+                <div className="text-2xl font-bold text-zinc-900 dark:text-zinc-100 leading-none" style={{ fontFamily: "'Barlow', sans-serif" }}>
                   {h.value}
                 </div>
                 <div className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">

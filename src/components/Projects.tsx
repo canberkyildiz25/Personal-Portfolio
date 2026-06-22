@@ -21,8 +21,8 @@ const projects: {
     gradient: 'from-orange-400',
     hoverColor: 'group-hover:text-orange-400',
     icon: 'solar:fire-linear',
-    liveUrl: 'https://fornace.vercel.app/',
-    githubUrl: 'https://github.com/canberkyildiz25/fornace',
+    liveUrl: 'https://fornace-next.vercel.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/fornace-next',
   },
   {
     title: 'Apex Engineering',
@@ -190,7 +190,7 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
       onClick={() => window.open(project.liveUrl, '_blank')}
     >
       {/* Screenshot / thumbnail */}
-      <div className="aspect-video w-full rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-hidden relative mb-6 transition-all duration-500 group-hover:border-indigo-500/50">
+      <div className="aspect-video w-full rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-hidden relative mb-6 transition-all duration-500 group-hover:border-rose-500/50">
         {imgState === 'loading' && <div className="absolute inset-0 animate-shimmer" />}
 
         {imgState !== 'error' && (
@@ -241,7 +241,7 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-8 h-8 rounded-full border border-zinc-300 dark:border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-indigo-600 hover:text-white hover:border-transparent transition-all duration-300 hover:shadow-md hover:shadow-indigo-500/50"
+            className="w-8 h-8 rounded-full border border-zinc-300 dark:border-zinc-800 flex items-center justify-center text-zinc-400 hover:bg-rose-600 hover:text-white hover:border-transparent transition-all duration-300 hover:shadow-md hover:shadow-rose-500/40"
             title="Live Demo"
           >
             <Icon icon="solar:arrow-right-up-linear" />
@@ -254,7 +254,7 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
         {project.tags.map((tag) => (
           <span
             key={tag}
-            className="text-xs font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 px-2.5 py-1 rounded-md hover:bg-indigo-100 dark:hover:bg-indigo-950 hover:border-indigo-300 dark:hover:border-indigo-700 hover:text-indigo-700 dark:hover:text-indigo-300 transition-all duration-300 cursor-default"
+            className="text-xs font-medium text-zinc-600 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 px-2.5 py-1 rounded-md hover:bg-rose-50 dark:hover:bg-rose-950/30 hover:border-rose-300/60 dark:hover:border-rose-700/50 hover:text-rose-700 dark:hover:text-rose-400 transition-all duration-300 cursor-default"
           >
             {tag}
           </span>
@@ -270,7 +270,7 @@ export default function Projects() {
   const visible = showAll ? projects : projects.slice(0, 2);
 
   return (
-    <section id="projects" className="py-20 border-t border-zinc-200 dark:border-zinc-900">
+    <section id="projects" className="py-20 border-t border-zinc-200 dark:border-zinc-800/60">
       <motion.div
         className="flex items-center justify-between mb-12"
         initial={{ opacity: 0, y: 20 }}
@@ -278,7 +278,7 @@ export default function Projects() {
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
       >
-        <h2 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+        <h2 className="text-2xl font-black tracking-tight text-zinc-900 dark:text-zinc-100">
           {t('projects_title')}
         </h2>
         <button

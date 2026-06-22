@@ -1,127 +1,158 @@
-import { motion, type Variants } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import { Icon } from '@iconify/react';
 import { useLanguage } from '../context/LanguageContext';
-import { useNormalizedMousePosition } from '../hooks/useMousePosition';
 
-const container: Variants = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.11, delayChildren: 0.15 } },
-};
-
-const item: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] } },
-};
+const sideIcons = [
+  { icon: 'solar:user-rounded-linear', href: '#about' },
+  { icon: 'solar:folder-2-linear', href: '#projects' },
+  { icon: 'solar:letter-linear', href: '#contact' },
+];
 
 export default function Hero() {
   const { t } = useLanguage();
-  const mouse = useNormalizedMousePosition();
+  const [mouse, setMouse] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const calc = (x: number, y: number) => {
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      setMouse({ x: (x - cx) / cx, y: (y - cy) / cy });
+    };
+    const move = (e: MouseEvent) => calc(e.clientX, e.clientY);
+    window.addEventListener('mousemove', move);
+    return () => window.removeEventListener('mousemove', move);
+  }, []);
 
   return (
-    <section className="relative py-10 md:py-24 overflow-hidden">
-      {/* Parallax background orbs */}
-      <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-        <div
-          className="absolute top-[-10%] left-[10%] w-[500px] h-[500px] rounded-full bg-indigo-400/10 dark:bg-indigo-500/8 blur-3xl"
-          style={{ transform: `translate(${mouse.x * -18}px, ${mouse.y * -18}px)`, transition: 'transform 0.6s ease-out' }}
-        />
-        <div
-          className="absolute bottom-[-5%] right-[5%] w-[400px] h-[400px] rounded-full bg-violet-400/10 dark:bg-violet-500/8 blur-3xl"
-          style={{ transform: `translate(${mouse.x * 28}px, ${mouse.y * 28}px)`, transition: 'transform 0.4s ease-out' }}
-        />
-        <div
-          className="absolute top-[30%] right-[20%] w-[220px] h-[220px] rounded-full bg-purple-400/8 dark:bg-purple-500/6 blur-2xl"
-          style={{ transform: `translate(${mouse.x * 42}px, ${mouse.y * 42}px)`, transition: 'transform 0.25s ease-out' }}
-        />
-        <div
-          className="absolute top-[10%] right-[35%] w-[150px] h-[150px] rounded-full bg-indigo-300/8 dark:bg-indigo-400/5 blur-2xl"
-          style={{ transform: `translate(${mouse.x * 55}px, ${mouse.y * 55}px)`, transition: 'transform 0.15s ease-out' }}
-        />
-      </div>
+    <section className="relative flex min-h-screen overflow-x-clip pt-16">
 
-      <motion.div
-        className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 w-full"
-        variants={container}
-        initial="hidden"
-        animate="visible"
-      >
-        {/* Text content */}
-        <div className="flex flex-col items-center text-center md:items-start md:text-left w-full md:flex-1">
-          {/* Badge */}
-          <motion.div
-            variants={item}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-200 dark:border-zinc-800 bg-emerald-50 dark:bg-zinc-900/50 text-xs font-medium text-emerald-700 dark:text-zinc-300 mb-6"
-          >
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            {t('hero_badge')}
-          </motion.div>
+      {/* ── LEFT — text ── */}
+      <div className="flex flex-col justify-center flex-1 px-8 sm:px-12 md:px-16 lg:px-24 py-16 z-10">
 
-          {/* Heading */}
-          <motion.h1
-            variants={item}
-            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight max-w-2xl leading-tight"
+        {/* Heading — thick rose left border like Nikki */}
+        <div className="border-l-[5px] border-rose-600 pl-6 mb-8">
+          <h1
+            className="text-4xl sm:text-5xl md:text-[3.2rem] lg:text-[3.8rem] font-black tracking-tight leading-[1.08] text-white"
+            style={{ fontFamily: "'Barlow', sans-serif" }}
           >
-            <span className="text-zinc-900 dark:text-zinc-100">{t('hero_h1_1')}</span>
-            <span className="bg-gradient-to-r from-indigo-500 via-violet-500 to-purple-500 bg-clip-text text-transparent">
-              {t('hero_h1_2')}
-            </span>
+            <span className="text-zinc-100">{t('hero_h1_1')}</span>
+            <span className="text-rose-500">{t('hero_h1_2')}</span>
             <br className="hidden sm:block" />
-            <span className="text-zinc-900 dark:text-zinc-100">{t('hero_h1_3')}</span>
-            <span className="bg-gradient-to-r from-indigo-500 via-violet-500 to-purple-500 bg-clip-text text-transparent">
-              {t('hero_h1_4')}
-            </span>
-          </motion.h1>
-
-          {/* Description */}
-          <motion.p
-            variants={item}
-            className="mt-6 text-base sm:text-lg text-zinc-500 dark:text-zinc-400 max-w-lg font-normal"
-          >
-            {t('hero_desc')}
-          </motion.p>
-
-          {/* CTA buttons */}
-          <motion.div variants={item} className="mt-10 flex flex-col sm:flex-row items-center gap-3">
-            <a
-              href="#projects"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-500/40 transition-all duration-300 shadow-lg shadow-indigo-500/20 group hover:scale-105"
-            >
-              {t('hero_cta_projects')}
-              <Icon icon="solar:arrow-right-linear" className="group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="https://github.com/canberkyildiz25"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent border border-zinc-300 dark:border-zinc-800 text-zinc-600 dark:text-zinc-300 px-6 py-3 rounded-full text-sm font-medium hover:bg-zinc-100 dark:hover:bg-zinc-900 hover:text-zinc-900 dark:hover:text-zinc-50 transition-all duration-300 group hover:scale-105"
-            >
-              <Icon icon="solar:code-square-linear" />
-              {t('hero_cta_github')}
-            </a>
-          </motion.div>
+            <span className="text-zinc-100">{t('hero_h1_3')}</span>
+            <span className="text-rose-500">{t('hero_h1_4')}</span>
+          </h1>
         </div>
 
-        {/* Avatar */}
-        <motion.div
-          variants={item}
-          className="flex-shrink-0 flex items-end justify-center relative md:-mt-16 w-full md:w-auto"
-        >
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="absolute w-[350px] h-[520px] rounded-[60%_40%_55%_45%/40%_60%_50%_50%] bg-gradient-to-b from-indigo-500/20 via-violet-400/20 to-purple-500/25 blur-2xl translate-y-10" />
-            <div className="absolute w-[250px] h-[400px] rounded-[40%_60%_45%_55%/50%_40%_60%_50%] bg-gradient-to-b from-violet-400/10 to-indigo-300/20 blur-xl translate-x-6 translate-y-16" />
+        <p className="text-base sm:text-lg text-zinc-400 max-w-lg mb-12 leading-relaxed">
+          {t('hero_desc')}
+        </p>
+
+        {/* CTA */}
+        <div className="flex flex-col sm:flex-row items-start gap-4 mb-16">
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white font-bold px-9 py-4 rounded-full text-base transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-rose-600/30"
+            style={{ fontFamily: "'Barlow', sans-serif" }}
+          >
+            {t('hero_cta_projects')}
+            <Icon icon="solar:arrow-right-bold" />
+          </a>
+          <a
+            href="https://github.com/canberkyildiz25"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 border border-zinc-700 text-zinc-300 hover:border-zinc-500 hover:text-white font-medium px-9 py-4 rounded-full text-base transition-all hover:-translate-y-0.5"
+          >
+            <Icon icon="solar:brand-github-linear" />
+            {t('hero_cta_github')}
+          </a>
+        </div>
+
+        {/* "Let's work together" */}
+        <p className="text-zinc-500 text-sm font-medium">
+          Let&apos;s <span className="text-rose-500 font-semibold">work</span> together!
+        </p>
+      </div>
+
+      {/* ── RIGHT — photo panel ── */}
+      <div className="hidden md:block relative w-[40%] flex-shrink-0 overflow-hidden">
+
+        {/* Dark base */}
+        <div className="absolute inset-0 bg-[#0c0c10]" />
+
+        {/* Photo */}
+        <img
+          src="/avatar.png"
+          alt="Canberk Yıldız"
+          className="absolute left-1/2 w-full"
+          style={{
+            top: '-18%',
+            transform: 'translateX(-50%)',
+            filter: 'brightness(0.97) contrast(1.08) saturate(1.05)',
+          }}
+        />
+
+        {/* Bottom dark fade */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-[#0a0a0c]/20 to-transparent pointer-events-none" />
+
+        {/* ✦ Pembe/magenta ışık — soldan yüze vuruyor */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              'radial-gradient(ellipse at -10% 42%, rgba(244,63,94,0.60) 0%, rgba(236,72,153,0.28) 28%, transparent 60%)',
+          }}
+        />
+
+        {/* Parallax micro-glow */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              'radial-gradient(ellipse at -15% 38%, rgba(251,113,133,0.22) 0%, transparent 50%)',
+            transform: `translate(${mouse.x * 14}px, ${mouse.y * 10}px)`,
+            transition: 'transform 0.9s ease-out',
+          }}
+        />
+
+        {/* Right-edge dark vignette */}
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-l from-[#0a0a0c]/50 via-transparent to-transparent" />
+
+        {/* Name / title block */}
+        <div className="absolute bottom-0 left-0 right-0 px-8 pb-8 pt-24 z-10 bg-gradient-to-t from-[#0a0a0c] via-[#0a0a0c]/80 to-transparent">
+          <div className="w-10 h-[3px] bg-rose-600 mb-3" />
+          <h3
+            className="text-2xl font-black text-white mb-1"
+            style={{ fontFamily: "'Barlow', sans-serif" }}
+          >
+            Canberk Yıldız
+          </h3>
+          <p className="text-rose-500 font-semibold text-sm mb-4">Full Stack Developer</p>
+          <div className="flex items-center gap-4">
+            <a href="https://github.com/canberkyildiz25" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">
+              <Icon icon="solar:brand-github-linear" className="text-xl" />
+            </a>
+            <a href="https://www.linkedin.com/in/canberk-y/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-rose-500 transition-colors">
+              <Icon icon="solar:brand-linkedin-linear" className="text-xl" />
+            </a>
           </div>
-          <img
-            src="/avatar.png"
-            alt="Canberk Yıldız"
-            className="relative w-full md:w-auto md:h-[600px] max-h-[420px] md:max-h-none object-contain object-bottom"
-            style={{
-              filter: 'brightness(0.78) saturate(0.6) drop-shadow(0 20px 40px rgba(0,0,0,0.15))',
-              maskImage: 'linear-gradient(to right, black 48%, transparent 88%)',
-              WebkitMaskImage: 'linear-gradient(to right, black 48%, transparent 88%)',
-            }}
-          />
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
+
+      {/* ── SIDE STRIP — Nikki's pink vertical bar ── */}
+      <div className="hidden md:flex w-14 bg-rose-600 flex-shrink-0 flex-col items-center py-8 z-10">
+        <a href="#about" className="text-black hover:text-black/70 transition-colors mb-auto">
+          <Icon icon="solar:arrow-down-bold" className="text-2xl" />
+        </a>
+        <div className="flex flex-col items-center gap-7 mb-auto">
+          {sideIcons.map((item) => (
+            <a key={item.href} href={item.href} className="text-black hover:text-black/70 transition-colors">
+              <Icon icon={item.icon} className="text-2xl" />
+            </a>
+          ))}
+        </div>
+      </div>
+
     </section>
   );
 }

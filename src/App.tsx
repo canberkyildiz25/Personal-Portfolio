@@ -18,13 +18,14 @@ function App() {
       <LanguageProvider>
         <ThemeProvider>
           <div
-            className="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-50 antialiased selection:bg-indigo-100 dark:selection:bg-zinc-800 transition-colors"
+            className="bg-white dark:bg-[#0a0a0c] text-zinc-900 dark:text-zinc-50 antialiased selection:bg-rose-100 dark:selection:bg-rose-900/40 transition-colors overflow-x-hidden"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
             <CursorGlow />
             <Navbar />
-            <main className="mx-auto max-w-5xl px-6 pt-16 pb-24">
-              <Hero />
+            {/* Hero is full-width — no max-w container */}
+            <Hero />
+            <main className="mx-auto max-w-5xl px-6 pb-24">
               <About />
               <Stack />
               <Projects />

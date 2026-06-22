@@ -25,15 +25,7 @@ function detectLang(): Lang {
 }
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = useState<Lang>(() => {
-    const saved = localStorage.getItem('language') as Lang | null;
-    return saved ?? detectLang();
-  });
-
-  const setLang = (next: Lang) => {
-    localStorage.setItem('language', next);
-    setLangState(next);
-  };
+  const [lang, setLang] = useState<Lang>(detectLang);
 
   const t = (key: TranslationKey): string => translations[lang][key];
 

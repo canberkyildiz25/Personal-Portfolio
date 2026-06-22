@@ -1,29 +1,42 @@
-import { useMousePosition } from '../hooks/useMousePosition';
+import { useEffect, useState } from 'react';
 
 export default function CursorGlow() {
-  const pos = useMousePosition();
+  const [pos, setPos] = useState({ x: -500, y: -500 });
+
+  useEffect(() => {
+    const move = (e: MouseEvent) => setPos({ x: e.clientX, y: e.clientY });
+    const touch = (e: TouchEvent) => {
+      if (e.touches[0]) setPos({ x: e.touches[0].clientX, y: e.touches[0].clientY });
+    };
+    window.addEventListener('mousemove', move);
+    window.addEventListener('touchmove', touch, { passive: true });
+    return () => {
+      window.removeEventListener('mousemove', move);
+      window.removeEventListener('touchmove', touch);
+    };
+  }, []);
 
   return (
     <div className="pointer-events-none fixed inset-0 z-40 overflow-hidden" aria-hidden="true">
       {/* Large soft glow */}
       <div
-        className="absolute -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full blur-3xl"
+        className="absolute -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full"
         style={{
           left: pos.x,
           top: pos.y,
           background:
-            'radial-gradient(circle, rgba(99,102,241,0.15) 0%, rgba(139,92,246,0.08) 40%, transparent 70%)',
-          transition: 'left 0.15s ease-out, top 0.15s ease-out, background 0.3s ease-out',
+            'radial-gradient(circle, rgba(99,102,241,0.12) 0%, rgba(139,92,246,0.06) 40%, transparent 70%)',
+          transition: 'left 0.15s ease-out, top 0.15s ease-out',
         }}
       />
       {/* Small sharp core */}
       <div
-        className="absolute -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] rounded-full blur-2xl"
+        className="absolute -translate-x-1/2 -translate-y-1/2 w-[120px] h-[120px] rounded-full"
         style={{
           left: pos.x,
           top: pos.y,
           background:
-            'radial-gradient(circle, rgba(129,140,248,0.25) 0%, transparent 70%)',
+            'radial-gradient(circle, rgba(129,140,248,0.18) 0%, transparent 70%)',
           transition: 'left 0.05s ease-out, top 0.05s ease-out',
         }}
       />
