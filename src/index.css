@@ -1,9 +1,12 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Barlow', sans-serif;
 }
 
 /* ─── Fade-in ─────────────────────────────────────────────── */
@@ -11,60 +14,10 @@ html {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 .animate-fade-in {
   animation: fadeIn 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   opacity: 0;
   animation-delay: var(--delay, 0ms);
-}
-
-/* ─── Shimmer skeleton ────────────────────────────────────── */
-@keyframes shimmer {
-  0%   { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-.animate-shimmer {
-  background: linear-gradient(
-    90deg,
-    theme('colors.zinc.100') 25%,
-    theme('colors.zinc.200') 50%,
-    theme('colors.zinc.100') 75%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.6s infinite linear;
-}
-
-.dark .animate-shimmer {
-  background: linear-gradient(
-    90deg,
-    theme('colors.zinc.800') 25%,
-    theme('colors.zinc.700') 50%,
-    theme('colors.zinc.800') 75%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.6s infinite linear;
-}
-
-/* ─── Gradient flow ───────────────────────────────────────── */
-@keyframes gradientFlow {
-  0%, 100% { background-position: 0% 50%; }
-  50%       { background-position: 100% 50%; }
-}
-
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradientFlow 3s ease infinite;
-}
-
-/* ─── Spin slow ───────────────────────────────────────────── */
-@keyframes spinSlow {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-.animate-spin-slow {
-  animation: spinSlow 3s linear infinite;
 }
 
 /* ─── Float ───────────────────────────────────────────────── */
@@ -72,54 +25,50 @@ html {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-8px); }
 }
+.animate-float      { animation: float 4s ease-in-out infinite; }
+.animate-float-slow { animation: float 6s ease-in-out infinite; }
+.animate-float-delay{ animation: float 5s ease-in-out 1s infinite; }
 
-.animate-float {
-  animation: float 4s ease-in-out infinite;
+/* ─── Shimmer skeleton ────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.animate-shimmer {
+  background: linear-gradient(90deg, theme('colors.zinc.100') 25%, theme('colors.zinc.200') 50%, theme('colors.zinc.100') 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s infinite linear;
+}
+.dark .animate-shimmer {
+  background: linear-gradient(90deg, theme('colors.zinc.800') 25%, theme('colors.zinc.700') 50%, theme('colors.zinc.800') 75%);
+  background-size: 200% 100%;
 }
 
-/* ─── Scale in ────────────────────────────────────────────── */
-@keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.94); }
-  to   { opacity: 1; transform: scale(1); }
+/* ─── Gradient flow ───────────────────────────────────────── */
+@keyframes gradientFlow {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientFlow 3s ease infinite;
 }
 
 /* ─── Focus ring ──────────────────────────────────────────── */
-button, a[href], [role="button"], input, select, textarea,
-.theme-transition {
+button, a[href], [role="button"], input, select, textarea {
   @apply transition-colors duration-300;
 }
-
 button, a[href] {
-  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-zinc-950;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500 dark:focus:ring-offset-zinc-950;
 }
 
 /* ─── Selection ───────────────────────────────────────────── */
-::selection {
-  background: theme('colors.indigo.100');
-}
-
-.dark ::selection {
-  background: theme('colors.zinc.700');
-}
+::selection        { background: theme('colors.rose.200'); }
+.dark ::selection  { background: theme('colors.rose.900'); }
 
 /* ─── Scrollbar ───────────────────────────────────────────── */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: theme('colors.zinc.300');
-  border-radius: 99px;
-}
-
-.dark ::-webkit-scrollbar-thumb {
-  background: theme('colors.zinc.700');
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: theme('colors.indigo.400');
-}
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: theme('colors.zinc.300'); border-radius: 99px; }
+.dark ::-webkit-scrollbar-thumb { background: theme('colors.zinc.700'); }
+::-webkit-scrollbar-thumb:hover  { background: theme('colors.rose.500'); }
