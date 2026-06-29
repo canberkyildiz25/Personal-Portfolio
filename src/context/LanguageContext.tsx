@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 import { translations, type Lang, type TranslationKey } from '../i18n/translations';
 
 type LanguageContextType = {
@@ -26,6 +26,10 @@ function detectLang(): Lang {
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLang] = useState<Lang>(detectLang);
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   const t = (key: TranslationKey): string => translations[lang][key];
 
