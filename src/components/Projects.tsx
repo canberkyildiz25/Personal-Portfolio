@@ -15,6 +15,16 @@ const projects: {
   githubUrl: string;
 }[] = [
   {
+    title: 'FORGE Athletic',
+    descKey: 'project_forge',
+    tags: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Framer Motion', 'GSAP'],
+    gradient: 'from-orange-600/20 to-red-500/10',
+    accentColor: 'rgba(255,74,0,0.4)',
+    icon: 'solar:dumbbell-large-linear',
+    liveUrl: 'https://forge-athletic.netlify.app',
+    githubUrl: 'https://github.com/canberkyildiz25/forge',
+  },
+  {
     title: 'Fornace',
     descKey: 'project_fornace',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
