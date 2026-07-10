@@ -3,13 +3,6 @@ import { Icon } from '@iconify/react';
 import { motion, useInView } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
-/* ── Side icons (Nikki) ─────────────────────────────────────── */
-const sideIcons = [
-  { icon: 'solar:user-rounded-linear', href: '#about' },
-  { icon: 'solar:folder-2-linear', href: '#projects' },
-  { icon: 'solar:letter-linear', href: '#contact' },
-];
-
 /* ── Skill bars (Mr.Bande) ──────────────────────────────────── */
 const skillCols = [
   {
@@ -100,7 +93,7 @@ function InfoChip({ icon, label, value }: { icon: string; label: string; value: 
 /* ════════════════════════════════════════════════════════════ */
 export default function Hero() {
   const { t } = useLanguage();
-  const [mouse, setMouse] = useState({ x: 0, y: 0 });
+  const [, setMouse] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const calc = (x: number, y: number) => {

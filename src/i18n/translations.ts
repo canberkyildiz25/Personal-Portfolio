@@ -64,6 +64,8 @@ export const translations = {
       'Cat encyclopedia featuring 60+ breeds with detailed characteristics, temperament scores, and images. Real-time search and smart filtering by energy level, coat length, and child compatibility. Compare up to 3 breeds side-by-side, interactive quiz to find your perfect cat match, and comprehensive care guide. PWA support for mobile app experience. Bilingual: Turkish and English.',
     project_pokeduel:
       'Interactive Pokémon TCG dueling game. Select trainers, build 5-card decks, choose dynamic arenas, and battle using type advantages and real stats. Features Framer Motion animations, sound effects, and responsive mobile design.',
+    project_forge:
+      'Cinematic marketing site for a premium London performance gym, built with Next.js 16 and TypeScript. Full-screen video hero, scroll-driven GSAP animations, word-level headline reveals, and self-hosted typography — fully responsive.',
     project_fornace:
       'Modern restaurant website built with Next.js. Features a dynamic menu, reservation flow, and a polished, responsive design.',
     project_psychologist:
@@ -137,6 +139,8 @@ export const translations = {
       'Kedi ırkları ansiklopedisi. 60+ kedi ırkı, detaylı özellikler, mizaç skorları ve görseller. Anlık arama ve akıllı filtreleme (enerji seviyesi, tüy uzunluğu, çocuklarla uyum). En fazla 3 ırkı yan yana karşılaştır, hangi kedi sana uygun bulun (interaktif quiz) ve kedi bakım rehberi. PWA desteği ile mobilde uygulama gibi kullan. Türkçe ve İngilizce.',
     project_pokeduel:
       'İnteraktif Pokémon TCG düello oyunu. Antrenör seç, 5 kartlık deste oluştur, dinamik arena seç ve tip avantajları ile gerçek istatistikleri kullanarak savaş. Framer Motion animasyonları, ses efektleri ve responsive mobil tasarım.',
+    project_forge:
+      'Londra merkezli premium bir performans salonu için sinematik tanıtım sitesi. Next.js 16 ve TypeScript ile geliştirildi. Tam ekran video hero, scroll tetiklemeli GSAP animasyonları, kelime kelime beliren başlıklar ve self-hosted tipografi — tamamen responsive.',
     project_fornace:
       'Next.js ile geliştirilmiş modern bir restoran web sitesi. Dinamik menü, rezervasyon akışı ve şık, duyarlı tasarım içerir.',
     project_psychologist:
@@ -210,6 +214,8 @@ export const translations = {
       'Энциклопедия кошачьих пород с 60+ породами. Подробные характеристики, оценки характера и изображения. Поиск в реальном времени и умная фильтрация по энергичности, длине шерсти и совместимости с детьми. Сравнение до 3 пород рядом, интерактивная викторина для поиска идеальной кошки, полное руководство по уходу. Поддержка PWA для мобильного приложения. Двуязычный: турецкий и английский.',
     project_pokeduel:
       'Интерактивная карточная игра-дуэль в стиле Pokémon TCG. Выбирайте тренеров, создавайте колоды из 5 карт, выбирайте арены и сражайтесь с учётом типовых преимуществ и реальных характеристик. Анимации Framer Motion, звуковые эффекты и адаптивный дизайн.',
+    project_forge:
+      'Кинематографичный маркетинговый сайт для премиального лондонского фитнес-зала на Next.js 16 и TypeScript. Полноэкранный видео-герой, GSAP-анимации при прокрутке, пословное появление заголовков и локальные шрифты — полностью адаптивный.',
     project_fornace:
       'Современный сайт ресторана на Next.js. Включает динамическое меню, форму бронирования и отзывчивый дизайн.',
     project_psychologist:
@@ -283,6 +289,8 @@ export const translations = {
       "Enciclopedia felina con 60+ razze di gatti. Caratteristiche dettagliate, punteggi di temperamento e immagini. Ricerca in tempo reale e filtri intelligenti per livello energetico, lunghezza del mantello e compatibilità con bambini. Confronta fino a 3 razze affiancate, quiz interattivo per trovare il gatto perfetto per te e guida completa alla cura. Supporto PWA per esperienza da app mobile. Bilingue: turco e inglese.",
     project_pokeduel:
       'Gioco di duello interattivo ispirato al Pokémon TCG. Seleziona allenatori, costruisci mazzi da 5 carte, scegli arene dinamiche e combatti usando vantaggi di tipo e statistiche reali. Animazioni Framer Motion, effetti sonori e design mobile responsive.',
+    project_forge:
+      'Sito di marketing cinematografico per una palestra premium di Londra, realizzato con Next.js 16 e TypeScript. Video hero a schermo intero, animazioni GSAP allo scroll, titoli che appaiono parola per parola e tipografia self-hosted — completamente responsivo.',
     project_fornace:
       'Sito web moderno per ristorante realizzato con Next.js. Include menu dinamico, flusso di prenotazione e design elegante e responsivo.',
     project_psychologist:
@@ -356,6 +364,8 @@ export const translations = {
       'Enciclopedia felina con 60+ razas de gatos. Características detalladas, puntuaciones de temperamento e imágenes. Búsqueda en tiempo real y filtrado inteligente por nivel de energía, longitud de pelaje y compatibilidad con niños. Compara hasta 3 razas lado a lado, cuestionario interactivo para encontrar tu gato perfecto y guía completa de cuidado. Soporte PWA para experiencia de app móvil. Bilingüe: turco e inglés.',
     project_pokeduel:
       'Juego interactivo de duelos basado en el Pokémon TCG. Selecciona entrenadores, construye mazos de 5 cartas, elige arenas dinámicas y batalla usando ventajas de tipo y estadísticas reales. Animaciones Framer Motion, efectos de sonido y diseño mobile responsive.',
+    project_forge:
+      'Sitio de marketing cinematográfico para un gimnasio premium de Londres, construido con Next.js 16 y TypeScript. Hero de vídeo a pantalla completa, animaciones GSAP al hacer scroll, títulos que aparecen palabra por palabra y tipografía self-hosted — totalmente responsive.',
     project_fornace:
       'Sitio web moderno de restaurante con Next.js. Incluye menú dinámico, flujo de reservas y diseño elegante y responsivo.',
     project_psychologist:
@@ -429,6 +439,8 @@ export const translations = {
       'Katzenenzyklopädie mit 60+ Katzenrassen. Detaillierte Charakteristiken, Temperaturwerte und Bilder. Echtzeitsucse und intelligente Filter nach Energielevel, Fellänge und Kindergerech. Vergleiche bis zu 3 Rassen nebeneinander, interaktives Quiz zur Findung deiner perfekten Katze und umfassender Pflegeleitfaden. PWA-Unterstützung für Mobile-App-Erlebnis. Zweisprachig: Türkisch und Englisch.',
     project_pokeduel:
       'Interaktives Pokémon-TCG-Duellspiel. Wähle Trainer, erstelle 5-Karten-Decks, wähle dynamische Arenen und kämpfe mit Typvorteilen und echten Statistiken. Framer-Motion-Animationen, Soundeffekte und responsives Mobile-Design.',
+    project_forge:
+      'Kinoreife Marketing-Website für ein Premium-Fitnessstudio in London, entwickelt mit Next.js 16 und TypeScript. Vollbild-Video-Hero, scrollgesteuerte GSAP-Animationen, wortweise erscheinende Überschriften und selbst gehostete Schriften — vollständig responsiv.',
     project_fornace:
       'Moderne Restaurant-Website mit Next.js. Enthält dynamisches Menü, Reservierungsablauf und elegantes, responsives Design.',
     project_psychologist:
@@ -502,6 +514,8 @@ export const translations = {
       "Encyclopédie féline avec 60+ races de chats. Caractéristiques détaillées, scores de tempérament et images. Recherche en temps réel et filtrage intelligent par niveau d'énergie, longueur du pelage et compatibilité avec les enfants. Comparez jusqu'à 3 races côte à côte, quiz interactif pour trouver votre chat parfait et guide complet de soins. Support PWA pour l'expérience d'une application mobile. Bilingue : turc et anglais.",
     project_pokeduel:
       'Jeu de duel interactif inspiré du Pokémon TCG. Sélectionnez des dresseurs, construisez des decks de 5 cartes, choisissez des arènes dynamiques et combattez en utilisant les avantages de type et les statistiques réelles. Animations Framer Motion, effets sonores et design mobile responsive.',
+    project_forge:
+      'Site marketing cinématographique pour une salle de sport premium à Londres, développé avec Next.js 16 et TypeScript. Hero vidéo plein écran, animations GSAP au défilement, titres révélés mot par mot et typographie auto-hébergée — entièrement responsive.',
     project_fornace:
       "Site web moderne de restaurant avec Next.js. Comprend un menu dynamique, un flux de réservation et un design élégant et responsive.",
     project_psychologist:
