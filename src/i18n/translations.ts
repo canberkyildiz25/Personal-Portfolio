@@ -45,7 +45,7 @@ export const translations = {
     projects_show_less: 'Show less',
     projects_view_all: 'View all',
     project_traveltrucks:
-      'Camper and motorhome rental app. Includes filtering by location, equipment and vehicle type, favorites, and a booking form.',
+      'OVERLAND — a premium campervan hire experience with a dark, cinematic interface. Custom-designed fleet listing with filtering by location, equipment and vehicle type, favourites, and a booking flow. Built with React 19 and Redux Toolkit.',
     project_cinemania:
       'Movie discovery and personal library app. Lists upcoming films with detailed info, ratings, and genre-based browsing.',
     project_bookshelf:
@@ -120,7 +120,7 @@ export const translations = {
     projects_show_less: 'Daha az göster',
     projects_view_all: 'Tümünü gör',
     project_traveltrucks:
-      'Karavan ve campervan kiralama uygulaması. Lokasyon, ekipman ve araç tipine göre filtreleme, favorilere ekleme ve rezervasyon formu içerir.',
+      'OVERLAND — koyu, sinematik arayüze sahip premium bir karavan kiralama deneyimi. Lokasyon, ekipman ve araç tipine göre filtreleme, favoriler ve rezervasyon akışı içeren özel tasarım araç listesi. React 19 ve Redux Toolkit ile geliştirildi.',
     project_cinemania:
       'Film keşif ve kişisel kütüphane uygulaması. Yaklaşan filmleri listeler, detaylı bilgi, puan ve türlere göre inceleme imkânı sunar.',
     project_bookshelf:
@@ -195,7 +195,7 @@ export const translations = {
     projects_show_less: 'Свернуть',
     projects_view_all: 'Смотреть все',
     project_traveltrucks:
-      'Приложение для аренды кемперов и автодомов. Включает фильтрацию по локации, оборудованию и типу транспорта, избранное и форму бронирования.',
+      'OVERLAND — премиальный сервис аренды кемперов с тёмным кинематографичным интерфейсом. Индивидуальный дизайн каталога с фильтрацией по локации, оборудованию и типу транспорта, избранное и оформление брони. Создано на React 19 и Redux Toolkit.',
     project_cinemania:
       'Приложение для поиска фильмов и личной библиотеки. Список предстоящих фильмов с подробной информацией, оценками и фильтрацией по жанрам.',
     project_bookshelf:
@@ -270,7 +270,7 @@ export const translations = {
     projects_show_less: 'Mostra meno',
     projects_view_all: 'Vedi tutti',
     project_traveltrucks:
-      'App per il noleggio di camper e autocaravan. Include filtri per posizione, attrezzatura e tipo di veicolo, preferiti e modulo di prenotazione.',
+      'OVERLAND — un servizio premium di noleggio camper con un’interfaccia scura e cinematografica. Catalogo dal design personalizzato con filtri per posizione, attrezzatura e tipo di veicolo, preferiti e flusso di prenotazione. Realizzato con React 19 e Redux Toolkit.',
     project_cinemania:
       'App per la scoperta di film e libreria personale. Elenca i film in uscita con informazioni dettagliate, valutazioni e navigazione per genere.',
     project_bookshelf:
@@ -345,7 +345,7 @@ export const translations = {
     projects_show_less: 'Mostrar menos',
     projects_view_all: 'Ver todos',
     project_traveltrucks:
-      'App de alquiler de caravanas y autocaravanas. Incluye filtros por ubicación, equipamiento y tipo de vehículo, favoritos y formulario de reserva.',
+      'OVERLAND — una experiencia premium de alquiler de campers con una interfaz oscura y cinematográfica. Catálogo de diseño personalizado con filtros por ubicación, equipamiento y tipo de vehículo, favoritos y flujo de reserva. Desarrollado con React 19 y Redux Toolkit.',
     project_cinemania:
       'App de descubrimiento de películas y biblioteca personal. Lista los próximos estrenos con información detallada, puntuaciones y navegación por género.',
     project_bookshelf:
@@ -420,7 +420,7 @@ export const translations = {
     projects_show_less: 'Weniger anzeigen',
     projects_view_all: 'Alle anzeigen',
     project_traveltrucks:
-      'App zur Vermietung von Campern und Wohnmobilen. Mit Filterung nach Standort, Ausstattung und Fahrzeugtyp, Favoriten und Buchungsformular.',
+      'OVERLAND — ein Premium-Campervan-Verleih mit dunkler, filmischer Oberfläche. Individuell gestaltete Fahrzeugliste mit Filterung nach Standort, Ausstattung und Fahrzeugtyp, Favoriten und Buchungsablauf. Entwickelt mit React 19 und Redux Toolkit.',
     project_cinemania:
       'Film-Entdeckungs- und persönliche Bibliotheks-App. Listet kommende Filme mit detaillierten Infos, Bewertungen und Genre-Filterung auf.',
     project_bookshelf:
@@ -495,7 +495,7 @@ export const translations = {
     projects_show_less: 'Afficher moins',
     projects_view_all: 'Voir tout',
     project_traveltrucks:
-      "Application de location de camping-cars et caravanes. Inclut des filtres par localisation, équipement et type de véhicule, des favoris et un formulaire de réservation.",
+      "OVERLAND — une expérience premium de location de camping-cars avec une interface sombre et cinématographique. Catalogue au design personnalisé avec filtres par localisation, équipement et type de véhicule, favoris et parcours de réservation. Développé avec React 19 et Redux Toolkit.",
     project_cinemania:
       "Application de découverte de films et bibliothèque personnelle. Liste les films à venir avec des infos détaillées, des notes et une navigation par genre.",
     project_bookshelf:
