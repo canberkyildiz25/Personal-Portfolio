@@ -112,7 +112,7 @@ const projects: {
     accentColor: 'rgba(232,130,60,0.4)',
     icon: 'solar:map-point-wave-linear',
     liveUrl: 'https://travel-trucks-eight-theta.vercel.app/',
-    githubUrl: 'https://github.com/canberkyildiz25/Travel-Trucks',
+    githubUrl: 'https://github.com/canberkyildiz25/overland',
   },
   {
     title: 'Cinemania',
