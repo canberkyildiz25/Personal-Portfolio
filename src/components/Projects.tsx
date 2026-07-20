@@ -8,8 +8,6 @@ const projects: {
   title: string;
   descKey: TranslationKey;
   tags: string[];
-  gradient: string;
-  accentColor: string;
   icon: string;
   liveUrl: string;
   githubUrl: string;
@@ -18,8 +16,6 @@ const projects: {
     title: 'FORGE Athletic',
     descKey: 'project_forge',
     tags: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Framer Motion', 'GSAP'],
-    gradient: 'from-orange-600/20 to-red-500/10',
-    accentColor: 'rgba(255,74,0,0.4)',
     icon: 'solar:dumbbell-large-linear',
     liveUrl: 'https://forge-athletic.netlify.app',
     githubUrl: 'https://github.com/canberkyildiz25/forge',
@@ -28,8 +24,6 @@ const projects: {
     title: 'Fornace',
     descKey: 'project_fornace',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-    gradient: 'from-orange-500/20 to-amber-500/10',
-    accentColor: 'rgba(249,115,22,0.4)',
     icon: 'solar:fire-linear',
     liveUrl: 'https://fornace-next.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/fornace-next',
@@ -38,8 +32,6 @@ const projects: {
     title: 'Apex Engineering',
     descKey: 'project_apex_engineering',
     tags: ['React 18', 'Three.js', 'React Three Fiber', 'Framer Motion', 'Tailwind CSS'],
-    gradient: 'from-sky-500/20 to-cyan-500/10',
-    accentColor: 'rgba(14,165,233,0.4)',
     icon: 'solar:3d-square-linear',
     liveUrl: 'https://apex-engineering-two.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/apex-engineering',
@@ -48,8 +40,6 @@ const projects: {
     title: 'Mystic',
     descKey: 'project_mystic',
     tags: ['React 19', 'TypeScript', 'Firebase', 'Framer Motion', 'Tailwind CSS 4'],
-    gradient: 'from-fuchsia-500/20 to-pink-500/10',
-    accentColor: 'rgba(217,70,239,0.4)',
     icon: 'solar:stars-linear',
     liveUrl: 'https://mystic-app-gules.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/mystic-app',
@@ -58,8 +48,6 @@ const projects: {
     title: 'Spectra CRM',
     descKey: 'project_spectra_crm',
     tags: ['Next.js 14', 'TypeScript', 'Node.js', 'MongoDB', 'JWT', 'Zustand'],
-    gradient: 'from-violet-500/20 to-purple-500/10',
-    accentColor: 'rgba(124,58,237,0.4)',
     icon: 'solar:chart-square-linear',
     liveUrl: 'https://client-xi-three-50.vercel.app',
     githubUrl: 'https://github.com/canberkyildiz25/Spectra-CRM',
@@ -68,8 +56,6 @@ const projects: {
     title: 'PokéDuel',
     descKey: 'project_pokeduel',
     tags: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Framer Motion'],
-    gradient: 'from-yellow-500/20 to-orange-500/10',
-    accentColor: 'rgba(234,179,8,0.4)',
     icon: 'solar:gamepad-linear',
     liveUrl: 'https://pokedueltr.netlify.app/',
     githubUrl: 'https://github.com/canberkyildiz25/PokeDuel',
@@ -78,8 +64,6 @@ const projects: {
     title: 'PetLove',
     descKey: 'project_petlove',
     tags: ['React 19', 'React Router 7', 'Node.js', 'Express 5', 'MongoDB'],
-    gradient: 'from-pink-500/20 to-rose-500/10',
-    accentColor: 'rgba(236,72,153,0.4)',
     icon: 'solar:paw-linear',
     liveUrl: 'https://pet-love-1.onrender.com/',
     githubUrl: 'https://github.com/canberkyildiz25/Pet-Love',
@@ -88,8 +72,6 @@ const projects: {
     title: 'E-Pharmacy',
     descKey: 'project_epharmacy',
     tags: ['React 18', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Geolocation'],
-    gradient: 'from-teal-500/20 to-emerald-500/10',
-    accentColor: 'rgba(20,184,166,0.4)',
     icon: 'solar:pills-2-linear',
     liveUrl: 'https://e-pharmacy-1.onrender.com/',
     githubUrl: 'https://github.com/canberkyildiz25/E-Pharmacy',
@@ -98,8 +80,6 @@ const projects: {
     title: 'Purr Pedia',
     descKey: 'project_purr_pedia',
     tags: ['React 18', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'PWA'],
-    gradient: 'from-orange-500/20 to-red-500/10',
-    accentColor: 'rgba(249,115,22,0.4)',
     icon: 'solar:cat-2-linear',
     liveUrl: 'https://purr-pedia.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Purr-Pedia',
@@ -108,8 +88,6 @@ const projects: {
     title: 'OVERLAND',
     descKey: 'project_traveltrucks',
     tags: ['React 19', 'Redux Toolkit', 'React Router 7', 'Vite', 'Custom UI'],
-    gradient: 'from-orange-500/20 to-amber-600/10',
-    accentColor: 'rgba(232,130,60,0.4)',
     icon: 'solar:map-point-wave-linear',
     liveUrl: 'https://travel-trucks-eight-theta.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/overland',
@@ -118,8 +96,6 @@ const projects: {
     title: 'Cinemania',
     descKey: 'project_cinemania',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    gradient: 'from-rose-500/20 to-pink-500/10',
-    accentColor: 'rgba(244,63,94,0.4)',
     icon: 'solar:clapperboard-play-linear',
     liveUrl: 'https://canberkyildiz25.github.io/Cinemania/',
     githubUrl: 'https://github.com/canberkyildiz25/Cinemania',
@@ -128,8 +104,6 @@ const projects: {
     title: 'Book-Shelf',
     descKey: 'project_bookshelf',
     tags: ['React', 'Redux Toolkit', 'React Router', 'Vite'],
-    gradient: 'from-emerald-500/20 to-green-500/10',
-    accentColor: 'rgba(16,185,129,0.4)',
     icon: 'solar:book-linear',
     liveUrl: 'https://book-shelf-brown.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Book-Shelf',
@@ -138,8 +112,6 @@ const projects: {
     title: 'Tasty Treats',
     descKey: 'project_tastytreats',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    gradient: 'from-orange-500/20 to-yellow-500/10',
-    accentColor: 'rgba(249,115,22,0.4)',
     icon: 'solar:dish-linear',
     liveUrl: 'https://tasty-treats-six.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Tasty-Treats',
@@ -148,8 +120,6 @@ const projects: {
     title: 'Money Guard',
     descKey: 'project_moneyguard',
     tags: ['React', 'Redux Toolkit', 'Chart.js', 'Vite'],
-    gradient: 'from-cyan-500/20 to-sky-500/10',
-    accentColor: 'rgba(6,182,212,0.4)',
     icon: 'solar:wallet-linear',
     liveUrl: 'https://money-guard-pi.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Money-Guard',
@@ -158,8 +128,6 @@ const projects: {
     title: 'Focus Frame',
     descKey: 'project_focusframe',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    gradient: 'from-slate-500/20 to-zinc-500/10',
-    accentColor: 'rgba(100,116,139,0.4)',
     icon: 'solar:camera-linear',
     liveUrl: 'https://canberkyildiz25.github.io/Focus-Frame-Project/',
     githubUrl: 'https://github.com/canberkyildiz25/Focus-Frame-Project',
@@ -168,8 +136,6 @@ const projects: {
     title: 'Green Harvest',
     descKey: 'project_greenharvest',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    gradient: 'from-lime-500/20 to-green-500/10',
-    accentColor: 'rgba(132,204,22,0.4)',
     icon: 'solar:leaf-linear',
     liveUrl: 'https://green-harvest-project.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/green-harvest-project',
@@ -178,13 +144,13 @@ const projects: {
     title: 'Psychologist Services',
     descKey: 'project_psychologist',
     tags: ['React 19', 'Vite', 'Firebase', 'React Hook Form', 'Yup'],
-    gradient: 'from-purple-500/20 to-violet-500/10',
-    accentColor: 'rgba(168,85,247,0.4)',
     icon: 'solar:heart-linear',
     liveUrl: 'https://resilient-salmiakki-c08a67.netlify.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Psychologist-Services',
   },
 ];
+
+const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
 
 function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: number }) {
   const { t } = useLanguage();
@@ -196,31 +162,33 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
       initial={{ opacity: 0, y: 32 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.55, delay: (idx % 2) * 0.1, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.55, delay: (idx % 2) * 0.1, ease }}
       onClick={() => window.open(project.liveUrl, '_blank')}
     >
       {/* Screenshot card */}
       <div
-        className="aspect-video w-full rounded-2xl overflow-hidden relative mb-5 transition-all duration-500"
+        className="aspect-video w-full overflow-hidden relative mb-5 transition-all duration-500"
         style={{
-          background: 'rgba(10,10,15,0.8)',
-          border: '1px solid rgba(255,255,255,0.06)',
-          boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
+          background: 'var(--surface)',
+          border: '1px solid var(--line)',
+          borderRadius: '3px',
         }}
         onMouseEnter={e => {
-          (e.currentTarget as HTMLElement).style.borderColor = project.accentColor;
-          (e.currentTarget as HTMLElement).style.boxShadow = `0 16px 48px rgba(0,0,0,0.5), 0 0 0 1px ${project.accentColor}`;
+          const el = e.currentTarget as HTMLElement;
+          el.style.borderColor = 'var(--accent)';
+          el.style.boxShadow = '0 0 24px rgba(53,224,240,0.15)';
         }}
         onMouseLeave={e => {
-          (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.06)';
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(0,0,0,0.4)';
+          const el = e.currentTarget as HTMLElement;
+          el.style.borderColor = 'var(--line)';
+          el.style.boxShadow = 'none';
         }}
       >
         {imgState === 'loading' && (
           <div
             className="absolute inset-0 animate-shimmer"
             style={{
-              background: 'linear-gradient(90deg, #18181b 25%, #27272a 50%, #18181b 75%)',
+              background: 'linear-gradient(90deg, var(--surface2) 25%, var(--surface) 50%, var(--surface2) 75%)',
               backgroundSize: '200% 100%',
             }}
           />
@@ -245,16 +213,16 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
         )}
 
         {imgState === 'error' && (
-          <div className={`absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br ${project.gradient}`}>
-            <Icon icon={project.icon} className="text-5xl text-zinc-500 group-hover:scale-110 group-hover:text-zinc-300 transition-all duration-500" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ background: 'var(--surface)' }}>
+            <Icon icon={project.icon} className="text-5xl transition-all duration-500" style={{ color: 'var(--muted)' }} />
           </div>
         )}
 
         {/* Live preview badge on hover */}
         <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-1 group-hover:translate-y-0">
           <div
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-white"
-            style={{ background: 'rgba(0,0,0,0.7)', backdropFilter: 'blur(8px)' }}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-semibold"
+            style={{ background: 'rgba(0,0,0,0.7)', backdropFilter: 'blur(8px)', color: 'var(--accent)', borderRadius: '2px' }}
           >
             <Icon icon="solar:arrow-right-up-linear" className="text-sm" />
             Live Demo
@@ -263,28 +231,40 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
       </div>
 
       {/* Info row */}
-      <div className="flex items-start justify-between">
+      <div className="flex items-start justify-between gap-4">
         <div className="flex-1">
           <h3
-            className="text-lg font-bold text-zinc-100 tracking-tight mb-1.5 transition-colors duration-300 group-hover:text-white"
-            style={{ fontFamily: "'Barlow', sans-serif" }}
+            className="text-base font-extrabold tracking-tight mb-2 transition-colors duration-300"
+            style={{ color: 'var(--text)' }}
           >
             {project.title}
           </h3>
-          <p className="text-sm text-zinc-500 max-w-sm leading-relaxed">{t(project.descKey)}</p>
+          <p className="text-[13px] max-w-sm leading-relaxed" style={{ color: 'var(--muted)' }}>
+            {t(project.descKey)}
+          </p>
         </div>
 
         {/* Action buttons */}
         <div
-          className="flex items-center gap-2 ml-3 flex-shrink-0"
+          className="flex items-center gap-2 flex-shrink-0"
           onClick={(e) => e.stopPropagation()}
         >
           <a
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-9 h-9 rounded-full flex items-center justify-center text-zinc-400 transition-all duration-300 hover:text-white hover:scale-110"
-            style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
+            className="w-9 h-9 rounded-sm flex items-center justify-center transition-all duration-300"
+            style={{ background: 'var(--surface2)', border: '1px solid var(--line)', color: 'var(--muted)' }}
+            onMouseEnter={e => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.borderColor = 'var(--accent)';
+              el.style.color = 'var(--accent)';
+            }}
+            onMouseLeave={e => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.borderColor = 'var(--line)';
+              el.style.color = 'var(--muted)';
+            }}
             title="GitHub"
           >
             <Icon icon="logos:github-icon" className="text-base" />
@@ -293,15 +273,19 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-9 h-9 rounded-full flex items-center justify-center text-zinc-400 transition-all duration-300 hover:text-white hover:scale-110"
-            style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
+            className="w-9 h-9 rounded-sm flex items-center justify-center transition-all duration-300"
+            style={{ background: 'var(--surface2)', border: '1px solid var(--line)', color: 'var(--muted)' }}
             onMouseEnter={e => {
-              (e.currentTarget as HTMLElement).style.background = project.accentColor.replace('0.4', '0.9');
-              (e.currentTarget as HTMLElement).style.borderColor = 'transparent';
+              const el = e.currentTarget as HTMLElement;
+              el.style.background = 'var(--accent)';
+              el.style.borderColor = 'var(--accent)';
+              el.style.color = '#08090C';
             }}
             onMouseLeave={e => {
-              (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.05)';
-              (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.08)';
+              const el = e.currentTarget as HTMLElement;
+              el.style.background = 'var(--surface2)';
+              el.style.borderColor = 'var(--line)';
+              el.style.color = 'var(--muted)';
             }}
             title="Live Demo"
           >
@@ -315,11 +299,22 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
         {project.tags.slice(0, 4).map((tag) => (
           <span
             key={tag}
-            className="text-[11px] font-medium px-2.5 py-1 rounded-lg transition-all duration-300 cursor-default"
+            className="text-[11px] font-medium px-2.5 py-1 transition-all duration-300 cursor-default"
             style={{
-              background: 'rgba(255,255,255,0.04)',
-              border: '1px solid rgba(255,255,255,0.07)',
-              color: '#71717a',
+              background: 'var(--surface2)',
+              border: '1px solid var(--line)',
+              color: 'var(--muted)',
+              borderRadius: '2px',
+            }}
+            onMouseEnter={e => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.borderColor = 'var(--accent)';
+              el.style.color = 'var(--accent)';
+            }}
+            onMouseLeave={e => {
+              const el = e.currentTarget as HTMLElement;
+              el.style.borderColor = 'var(--line)';
+              el.style.color = 'var(--muted)';
             }}
           >
             {tag}
@@ -327,11 +322,12 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
         ))}
         {project.tags.length > 4 && (
           <span
-            className="text-[11px] font-medium px-2.5 py-1 rounded-lg"
+            className="text-[11px] font-medium px-2.5 py-1"
             style={{
-              background: 'rgba(255,255,255,0.04)',
-              border: '1px solid rgba(255,255,255,0.07)',
-              color: '#52525b',
+              background: 'var(--surface2)',
+              border: '1px solid var(--line)',
+              color: 'var(--muted-2)',
+              borderRadius: '2px',
             }}
           >
             +{project.tags.length - 4}
@@ -348,49 +344,46 @@ export default function Projects() {
   const visible = showAll ? projects : projects.slice(0, 4);
 
   return (
-    <section id="projects" className="py-20 border-t border-zinc-800/60">
+    <section id="projects" className="py-24" style={{ borderTop: '1px solid var(--line)' }}>
+      {/* section index */}
+      <div className="flex items-center gap-4 mb-14">
+        <span className="eyebrow">03</span>
+        <span className="h-px w-8" style={{ background: 'var(--accent)' }} />
+        <span className="eyebrow eyebrow-muted">PROJECTS</span>
+      </div>
+
       <motion.div
         className="flex items-center justify-between mb-12"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-80px' }}
-        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.55, ease }}
       >
-        <div>
-          <div
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold mb-4"
-            style={{
-              background: 'rgba(124,58,237,0.1)',
-              border: '1px solid rgba(124,58,237,0.2)',
-              color: '#c084fc',
-            }}
-          >
-            <Icon icon="solar:folder-2-linear" className="text-sm" />
-            Projects
-          </div>
-          <h2
-            className="text-2xl sm:text-3xl font-black tracking-tight text-zinc-100"
-            style={{ fontFamily: "'Barlow', sans-serif" }}
-          >
-            {t('projects_title')}
-          </h2>
-        </div>
+        <h2
+          className="text-[1.9rem] sm:text-[2.5rem] font-extrabold leading-[1.05]"
+          style={{ color: 'var(--text)' }}
+        >
+          {t('projects_title')}
+        </h2>
 
         <button
           onClick={() => setShowAll((v) => !v)}
-          className="flex items-center gap-1.5 text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 px-4 py-2 rounded-full"
+          className="hidden sm:flex items-center gap-1.5 text-[13px] font-semibold transition-all duration-300 hover:-translate-y-0.5 px-4 py-2 mono"
           style={{
-            background: 'rgba(255,255,255,0.04)',
-            border: '1px solid rgba(255,255,255,0.08)',
-            color: '#a1a1aa',
+            background: 'var(--surface)',
+            border: '1px solid var(--line)',
+            color: 'var(--muted)',
+            borderRadius: '2px',
           }}
           onMouseEnter={e => {
-            (e.currentTarget as HTMLElement).style.color = '#e4e4e7';
-            (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.15)';
+            const el = e.currentTarget as HTMLElement;
+            el.style.color = 'var(--text)';
+            el.style.borderColor = 'var(--accent)';
           }}
           onMouseLeave={e => {
-            (e.currentTarget as HTMLElement).style.color = '#a1a1aa';
-            (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.08)';
+            const el = e.currentTarget as HTMLElement;
+            el.style.color = 'var(--muted)';
+            el.style.borderColor = 'var(--line)';
           }}
         >
           {showAll ? t('projects_show_less') : t('projects_view_all')}
