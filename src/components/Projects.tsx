@@ -93,11 +93,11 @@ const projects: {
     githubUrl: 'https://github.com/canberkyildiz25/overland',
   },
   {
-    title: 'Cinemania',
+    title: 'FILMHUB',
     descKey: 'project_cinemania',
-    tags: ['HTML', 'CSS', 'JavaScript'],
+    tags: ['Vite', 'Vanilla JS', 'Prestige Design', 'TMDB API', 'Watch Providers'],
     icon: 'solar:clapperboard-play-linear',
-    liveUrl: 'https://canberkyildiz25.github.io/Cinemania/',
+    liveUrl: 'https://filmhub-db.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Cinemania',
   },
   {
