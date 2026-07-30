@@ -47,7 +47,7 @@ export const translations = {
     project_traveltrucks:
       'OVERLAND — a premium campervan hire experience with a dark, cinematic interface. Custom-designed fleet listing with filtering by location, equipment and vehicle type, favourites, and a booking flow. Built with React 19 and Redux Toolkit.',
     project_cinemania:
-      'Movie discovery and personal library app. Lists upcoming films with detailed info, ratings, and genre-based browsing.',
+      'FILMHUB — a cinema discovery platform in burgundy and gold, built around a Bodoni display face and film-grain texture. Trending, top-rated and upcoming rails from TMDB, trailers in-page, and region-aware links that open the film directly on Netflix, Prime Video or Disney+. Personal watchlist and ratings persist locally. React 19, TypeScript and Tailwind CSS 4.',
     project_bookshelf:
       'Personal book library app. Allows adding books, tracking reading status, and managing your collection.',
     project_tastytreats:
@@ -122,7 +122,7 @@ export const translations = {
     project_traveltrucks:
       'OVERLAND — koyu, sinematik arayüze sahip premium bir karavan kiralama deneyimi. Lokasyon, ekipman ve araç tipine göre filtreleme, favoriler ve rezervasyon akışı içeren özel tasarım araç listesi. React 19 ve Redux Toolkit ile geliştirildi.',
     project_cinemania:
-      'Film keşif ve kişisel kütüphane uygulaması. Yaklaşan filmleri listeler, detaylı bilgi, puan ve türlere göre inceleme imkânı sunar.',
+      'FILMHUB — bordo ve altın tonlarında, Bodoni başlık karakteri ve film grenli dokusu üzerine kurulu bir sinema keşif platformu. TMDB’den trend, en yüksek puanlı ve yakında vizyona girecek film şeritleri; sayfadan çıkmadan fragman; filmi doğrudan Netflix, Prime Video veya Disney+ üzerinde açan Türkiye’ye özel bağlantılar. Kişisel izleme listesi ve puanlar tarayıcıda kalıcı. React 19, TypeScript ve Tailwind CSS 4 ile geliştirildi.',
     project_bookshelf:
       'Kişisel kitap kütüphanesi uygulaması. Kitap ekleme, okuma durumu takibi ve koleksiyon yönetimi imkânı sunar.',
     project_tastytreats:
@@ -197,7 +197,7 @@ export const translations = {
     project_traveltrucks:
       'OVERLAND — премиальный сервис аренды кемперов с тёмным кинематографичным интерфейсом. Индивидуальный дизайн каталога с фильтрацией по локации, оборудованию и типу транспорта, избранное и оформление брони. Создано на React 19 и Redux Toolkit.',
     project_cinemania:
-      'Приложение для поиска фильмов и личной библиотеки. Список предстоящих фильмов с подробной информацией, оценками и фильтрацией по жанрам.',
+      'FILMHUB — платформа для поиска кино в бордово-золотой гамме, построенная на шрифте Bodoni и текстуре кинозерна. Подборки популярного, высокорейтингового и предстоящего из TMDB, трейлеры прямо на странице и ссылки с учётом региона, открывающие фильм в Netflix, Prime Video или Disney+. Личный список и оценки сохраняются локально. React 19, TypeScript и Tailwind CSS 4.',
     project_bookshelf:
       'Личная книжная библиотека. Позволяет добавлять книги, отслеживать статус чтения и управлять коллекцией.',
     project_tastytreats:
@@ -272,7 +272,7 @@ export const translations = {
     project_traveltrucks:
       'OVERLAND — un servizio premium di noleggio camper con un’interfaccia scura e cinematografica. Catalogo dal design personalizzato con filtri per posizione, attrezzatura e tipo di veicolo, preferiti e flusso di prenotazione. Realizzato con React 19 e Redux Toolkit.',
     project_cinemania:
-      'App per la scoperta di film e libreria personale. Elenca i film in uscita con informazioni dettagliate, valutazioni e navigazione per genere.',
+      'FILMHUB — una piattaforma di scoperta cinematografica in bordeaux e oro, costruita attorno al carattere display Bodoni e a una texture di grana pellicola. Sezioni di tendenza, più votati e prossime uscite da TMDB, trailer nella pagina e link regionali che aprono il film direttamente su Netflix, Prime Video o Disney+. Watchlist e valutazioni personali salvate localmente. React 19, TypeScript e Tailwind CSS 4.',
     project_bookshelf:
       'Libreria personale di libri. Permette di aggiungere libri, tracciare lo stato di lettura e gestire la collezione.',
     project_tastytreats:
@@ -347,7 +347,7 @@ export const translations = {
     project_traveltrucks:
       'OVERLAND — una experiencia premium de alquiler de campers con una interfaz oscura y cinematográfica. Catálogo de diseño personalizado con filtros por ubicación, equipamiento y tipo de vehículo, favoritos y flujo de reserva. Desarrollado con React 19 y Redux Toolkit.',
     project_cinemania:
-      'App de descubrimiento de películas y biblioteca personal. Lista los próximos estrenos con información detallada, puntuaciones y navegación por género.',
+      'FILMHUB — una plataforma de descubrimiento de cine en burdeos y oro, construida sobre la tipografía Bodoni y una textura de grano de película. Secciones de tendencias, mejor valoradas y próximos estrenos desde TMDB, tráilers en la misma página y enlaces regionales que abren la película directamente en Netflix, Prime Video o Disney+. Lista personal y puntuaciones guardadas localmente. React 19, TypeScript y Tailwind CSS 4.',
     project_bookshelf:
       'Biblioteca personal de libros. Permite añadir libros, rastrear el estado de lectura y gestionar tu colección.',
     project_tastytreats:
@@ -422,7 +422,7 @@ export const translations = {
     project_traveltrucks:
       'OVERLAND — ein Premium-Campervan-Verleih mit dunkler, filmischer Oberfläche. Individuell gestaltete Fahrzeugliste mit Filterung nach Standort, Ausstattung und Fahrzeugtyp, Favoriten und Buchungsablauf. Entwickelt mit React 19 und Redux Toolkit.',
     project_cinemania:
-      'Film-Entdeckungs- und persönliche Bibliotheks-App. Listet kommende Filme mit detaillierten Infos, Bewertungen und Genre-Filterung auf.',
+      'FILMHUB — eine Plattform zur Filmentdeckung in Bordeaux und Gold, aufgebaut auf der Bodoni-Displayschrift und einer Filmkorn-Textur. Trending-, Top-Rated- und Demnächst-Reihen von TMDB, Trailer direkt auf der Seite und regionsbezogene Links, die den Film unmittelbar bei Netflix, Prime Video oder Disney+ öffnen. Persönliche Merkliste und Bewertungen bleiben lokal gespeichert. React 19, TypeScript und Tailwind CSS 4.',
     project_bookshelf:
       'Persönliche Bücherbibliothek. Ermöglicht das Hinzufügen von Büchern, die Verfolgung des Lesestatus und die Verwaltung der Sammlung.',
     project_tastytreats:
@@ -497,7 +497,7 @@ export const translations = {
     project_traveltrucks:
       "OVERLAND — une expérience premium de location de camping-cars avec une interface sombre et cinématographique. Catalogue au design personnalisé avec filtres par localisation, équipement et type de véhicule, favoris et parcours de réservation. Développé avec React 19 et Redux Toolkit.",
     project_cinemania:
-      "Application de découverte de films et bibliothèque personnelle. Liste les films à venir avec des infos détaillées, des notes et une navigation par genre.",
+      "FILMHUB — une plateforme de découverte du cinéma en bordeaux et or, construite autour du caractère d'affichage Bodoni et d'une texture de grain argentique. Sélections tendances, mieux notés et prochaines sorties issues de TMDB, bandes-annonces intégrées et liens régionaux qui ouvrent le film directement sur Netflix, Prime Video ou Disney+. Liste personnelle et notes conservées localement. React 19, TypeScript et Tailwind CSS 4.",
     project_bookshelf:
       "Bibliothèque personnelle de livres. Permet d'ajouter des livres, de suivre le statut de lecture et de gérer sa collection.",
     project_tastytreats:

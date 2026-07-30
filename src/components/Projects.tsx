@@ -21,6 +21,14 @@ const projects: {
     githubUrl: 'https://github.com/canberkyildiz25/forge',
   },
   {
+    title: 'FILMHUB',
+    descKey: 'project_cinemania',
+    tags: ['React 19', 'TypeScript', 'Tailwind CSS 4', 'Zustand', 'TMDB API'],
+    icon: 'solar:clapperboard-play-linear',
+    liveUrl: 'https://benevolent-sundae-0eacbc.netlify.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/Cinemania',
+  },
+  {
     title: 'Fornace',
     descKey: 'project_fornace',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
@@ -91,14 +99,6 @@ const projects: {
     icon: 'solar:map-point-wave-linear',
     liveUrl: 'https://travel-trucks-eight-theta.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/overland',
-  },
-  {
-    title: 'FILMHUB',
-    descKey: 'project_cinemania',
-    tags: ['Vite', 'Vanilla JS', 'Prestige Design', 'TMDB API', 'Watch Providers'],
-    icon: 'solar:clapperboard-play-linear',
-    liveUrl: 'https://filmhub-db.vercel.app/',
-    githubUrl: 'https://github.com/canberkyildiz25/Cinemania',
   },
   {
     title: 'Book-Shelf',
