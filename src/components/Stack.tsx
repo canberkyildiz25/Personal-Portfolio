@@ -1,6 +1,5 @@
 import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
-import { useLanguage } from '../context/LanguageContext';
 
 const skills = [
   {
@@ -61,11 +60,7 @@ const cardVariants = {
   }),
 };
 
-const ease = [0.22, 1, 0.36, 1] as [number, number, number, number];
-
 export default function Stack() {
-  const { t } = useLanguage();
-
   return (
     <section id="stack" className="py-24" style={{ borderTop: '1px solid var(--line)' }}>
       {/* section index */}
