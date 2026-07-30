@@ -25,7 +25,7 @@ const projects: {
     descKey: 'project_cinemania',
     tags: ['React 19', 'TypeScript', 'Tailwind CSS 4', 'Zustand', 'TMDB API'],
     icon: 'solar:clapperboard-play-linear',
-    liveUrl: 'https://benevolent-sundae-0eacbc.netlify.app/',
+    liveUrl: 'https://filmhub-tr.netlify.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Cinemania',
   },
   {
