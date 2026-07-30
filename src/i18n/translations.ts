@@ -57,7 +57,7 @@ export const translations = {
     project_focusframe:
       'Photography studio showcase site. A modern landing page featuring services, a portfolio gallery, and a contact form.',
     project_greenharvest:
-      'Organic farm products e-commerce site. Features product listing, category filtering, and a shopping cart.',
+      "VERDANT — an organic vegetable box shop for a co-operative of five family farms. Built as a full storefront: a filterable catalogue, product pages, a basket that survives a refresh, and a checkout that issues a real order reference. Its centrepiece is a twelve-month seasonal band — every crop carries the months it is actually in the ground, and that same data drives the season filter and the 'in season now' stamps. React 19, React Router 7, Zustand and Tailwind CSS 4.",
     project_epharmacy:
       'Digital pharmacy platform connecting customers with pharmacies. Features location-based pharmacy discovery, order management, and analytics dashboard for pharmacy owners.',
     project_purr_pedia:
@@ -132,7 +132,7 @@ export const translations = {
     project_focusframe:
       'Fotoğrafçılık stüdyosu tanıtım sitesi. Hizmetler, portföy galerisi ve iletişim formu içeren modern bir landing page.',
     project_greenharvest:
-      'Organik tarım ürünleri e-ticaret sitesi. Ürün listeleme, kategori filtreleme ve alışveriş sepeti özelliklerini sunar.',
+      "VERDANT — beş aile çiftliğinden oluşan bir kooperatif için organik sebze kutusu mağazası. Tam bir satış vitrini olarak kuruldu: filtrelenebilir katalog, ürün sayfaları, sayfa yenilense de kaybolmayan sepet ve gerçek bir sipariş referansı üreten ödeme adımı. Merkezinde on iki aylık hasat şeridi var — her ürün tarlada olduğu ayları taşır, aynı veri hem mevsim filtresini hem de 'şu an mevsiminde' damgalarını besler. React 19, React Router 7, Zustand ve Tailwind CSS 4.",
     project_epharmacy:
       'Müşterileri eczanelerle buluşturan dijital eczane platformu. Lokasyona göre yakın eczane keşfi, sipariş yönetimi ve eczane sahipleri için analitik paneli sunar.',
     project_purr_pedia:
@@ -207,7 +207,7 @@ export const translations = {
     project_focusframe:
       'Сайт-визитка фотостудии. Современный лендинг с описанием услуг, портфолио и формой обратной связи.',
     project_greenharvest:
-      'Интернет-магазин органических продуктов. Листинг товаров, фильтрация по категориям и корзина покупок.',
+      "VERDANT — магазин овощных коробов для кооператива из пяти семейных ферм. Сделан как полноценная витрина: каталог с фильтрами, страницы товаров, корзина, переживающая перезагрузку, и оформление заказа с настоящим номером. В центре — двенадцатимесячная полоса сезонов: каждая культура хранит месяцы, когда она реально в земле, и эти же данные питают фильтр по сезону и отметки «в сезоне». React 19, React Router 7, Zustand и Tailwind CSS 4.",
     project_epharmacy:
       'Цифровая платформа фармацевтических услуг, соединяющая клиентов с аптеками. Поиск аптек по геолокации, управление заказами и аналитическая панель для владельцев аптек.',
     project_purr_pedia:
@@ -282,7 +282,7 @@ export const translations = {
     project_focusframe:
       'Sito vetrina per studio fotografico. Una landing page moderna con servizi, galleria portfolio e modulo di contatto.',
     project_greenharvest:
-      "E-commerce di prodotti agricoli biologici. Listino prodotti, filtro per categoria e carrello della spesa.",
+      "VERDANT — un negozio di cassette di verdura biologica per una cooperativa di cinque aziende agricole familiari. Costruito come vetrina completa: catalogo filtrabile, pagine prodotto, un carrello che sopravvive al ricaricamento e un checkout che emette un vero riferimento d'ordine. Al centro c'è una fascia stagionale di dodici mesi: ogni coltura porta con sé i mesi in cui è davvero nel terreno, e gli stessi dati alimentano il filtro stagionale e i timbri 'di stagione'. React 19, React Router 7, Zustand e Tailwind CSS 4.",
     project_epharmacy:
       'Piattaforma farmaceutica digitale che connette clienti con farmacie. Include ricerca di farmacie per posizione, gestione ordini e pannello analitico per proprietari.',
     project_purr_pedia:
@@ -357,7 +357,7 @@ export const translations = {
     project_focusframe:
       'Sitio de presentación de estudio fotográfico. Una landing page moderna con servicios, galería de portafolio y formulario de contacto.',
     project_greenharvest:
-      'Tienda online de productos agrícolas ecológicos. Listado de productos, filtro por categoría y carrito de compras.',
+      "VERDANT — una tienda de cajas de verdura ecológica para una cooperativa de cinco granjas familiares. Construida como escaparate completo: catálogo filtrable, páginas de producto, un carrito que sobrevive a la recarga y un checkout que emite una referencia de pedido real. Su pieza central es una banda estacional de doce meses: cada cultivo lleva los meses en que está realmente en la tierra, y esos mismos datos alimentan el filtro de temporada y los sellos 'de temporada'. React 19, React Router 7, Zustand y Tailwind CSS 4.",
     project_epharmacy:
       'Plataforma farmacéutica digital que conecta clientes con farmacias. Incluye búsqueda de farmacias por ubicación, gestión de pedidos y panel analítico para propietarios.',
     project_purr_pedia:
@@ -432,7 +432,7 @@ export const translations = {
     project_focusframe:
       'Präsentationsseite für ein Fotostudio. Eine moderne Landing Page mit Leistungen, Portfolio-Galerie und Kontaktformular.',
     project_greenharvest:
-      'E-Commerce-Site für Bio-Landwirtschaftsprodukte. Produktlisting, Kategoriefilterung und Warenkorb.',
+      "VERDANT — ein Gemüsekisten-Shop für eine Genossenschaft aus fünf Familienbetrieben. Als vollständiger Laden gebaut: filterbarer Katalog, Produktseiten, ein Warenkorb, der das Neuladen übersteht, und ein Checkout mit echter Bestellreferenz. Herzstück ist ein Zwölf-Monats-Saisonband: Jede Kultur trägt die Monate, in denen sie tatsächlich im Boden ist, und dieselben Daten speisen den Saisonfilter und die 'jetzt Saison'-Stempel. React 19, React Router 7, Zustand und Tailwind CSS 4.",
     project_epharmacy:
       'Digitale Apothekenplattform, die Kunden mit Apotheken verbindet. Standortbasierte Apothekensuche, Bestellverwaltung und Analyse-Dashboard für Apothekeninhaber.',
     project_purr_pedia:
@@ -507,7 +507,7 @@ export const translations = {
     project_focusframe:
       "Site vitrine pour studio photographique. Une landing page moderne avec services, galerie portfolio et formulaire de contact.",
     project_greenharvest:
-      "Site e-commerce de produits agricoles biologiques. Listing de produits, filtrage par catégorie et panier d'achats.",
+      "VERDANT — une boutique de paniers de légumes bio pour une coopérative de cinq fermes familiales. Conçue comme une vraie vitrine : catalogue filtrable, pages produit, un panier qui survit au rechargement et un paiement qui délivre une véritable référence de commande. Sa pièce maîtresse est une bande saisonnière de douze mois : chaque culture porte les mois où elle est réellement en terre, et ces mêmes données alimentent le filtre de saison et les tampons « de saison ». React 19, React Router 7, Zustand et Tailwind CSS 4.",
     project_epharmacy:
       'Plateforme pharmaceutique numérique connectant clients et pharmacies. Recherche de pharmacies par localisation, gestion des commandes et tableau de bord analytique pour propriétaires.',
     project_purr_pedia:

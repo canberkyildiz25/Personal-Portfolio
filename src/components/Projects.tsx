@@ -29,6 +29,14 @@ const projects: {
     githubUrl: 'https://github.com/canberkyildiz25/Cinemania',
   },
   {
+    title: 'VERDANT',
+    descKey: 'project_greenharvest',
+    tags: ['React 19', 'React Router 7', 'Zustand', 'Tailwind CSS 4', 'Vite'],
+    icon: 'solar:leaf-linear',
+    liveUrl: 'https://verdant-produce.netlify.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/verdant',
+  },
+  {
     title: 'Fornace',
     descKey: 'project_fornace',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
@@ -131,14 +139,6 @@ const projects: {
     icon: 'solar:camera-linear',
     liveUrl: 'https://canberkyildiz25.github.io/Focus-Frame-Project/',
     githubUrl: 'https://github.com/canberkyildiz25/Focus-Frame-Project',
-  },
-  {
-    title: 'Green Harvest',
-    descKey: 'project_greenharvest',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    icon: 'solar:leaf-linear',
-    liveUrl: 'https://green-harvest-project.vercel.app/',
-    githubUrl: 'https://github.com/canberkyildiz25/green-harvest-project',
   },
   {
     title: 'Psychologist Services',
