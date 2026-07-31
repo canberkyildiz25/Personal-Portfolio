@@ -37,6 +37,14 @@ const projects: {
     githubUrl: 'https://github.com/canberkyildiz25/verdant',
   },
   {
+    title: 'APERTURE',
+    descKey: 'project_focusframe',
+    tags: ['React 19', 'React Router 7', 'Zustand', 'Tailwind CSS 4', 'Vite'],
+    icon: 'solar:camera-linear',
+    liveUrl: 'https://aperture-school.netlify.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/aperture',
+  },
+  {
     title: 'Fornace',
     descKey: 'project_fornace',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
@@ -131,14 +139,6 @@ const projects: {
     icon: 'solar:wallet-linear',
     liveUrl: 'https://money-guard-pi.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Money-Guard',
-  },
-  {
-    title: 'Focus Frame',
-    descKey: 'project_focusframe',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    icon: 'solar:camera-linear',
-    liveUrl: 'https://canberkyildiz25.github.io/Focus-Frame-Project/',
-    githubUrl: 'https://github.com/canberkyildiz25/Focus-Frame-Project',
   },
   {
     title: 'Psychologist Services',
