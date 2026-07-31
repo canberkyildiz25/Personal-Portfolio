@@ -55,7 +55,7 @@ export const translations = {
     project_moneyguard:
       'Personal finance tracker. Offers income and expense management, category-based spending analysis, and visual reports.',
     project_focusframe:
-      'Photography studio showcase site. A modern landing page featuring services, a portfolio gallery, and a contact form.',
+      "APERTURE — a photography school in a converted print works: six courses, four working photographers, and a darkroom running six days a week. Built as an enrolment platform — courses filtered by level and location, places held per start date, and a confirmation that issues a reference. Its centrepiece is an exposure simulator: aperture blurs the background and swells the bokeh, shutter smears the subject, ISO lifts grain, and all three feed one exposure reading. The scene is CSS, not a photograph, so the light behaves rather than being faked. React 19, React Router 7, Zustand and Tailwind CSS 4.",
     project_greenharvest:
       "VERDANT — an organic vegetable box shop for a co-operative of five family farms. Built as a full storefront: a filterable catalogue, product pages, a basket that survives a refresh, and a checkout that issues a real order reference. Its centrepiece is a twelve-month seasonal band — every crop carries the months it is actually in the ground, and that same data drives the season filter and the 'in season now' stamps. React 19, React Router 7, Zustand and Tailwind CSS 4.",
     project_epharmacy:
@@ -130,7 +130,7 @@ export const translations = {
     project_moneyguard:
       'Kişisel finans takip uygulaması. Gelir ve gider yönetimi, kategori bazlı harcama analizi ve görsel raporlar sunar.',
     project_focusframe:
-      'Fotoğrafçılık stüdyosu tanıtım sitesi. Hizmetler, portföy galerisi ve iletişim formu içeren modern bir landing page.',
+      "APERTURE — eski bir matbaadan bozma bir fotoğraf okulu: altı kurs, hâlâ sahada çalışan dört fotoğrafçı ve haftanın altı günü açık bir karanlık oda. Kayıt platformu olarak kuruldu — seviyeye ve mekâna göre filtrelenen kurslar, başlangıç tarihine göre tutulan kontenjanlar ve referans numarası üreten onay adımı. Merkezinde bir pozlama simülatörü var: diyafram arka planı eritip bokeh dairelerini büyütüyor, enstantane özneyi bulanıklaştırıyor, ISO greni yükseltiyor ve üçü birden tek bir pozlama değerine bağlanıyor. Sahne fotoğraf değil CSS — ışık taklit edilmiyor, gerçekten davranıyor. React 19, React Router 7, Zustand ve Tailwind CSS 4.",
     project_greenharvest:
       "VERDANT — beş aile çiftliğinden oluşan bir kooperatif için organik sebze kutusu mağazası. Tam bir satış vitrini olarak kuruldu: filtrelenebilir katalog, ürün sayfaları, sayfa yenilense de kaybolmayan sepet ve gerçek bir sipariş referansı üreten ödeme adımı. Merkezinde on iki aylık hasat şeridi var — her ürün tarlada olduğu ayları taşır, aynı veri hem mevsim filtresini hem de 'şu an mevsiminde' damgalarını besler. React 19, React Router 7, Zustand ve Tailwind CSS 4.",
     project_epharmacy:
@@ -205,7 +205,7 @@ export const translations = {
     project_moneyguard:
       'Персональный финансовый трекер. Управление доходами и расходами, анализ трат по категориям и визуальные отчёты.',
     project_focusframe:
-      'Сайт-визитка фотостудии. Современный лендинг с описанием услуг, портфолио и формой обратной связи.',
+      "APERTURE — школа фотографии в бывшей типографии: шесть курсов, четыре практикующих фотографа и тёмная комната, работающая шесть дней в неделю. Сделана как платформа записи: курсы с фильтрами по уровню и месту, места, забронированные под конкретную дату старта, и подтверждение с номером. В центре — симулятор экспозиции: диафрагма размывает фон и раздувает боке, выдержка смазывает объект, ISO поднимает зерно, и всё это сходится в одном значении экспозиции. Сцена собрана на CSS, а не снята, поэтому свет ведёт себя по-настоящему. React 19, React Router 7, Zustand и Tailwind CSS 4.",
     project_greenharvest:
       "VERDANT — магазин овощных коробов для кооператива из пяти семейных ферм. Сделан как полноценная витрина: каталог с фильтрами, страницы товаров, корзина, переживающая перезагрузку, и оформление заказа с настоящим номером. В центре — двенадцатимесячная полоса сезонов: каждая культура хранит месяцы, когда она реально в земле, и эти же данные питают фильтр по сезону и отметки «в сезоне». React 19, React Router 7, Zustand и Tailwind CSS 4.",
     project_epharmacy:
@@ -280,7 +280,7 @@ export const translations = {
     project_moneyguard:
       'Tracker finanziario personale. Gestione entrate e uscite, analisi spese per categoria e report visivi.',
     project_focusframe:
-      'Sito vetrina per studio fotografico. Una landing page moderna con servizi, galleria portfolio e modulo di contatto.',
+      "APERTURE — una scuola di fotografia in una ex tipografia: sei corsi, quattro fotografi in attività e una camera oscura aperta sei giorni su sette. Costruita come piattaforma di iscrizione: corsi filtrabili per livello e sede, posti riservati per data di inizio e una conferma con numero di riferimento. Al centro c'è un simulatore di esposizione: il diaframma sfoca lo sfondo e allarga il bokeh, il tempo di posa mossa il soggetto, gli ISO alzano la grana, e tutti e tre confluiscono in un'unica lettura. La scena è in CSS, non una fotografia, così la luce si comporta davvero. React 19, React Router 7, Zustand e Tailwind CSS 4.",
     project_greenharvest:
       "VERDANT — un negozio di cassette di verdura biologica per una cooperativa di cinque aziende agricole familiari. Costruito come vetrina completa: catalogo filtrabile, pagine prodotto, un carrello che sopravvive al ricaricamento e un checkout che emette un vero riferimento d'ordine. Al centro c'è una fascia stagionale di dodici mesi: ogni coltura porta con sé i mesi in cui è davvero nel terreno, e gli stessi dati alimentano il filtro stagionale e i timbri 'di stagione'. React 19, React Router 7, Zustand e Tailwind CSS 4.",
     project_epharmacy:
@@ -355,7 +355,7 @@ export const translations = {
     project_moneyguard:
       'Rastreador de finanzas personales. Gestión de ingresos y gastos, análisis de gastos por categoría e informes visuales.',
     project_focusframe:
-      'Sitio de presentación de estudio fotográfico. Una landing page moderna con servicios, galería de portafolio y formulario de contacto.',
+      "APERTURE — una escuela de fotografía en una antigua imprenta: seis cursos, cuatro fotógrafos en activo y un laboratorio que abre seis días por semana. Construida como plataforma de inscripción: cursos filtrables por nivel y lugar, plazas reservadas por fecha de inicio y una confirmación con número de referencia. Su pieza central es un simulador de exposición: el diafragma desenfoca el fondo y agranda el bokeh, la velocidad arrastra al sujeto, el ISO sube el grano, y los tres alimentan una única lectura. La escena es CSS, no una fotografía, así que la luz se comporta de verdad. React 19, React Router 7, Zustand y Tailwind CSS 4.",
     project_greenharvest:
       "VERDANT — una tienda de cajas de verdura ecológica para una cooperativa de cinco granjas familiares. Construida como escaparate completo: catálogo filtrable, páginas de producto, un carrito que sobrevive a la recarga y un checkout que emite una referencia de pedido real. Su pieza central es una banda estacional de doce meses: cada cultivo lleva los meses en que está realmente en la tierra, y esos mismos datos alimentan el filtro de temporada y los sellos 'de temporada'. React 19, React Router 7, Zustand y Tailwind CSS 4.",
     project_epharmacy:
@@ -430,7 +430,7 @@ export const translations = {
     project_moneyguard:
       'Persönlicher Finanz-Tracker. Einnahmen- und Ausgabenverwaltung, kategoriebasierte Ausgabenanalyse und visuelle Berichte.',
     project_focusframe:
-      'Präsentationsseite für ein Fotostudio. Eine moderne Landing Page mit Leistungen, Portfolio-Galerie und Kontaktformular.',
+      "APERTURE — eine Fotoschule in einer umgebauten Druckerei: sechs Kurse, vier arbeitende Fotografen und eine Dunkelkammer, die an sechs Tagen läuft. Als Anmeldeplattform gebaut: Kurse filterbar nach Niveau und Ort, Plätze pro Starttermin reserviert und eine Bestätigung mit Referenznummer. Herzstück ist ein Belichtungssimulator: Die Blende löst den Hintergrund auf und lässt das Bokeh wachsen, die Verschlusszeit verwischt das Motiv, ISO hebt das Korn — und alle drei laufen in einer Belichtungsanzeige zusammen. Die Szene ist CSS statt Fotografie, das Licht verhält sich also wirklich. React 19, React Router 7, Zustand und Tailwind CSS 4.",
     project_greenharvest:
       "VERDANT — ein Gemüsekisten-Shop für eine Genossenschaft aus fünf Familienbetrieben. Als vollständiger Laden gebaut: filterbarer Katalog, Produktseiten, ein Warenkorb, der das Neuladen übersteht, und ein Checkout mit echter Bestellreferenz. Herzstück ist ein Zwölf-Monats-Saisonband: Jede Kultur trägt die Monate, in denen sie tatsächlich im Boden ist, und dieselben Daten speisen den Saisonfilter und die 'jetzt Saison'-Stempel. React 19, React Router 7, Zustand und Tailwind CSS 4.",
     project_epharmacy:
@@ -505,7 +505,7 @@ export const translations = {
     project_moneyguard:
       "Gestionnaire de finances personnelles. Gestion des revenus et dépenses, analyse des dépenses par catégorie et rapports visuels.",
     project_focusframe:
-      "Site vitrine pour studio photographique. Une landing page moderne avec services, galerie portfolio et formulaire de contact.",
+      "APERTURE — une école de photographie installée dans une ancienne imprimerie : six cours, quatre photographes en activité et un labo ouvert six jours sur sept. Conçue comme une plateforme d'inscription : cours filtrables par niveau et par lieu, places retenues selon la date de début et une confirmation avec numéro de référence. Sa pièce maîtresse est un simulateur d'exposition : l'ouverture dissout l'arrière-plan et gonfle le bokeh, la vitesse file le sujet, les ISO montent le grain, et les trois alimentent une seule lecture. La scène est en CSS et non photographiée, la lumière se comporte donc réellement. React 19, React Router 7, Zustand et Tailwind CSS 4.",
     project_greenharvest:
       "VERDANT — une boutique de paniers de légumes bio pour une coopérative de cinq fermes familiales. Conçue comme une vraie vitrine : catalogue filtrable, pages produit, un panier qui survit au rechargement et un paiement qui délivre une véritable référence de commande. Sa pièce maîtresse est une bande saisonnière de douze mois : chaque culture porte les mois où elle est réellement en terre, et ces mêmes données alimentent le filtre de saison et les tampons « de saison ». React 19, React Router 7, Zustand et Tailwind CSS 4.",
     project_epharmacy:
