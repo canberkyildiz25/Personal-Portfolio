@@ -129,7 +129,9 @@ export default function Hero() {
         <div className="absolute inset-0 blueprint" style={{ opacity: 0.4 }} />
 
         <motion.img
-          src="/avatar.png" alt="Canberk Yıldız"
+          src="/avatar.webp" alt="Canberk Yıldız, Full Stack Developer"
+          width={900} height={1200}
+          loading="eager" fetchPriority="high" decoding="async"
           className="absolute w-full object-cover object-top"
           style={{ top: '-22%', height: '122%', transform: 'translateZ(0)' }}
           initial={{ opacity: 0 }} animate={{ opacity: 1 }}
