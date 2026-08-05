@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://canberkyildiz.dev/sitemap.xml
+Sitemap: https://canberkyildiz.netlify.app/sitemap.xml
