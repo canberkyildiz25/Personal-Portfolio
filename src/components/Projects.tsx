@@ -45,6 +45,14 @@ const projects: {
     githubUrl: 'https://github.com/canberkyildiz25/aperture',
   },
   {
+    title: 'MISE',
+    descKey: 'project_tastytreats',
+    tags: ['React 19', 'React Router 7', 'Zustand', 'Tailwind CSS 4', 'Vite'],
+    icon: 'solar:stopwatch-linear',
+    liveUrl: 'https://tasty-treats-six.vercel.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/Tasty-Treats',
+  },
+  {
     title: 'Fornace',
     descKey: 'project_fornace',
     tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
@@ -123,14 +131,6 @@ const projects: {
     icon: 'solar:book-linear',
     liveUrl: 'https://book-shelf-brown.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Book-Shelf',
-  },
-  {
-    title: 'Tasty Treats',
-    descKey: 'project_tastytreats',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    icon: 'solar:dish-linear',
-    liveUrl: 'https://tasty-treats-six.vercel.app/',
-    githubUrl: 'https://github.com/canberkyildiz25/Tasty-Treats',
   },
   {
     title: 'Money Guard',
