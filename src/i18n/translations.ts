@@ -51,7 +51,7 @@ export const translations = {
     project_bookshelf:
       'Personal book library app. Allows adding books, tracking reading status, and managing your collection.',
     project_tastytreats:
-      'Recipe discovery app. Features recipe search by category, ingredient lists, and step-by-step preparation instructions.',
+      "MISE — fourteen recipes written as prep tickets, for a kitchen where the thing that goes wrong is the timing. Its centrepiece is a schedule that runs backwards: name the hour you want to eat and every step is handed a start time, with the stretches you can walk away from marked separately from the ones that need you at the bench. A four-hour braise turns out to be an easy Tuesday; a thirty-minute pasta does not. Portions scale to quarter units, saved recipes persist in the browser, and every dish carries a photograph credited to its Wikimedia source. React 19, React Router 7, Zustand and Tailwind CSS 4.",
     project_moneyguard:
       'Personal finance tracker. Offers income and expense management, category-based spending analysis, and visual reports.',
     project_focusframe:
@@ -126,7 +126,7 @@ export const translations = {
     project_bookshelf:
       'Kişisel kitap kütüphanesi uygulaması. Kitap ekleme, okuma durumu takibi ve koleksiyon yönetimi imkânı sunar.',
     project_tastytreats:
-      'Tarif keşif uygulaması. Kategorilere göre yemek tarifi arama, malzeme listesi ve hazırlanış adımlarını sunar.',
+      'MISE — mutfakta asıl aksayan şeyin zamanlama olduğu fikri üzerine kurulmuş, prep fişi gibi yazılmış on dört tarif. Merkezinde geriye doğru işleyen bir çizelge var: yemeği kaçta yiyeceğini söylüyorsun, her adım kendi başlangıç saatini alıyor ve tezgâh başında durman gereken dakikalar, başından ayrılabileceklerinden ayrı işaretleniyor. Dört saatlik bir fırın yemeği böylece rahat bir salı akşamına dönüşüyor, otuz dakikalık makarna ise dönüşmüyor. Porsiyonlar çeyreklik birimlere yuvarlanarak ölçekleniyor, kaydedilen tarifler tarayıcıda kalıyor, her tabağın fotoğrafı Wikimedia kaynağıyla künyeleniyor. React 19, React Router 7, Zustand ve Tailwind CSS 4.',
     project_moneyguard:
       'Kişisel finans takip uygulaması. Gelir ve gider yönetimi, kategori bazlı harcama analizi ve görsel raporlar sunar.',
     project_focusframe:
@@ -201,7 +201,7 @@ export const translations = {
     project_bookshelf:
       'Личная книжная библиотека. Позволяет добавлять книги, отслеживать статус чтения и управлять коллекцией.',
     project_tastytreats:
-      'Приложение для поиска рецептов. Поиск по категориям, список ингредиентов и пошаговые инструкции приготовления.',
+      'MISE — четырнадцать рецептов, написанных как заготовочные карточки, для кухни, где подводит именно время. В основе лежит расписание, которое считает назад: вы называете час, когда хотите сесть за стол, и каждый шаг получает своё время начала, причём минуты у плиты отмечены отдельно от тех, когда можно уйти. Четырёхчасовое тушение оказывается спокойным вторником, а паста за полчаса — нет. Порции масштабируются с округлением до четвертей, сохранённые рецепты остаются в браузере, и у каждого блюда есть фотография с указанием источника на Wikimedia. React 19, React Router 7, Zustand и Tailwind CSS 4.',
     project_moneyguard:
       'Персональный финансовый трекер. Управление доходами и расходами, анализ трат по категориям и визуальные отчёты.',
     project_focusframe:
@@ -276,7 +276,7 @@ export const translations = {
     project_bookshelf:
       'Libreria personale di libri. Permette di aggiungere libri, tracciare lo stato di lettura e gestire la collezione.',
     project_tastytreats:
-      'App per la scoperta di ricette. Ricerca per categoria, lista degli ingredienti e istruzioni passo passo.',
+      "MISE — quattordici ricette scritte come schede di preparazione, per una cucina in cui a saltare è sempre il tempo. Al centro c'è un programma che procede a ritroso: indichi l'ora in cui vuoi mangiare e ogni passaggio riceve la propria ora d'inizio, con i minuti che richiedono la tua presenza segnati separatamente da quelli in cui puoi allontanarti. Un brasato di quattro ore diventa così un martedì tranquillo, una pasta da trenta minuti no. Le porzioni si scalano arrotondate al quarto, le ricette salvate restano nel browser e ogni piatto porta una fotografia con il credito alla fonte Wikimedia. React 19, React Router 7, Zustand e Tailwind CSS 4.",
     project_moneyguard:
       'Tracker finanziario personale. Gestione entrate e uscite, analisi spese per categoria e report visivi.',
     project_focusframe:
@@ -351,7 +351,7 @@ export const translations = {
     project_bookshelf:
       'Biblioteca personal de libros. Permite añadir libros, rastrear el estado de lectura y gestionar tu colección.',
     project_tastytreats:
-      'App de descubrimiento de recetas. Búsqueda por categoría, lista de ingredientes e instrucciones paso a paso.',
+      'MISE — catorce recetas escritas como fichas de preparación, para una cocina donde lo que falla es el tiempo. Su eje es un horario que cuenta hacia atrás: dices a qué hora quieres comer y cada paso recibe su hora de inicio, con los minutos que exigen tu presencia marcados aparte de aquellos en los que puedes irte. Un estofado de cuatro horas resulta así un martes tranquilo; una pasta de treinta minutos, no. Las raciones se escalan redondeadas al cuarto, las recetas guardadas permanecen en el navegador y cada plato lleva una fotografía acreditada a su fuente en Wikimedia. React 19, React Router 7, Zustand y Tailwind CSS 4.',
     project_moneyguard:
       'Rastreador de finanzas personales. Gestión de ingresos y gastos, análisis de gastos por categoría e informes visuales.',
     project_focusframe:
@@ -426,7 +426,7 @@ export const translations = {
     project_bookshelf:
       'Persönliche Bücherbibliothek. Ermöglicht das Hinzufügen von Büchern, die Verfolgung des Lesestatus und die Verwaltung der Sammlung.',
     project_tastytreats:
-      'Rezept-Entdeckungs-App. Rezeptsuche nach Kategorie, Zutatenlisten und schrittweise Zubereitungsanweisungen.',
+      'MISE — vierzehn Rezepte, geschrieben wie Mise-en-place-Zettel, für eine Küche, in der es am Timing scheitert. Kernstück ist ein Ablaufplan, der rückwärts rechnet: Man nennt die Uhrzeit des Essens, und jeder Schritt bekommt seine eigene Startzeit — die Minuten am Herd getrennt markiert von denen, in denen man weggehen kann. Ein vierstündiger Schmorbraten wird so zum entspannten Dienstag, eine Pasta in dreißig Minuten dagegen nicht. Portionen skalieren auf Viertelschritte gerundet, gespeicherte Rezepte bleiben im Browser, und jedes Gericht trägt ein Foto mit Quellenangabe zu Wikimedia. React 19, React Router 7, Zustand und Tailwind CSS 4.',
     project_moneyguard:
       'Persönlicher Finanz-Tracker. Einnahmen- und Ausgabenverwaltung, kategoriebasierte Ausgabenanalyse und visuelle Berichte.',
     project_focusframe:
@@ -501,7 +501,7 @@ export const translations = {
     project_bookshelf:
       "Bibliothèque personnelle de livres. Permet d'ajouter des livres, de suivre le statut de lecture et de gérer sa collection.",
     project_tastytreats:
-      "Application de découverte de recettes. Recherche par catégorie, liste d'ingrédients et instructions étape par étape.",
+      "MISE — quatorze recettes rédigées comme des fiches de mise en place, pour une cuisine où c'est le minutage qui lâche. Son cœur est un planning qui remonte le temps : on indique l'heure du repas et chaque étape reçoit son heure de départ, les minutes qui exigent votre présence étant distinguées de celles où vous pouvez partir. Un braisé de quatre heures devient ainsi un mardi tranquille, ce qui n'est pas le cas d'une pâte de trente minutes. Les portions se calculent au quart près, les recettes enregistrées restent dans le navigateur et chaque plat porte une photographie créditée à sa source Wikimedia. React 19, React Router 7, Zustand et Tailwind CSS 4.",
     project_moneyguard:
       "Gestionnaire de finances personnelles. Gestion des revenus et dépenses, analyse des dépenses par catégorie et rapports visuels.",
     project_focusframe:
