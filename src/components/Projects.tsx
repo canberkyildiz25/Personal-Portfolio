@@ -13,6 +13,14 @@ const projects: {
   githubUrl: string;
 }[] = [
   {
+    title: 'MISE',
+    descKey: 'project_tastytreats',
+    tags: ['React 19', 'React Router 7', 'Zustand', 'Tailwind CSS 4', 'Vite'],
+    icon: 'solar:stopwatch-linear',
+    liveUrl: 'https://tasty-treats-six.vercel.app/',
+    githubUrl: 'https://github.com/canberkyildiz25/Tasty-Treats',
+  },
+  {
     title: 'FORGE Athletic',
     descKey: 'project_forge',
     tags: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Framer Motion', 'GSAP'],
@@ -43,14 +51,6 @@ const projects: {
     icon: 'solar:camera-linear',
     liveUrl: 'https://aperture-school.netlify.app/',
     githubUrl: 'https://github.com/canberkyildiz25/aperture',
-  },
-  {
-    title: 'MISE',
-    descKey: 'project_tastytreats',
-    tags: ['React 19', 'React Router 7', 'Zustand', 'Tailwind CSS 4', 'Vite'],
-    icon: 'solar:stopwatch-linear',
-    liveUrl: 'https://tasty-treats-six.vercel.app/',
-    githubUrl: 'https://github.com/canberkyildiz25/Tasty-Treats',
   },
   {
     title: 'Fornace',
