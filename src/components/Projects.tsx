@@ -17,7 +17,7 @@ const projects: {
     descKey: 'project_tastytreats',
     tags: ['React 19', 'React Router 7', 'Zustand', 'Tailwind CSS 4', 'Vite'],
     icon: 'solar:stopwatch-linear',
-    liveUrl: 'https://tasty-treats-six.vercel.app/',
+    liveUrl: 'https://mise-prep.vercel.app',
     githubUrl: 'https://github.com/canberkyildiz25/Tasty-Treats',
   },
   {
@@ -121,7 +121,7 @@ const projects: {
     descKey: 'project_traveltrucks',
     tags: ['React 19', 'Redux Toolkit', 'React Router 7', 'Vite', 'Custom UI'],
     icon: 'solar:map-point-wave-linear',
-    liveUrl: 'https://travel-trucks-eight-theta.vercel.app/',
+    liveUrl: 'https://overland-vans.vercel.app',
     githubUrl: 'https://github.com/canberkyildiz25/overland',
   },
   {
