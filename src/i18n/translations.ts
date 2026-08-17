@@ -73,7 +73,7 @@ export const translations = {
     project_petlove:
       'Full-stack pet adoption and listing platform. Browse adoptable pets, report lost/found animals, read pet care guides, and discover nearby shelters and partner organizations.',
     project_spectra_crm:
-      'Modern full-stack CRM system. Features customer profile and contact management, Kanban-based sales pipeline, professional quote generation with PDF export, team task assignment, and real-time sales dashboards with performance analytics. JWT authentication, built with Next.js, Node.js/Express, and MongoDB.',
+      'Modern full-stack CRM system. Features customer profile and contact management, Kanban-based sales pipeline, professional quote generation with PDF export, team task assignment, and real-time sales dashboards with performance analytics. JWT authentication, built with Next.js, Node.js/Express, and MongoDB. Every screen is browsable without signing in, and the interface ships as a matched light and dark theme built on shadcn/ui.',
     project_apex_engineering:
       'Dark industrial 3D showcase site for an aerospace/defense/automotive engineering company. Built with React Three Fiber and Three.js for immersive WebGL scenes, post-processing visual effects, and smooth section transitions powered by Framer Motion.',
     project_mystic:
@@ -148,7 +148,7 @@ export const translations = {
     project_petlove:
       'Evcil hayvan sahiplenme ve listeleme platformu. Sahiplenilecek hayvanları keşfet, kayıp/bulunmuş hayvanları bildir, hayvan bakım rehberleri oku ve yakındaki barınakları keşfet.',
     project_spectra_crm:
-      'Modern tam yığın CRM sistemi. Müşteri profil ve iletişim yönetimi, Kanban tabanlı satış hattı, PDF dışa aktarımlı profesyonel teklif oluşturma, ekip görev takibi ve gerçek zamanlı satış analizleri içerir. JWT kimlik doğrulama, Next.js, Node.js/Express ve MongoDB ile geliştirildi.',
+      'Modern tam yığın CRM sistemi. Müşteri profil ve iletişim yönetimi, Kanban tabanlı satış hattı, PDF dışa aktarımlı profesyonel teklif oluşturma, ekip görev takibi ve gerçek zamanlı satış analizleri içerir. JWT kimlik doğrulama, Next.js, Node.js/Express ve MongoDB ile geliştirildi. Tüm ekranlar giriş yapmadan gezilebilir; arayüz shadcn/ui üzerine kurulu, eşlenik açık ve koyu temayla gelir.',
     project_apex_engineering:
       'Havacılık/savunma/otomotiv mühendislik firması için geliştirilmiş karanlık temalı endüstriyel 3D vitrin sitesi. React Three Fiber ve Three.js ile sürükleyici WebGL sahneleri, post-processing görsel efektler ve Framer Motion ile akıcı bölüm geçişleri.',
     project_mystic:
@@ -223,7 +223,7 @@ export const translations = {
     project_petlove:
       'Полнофункциональная платформа для усыновления и размещения объявлений о домашних животных. Просмотр животных для усыновления, сообщение о потерянных/найденных животных, чтение руководств по уходу и поиск приютов.',
     project_spectra_crm:
-      'Современная полнофункциональная CRM-система. Управление профилями клиентов и контактами, Kanban-воронка продаж, профессиональное создание коммерческих предложений с экспортом в PDF, постановка задач команде и дашборды аналитики продаж в реальном времени. JWT-аутентификация, стек Next.js, Node.js/Express и MongoDB.',
+      'Современная полнофункциональная CRM-система. Управление профилями клиентов и контактами, Kanban-воронка продаж, профессиональное создание коммерческих предложений с экспортом в PDF, постановка задач команде и дашборды аналитики продаж в реальном времени. JWT-аутентификация, стек Next.js, Node.js/Express и MongoDB. Все экраны доступны без входа в систему, интерфейс построен на shadcn/ui и поставляется в согласованных светлой и тёмной темах.',
     project_apex_engineering:
       'Тёмный индустриальный 3D-сайт для аэрокосмической/оборонной/автомобильной инженерной компании. React Three Fiber и Three.js для иммерсивных WebGL-сцен, эффекты постобработки и плавные переходы между секциями на Framer Motion.',
     project_mystic:
@@ -298,7 +298,7 @@ export const translations = {
     project_petlove:
       "Piattaforma full-stack di adozione e annunci di animali domestici. Sfoglia animali disponibili per l'adozione, segnala animali persi/trovati, leggi guide sulla cura degli animali e scopri rifugi e organizzazioni partner.",
     project_spectra_crm:
-      'Sistema CRM full-stack moderno. Gestione profili clienti e contatti, pipeline di vendita Kanban, generazione di preventivi professionali con esportazione PDF, assegnazione compiti al team e dashboard di analisi vendite in tempo reale. Autenticazione JWT, sviluppato con Next.js, Node.js/Express e MongoDB.',
+      'Sistema CRM full-stack moderno. Gestione profili clienti e contatti, pipeline di vendita Kanban, generazione di preventivi professionali con esportazione PDF, assegnazione compiti al team e dashboard di analisi vendite in tempo reale. Autenticazione JWT, sviluppato con Next.js, Node.js/Express e MongoDB. Tutte le schermate sono navigabili senza accedere, con interfaccia costruita su shadcn/ui e temi chiaro e scuro coordinati.',
     project_apex_engineering:
       'Sito 3D industriale in stile dark per una società di ingegneria aerospaziale/difesa/automotive. Realizzato con React Three Fiber e Three.js per scene WebGL immersive, effetti di post-processing e transizioni fluide tra sezioni con Framer Motion.',
     project_mystic:
@@ -373,7 +373,7 @@ export const translations = {
     project_petlove:
       'Plataforma full-stack de adopción y anuncios de mascotas. Explora mascotas disponibles para adopción, reporta animales perdidos/encontrados, lee guías de cuidado de mascotas y descubre refugios cercanos.',
     project_spectra_crm:
-      'Sistema CRM full-stack moderno. Gestión de perfiles de clientes y contactos, embudo de ventas Kanban, generación de presupuestos profesionales con exportación PDF, asignación de tareas al equipo y dashboards de análisis de ventas en tiempo real. Autenticación JWT, desarrollado con Next.js, Node.js/Express y MongoDB.',
+      'Sistema CRM full-stack moderno. Gestión de perfiles de clientes y contactos, embudo de ventas Kanban, generación de presupuestos profesionales con exportación PDF, asignación de tareas al equipo y dashboards de análisis de ventas en tiempo real. Autenticación JWT, desarrollado con Next.js, Node.js/Express y MongoDB. Todas las pantallas se pueden explorar sin iniciar sesión y la interfaz, construida sobre shadcn/ui, incluye temas claro y oscuro coordinados.',
     project_apex_engineering:
       'Sitio 3D industrial de estilo oscuro para una empresa de ingeniería aeroespacial/defensa/automoción. Construido con React Three Fiber y Three.js para escenas WebGL inmersivas, efectos de post-procesado y transiciones suaves entre secciones con Framer Motion.',
     project_mystic:
@@ -448,7 +448,7 @@ export const translations = {
     project_petlove:
       'Vollständige Plattform für Haustieradoption und Inserate. Durchsuchen Sie verfügbare Haustiere zur Adoption, melden Sie verlorene/gefundene Tiere, lesen Sie Pflegeleitfäden und entdecken Sie Tierheime in der Nähe.',
     project_spectra_crm:
-      'Modernes Full-Stack-CRM-System. Kundenprofil- und Kontaktverwaltung, Kanban-basierte Vertriebspipeline, professionelle Angebotserstellung mit PDF-Export, Team-Aufgabenverteilung und Echtzeit-Vertriebs-Dashboards. JWT-Authentifizierung, entwickelt mit Next.js, Node.js/Express und MongoDB.',
+      'Modernes Full-Stack-CRM-System. Kundenprofil- und Kontaktverwaltung, Kanban-basierte Vertriebspipeline, professionelle Angebotserstellung mit PDF-Export, Team-Aufgabenverteilung und Echtzeit-Vertriebs-Dashboards. JWT-Authentifizierung, entwickelt mit Next.js, Node.js/Express und MongoDB. Alle Ansichten sind ohne Anmeldung zugänglich, und die auf shadcn/ui aufgebaute Oberfläche bietet aufeinander abgestimmte helle und dunkle Themes.',
     project_apex_engineering:
       'Dunkle, industrielle 3D-Showcase-Site für ein Luft- und Raumfahrt-/Verteidigungs-/Automobilingenieurunternehmen. Mit React Three Fiber und Three.js für immersive WebGL-Szenen, Postprocessing-Effekte und flüssige Abschnittsübergänge mit Framer Motion.',
     project_mystic:
@@ -523,7 +523,7 @@ export const translations = {
     project_petlove:
       "Plateforme complète d'adoption et d'annonces d'animaux de compagnie. Explorez les animaux disponibles à l'adoption, signalez les animaux perdus/trouvés, lisez des guides de soins et découvrez les refuges à proximité.",
     project_spectra_crm:
-      'Système CRM full-stack moderne. Gestion des profils clients et des contacts, pipeline de vente Kanban, génération de devis professionnels avec export PDF, attribution de tâches à l\'équipe et tableaux de bord des ventes en temps réel. Authentification JWT, développé avec Next.js, Node.js/Express et MongoDB.',
+      'Système CRM full-stack moderne. Gestion des profils clients et des contacts, pipeline de vente Kanban, génération de devis professionnels avec export PDF, attribution de tâches à l\'équipe et tableaux de bord des ventes en temps réel. Authentification JWT, développé avec Next.js, Node.js/Express et MongoDB. Tous les écrans sont consultables sans connexion, avec une interface construite sur shadcn/ui et des thèmes clair et sombre coordonnés.',
     project_apex_engineering:
       'Site 3D industriel sombre pour une société d\'ingénierie aérospatiale/défense/automobile. Construit avec React Three Fiber et Three.js pour des scènes WebGL immersives, des effets de post-traitement et des transitions fluides entre sections avec Framer Motion.',
     project_mystic:
