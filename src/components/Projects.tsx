@@ -10,7 +10,7 @@ const projects: {
   tags: string[];
   icon: string;
   liveUrl: string;
-  githubUrl: string;
+  githubUrl?: string;
 }[] = [
   {
     title: 'MISE',
@@ -64,7 +64,7 @@ const projects: {
     title: 'Apex Engineering',
     descKey: 'project_apex_engineering',
     tags: ['React 18', 'Three.js', 'React Three Fiber', 'Framer Motion', 'Tailwind CSS'],
-    icon: 'solar:3d-square-linear',
+    icon: 'solar:rocket-2-linear',
     liveUrl: 'https://apex-engineering-two.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/apex-engineering',
   },
@@ -74,14 +74,13 @@ const projects: {
     tags: ['React 19', 'TypeScript', 'Firebase', 'Framer Motion', 'Tailwind CSS 4'],
     icon: 'solar:stars-linear',
     liveUrl: 'https://mystic-app-gules.vercel.app/',
-    githubUrl: 'https://github.com/canberkyildiz25/mystic-app',
   },
   {
     title: 'Spectra CRM',
     descKey: 'project_spectra_crm',
-    tags: ['Next.js 14', 'TypeScript', 'Node.js', 'MongoDB', 'JWT', 'Zustand'],
+    tags: ['Next.js 14', 'TypeScript', 'shadcn/ui', 'Node.js', 'MongoDB', 'JWT'],
     icon: 'solar:chart-square-linear',
-    liveUrl: 'https://client-xi-three-50.vercel.app',
+    liveUrl: 'https://spectra-crm.vercel.app',
     githubUrl: 'https://github.com/canberkyildiz25/Spectra-CRM',
   },
   {
@@ -112,7 +111,7 @@ const projects: {
     title: 'Purr Pedia',
     descKey: 'project_purr_pedia',
     tags: ['React 18', 'TypeScript', 'Redux Toolkit', 'Tailwind CSS', 'PWA'],
-    icon: 'solar:cat-2-linear',
+    icon: 'solar:cat-linear',
     liveUrl: 'https://purr-pedia.vercel.app/',
     githubUrl: 'https://github.com/canberkyildiz25/Purr-Pedia',
   },
@@ -249,26 +248,28 @@ function ProjectCard({ project, idx }: { project: typeof projects[0]; idx: numbe
           className="flex items-center gap-2 flex-shrink-0"
           onClick={(e) => e.stopPropagation()}
         >
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-9 h-9 rounded-sm flex items-center justify-center transition-all duration-300"
-            style={{ background: 'var(--surface2)', border: '1px solid var(--line)', color: 'var(--muted)' }}
-            onMouseEnter={e => {
-              const el = e.currentTarget as HTMLElement;
-              el.style.borderColor = 'var(--accent)';
-              el.style.color = 'var(--accent)';
-            }}
-            onMouseLeave={e => {
-              const el = e.currentTarget as HTMLElement;
-              el.style.borderColor = 'var(--line)';
-              el.style.color = 'var(--muted)';
-            }}
-            title="GitHub"
-          >
-            <Icon icon="logos:github-icon" className="text-base" />
-          </a>
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-9 h-9 rounded-sm flex items-center justify-center transition-all duration-300"
+              style={{ background: 'var(--surface2)', border: '1px solid var(--line)', color: 'var(--muted)' }}
+              onMouseEnter={e => {
+                const el = e.currentTarget as HTMLElement;
+                el.style.borderColor = 'var(--accent)';
+                el.style.color = 'var(--accent)';
+              }}
+              onMouseLeave={e => {
+                const el = e.currentTarget as HTMLElement;
+                el.style.borderColor = 'var(--line)';
+                el.style.color = 'var(--muted)';
+              }}
+              title="GitHub"
+            >
+              <Icon icon="logos:github-icon" className="text-base" />
+            </a>
+          )}
           <a
             href={project.liveUrl}
             target="_blank"
