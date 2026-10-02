@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-10-02",
+    "scope": "site",
+    "stack": "Next.js 16 static export + React 19 + TS + Tailwind 4 + GSAP ScrollTrigger (stack only)",
+    "macrostructure": "Drawing sheet: full-width headline, title block, stacked project sheets, parts list table, revision tables, checklist, statement contact",
+    "nav": "N1 mark + name, four anchors, language and theme",
+    "footer": "Ft minimal colophon",
+    "theme": "custom: paper and ink, colour only inside screenshots, red reserved for revisions (design.md)",
+    "type": "Archivo variable width (condensed display, normal body) + IBM Plex Mono (lettering, figures)",
+    "enrichment": "Real captures of the 19 live sites at 1440 and 390 px; no photo, no stock imagery",
+    "motion": "CSS: headline word rise, rule draw, block rise, figure wipe. GSAP scrub: covered sheet recedes. Reduced-motion and no-JS safe.",
+    "verification": "tsc + eslint clean; next build clean; 47/47 checks on the exported build: no sideways scroll at 320/375/414/768/1024/1440 in en and tr, console clean, AA contrast in both themes, keyboard reaches every control with visible unobscured focus, reduced motion, no-JS",
+    "critique": "P5 H4 E4 S5 R5 V4"
+  }
+]
