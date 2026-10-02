@@ -202,8 +202,8 @@ export const PATH_SOFTWARE: PathRow[] = [
   {
     date: { en: '2026-01', tr: '2026-01' },
     text: {
-      en: 'Finished GoIT with a grade of 90 out of 100. First React projects.',
-      tr: 'GoIT’i 100 üzerinden 90 ile bitirdim. İlk React projeleri.',
+      en: 'Finished the GoIT programme. First React projects.',
+      tr: 'GoIT programını bitirdim. İlk React projeleri.',
     },
   },
   {
@@ -300,3 +300,16 @@ export const CONTACT = {
   source: { en: 'Source of this site', tr: 'Bu sitenin kaynak kodu' },
   set: { en: 'Set in Archivo and IBM Plex Mono.', tr: 'Archivo ve IBM Plex Mono ile dizildi.' },
 } satisfies Record<string, L>;
+
+export const NOT_FOUND = {
+  title: { en: 'This sheet is not in the set.', tr: 'Bu pafta sette yok.' },
+  body: {
+    en: 'The address may be mistyped, or the page was withdrawn in a later revision.',
+    tr: 'Adres yanlış yazılmış olabilir ya da sayfa sonraki bir revizyonda kaldırılmış olabilir.',
+  },
+  home: { en: 'Go to the first sheet', tr: 'İlk paftaya git' },
+  requested: { en: 'Requested', tr: 'İstenen' },
+  status: { en: 'Status', tr: 'Durum' },
+  statusValue: { en: 'Not found', tr: 'Bulunamadı' },
+} satisfies Record<string, L>;
+

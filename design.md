@@ -110,6 +110,11 @@ gutter `clamp(1rem, 3.4vw, 3rem)`.
 Section heads are real headings. No small label above a heading, no section
 numbers.
 
+The 404 page (`app/global-not-found.tsx`) reuses the hero: the numeral at
+headline size, the stripe, then one message per language side by side and a
+two-row title block showing the address that was asked for. It speaks both
+languages because a static host cannot tell which one the visitor wanted.
+
 ## Motion
 
 Each animation has a job. Easing is `--ease-out` `cubic-bezier(0.23, 1, 0.32, 1)`

@@ -8,6 +8,8 @@ const config: NextConfig = {
   trailingSlash: true,
   images: { unoptimized: true },
   turbopack: { root: path.resolve(__dirname) },
+  // app/global-not-found.tsx: one 404 for both language layouts
+  experimental: { globalNotFound: true },
 };
 
 export default config;
