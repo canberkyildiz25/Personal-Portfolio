@@ -2,8 +2,8 @@ import type { L } from './site';
 
 /* Single source for every project on the page. `id` is also the screenshot
    file name under /public/work. `started` is the month of the first commit
-   in the project's repository; `rev` is B when the project was later rebuilt
-   from scratch under the same repository. */
+   in the project's repository; `rev` is B when the project was rebuilt or
+   redesigned after its first version. */
 
 export type Standing = 'product' | 'demo' | 'concept';
 
@@ -205,12 +205,12 @@ export const PROJECTS: Project[] = [
     kind: { en: 'Content site', tr: 'İçerik sitesi' },
     standing: 'product',
     blurb: {
-      en: 'Technology news and guides on its own domain, written in Markdown.',
-      tr: 'Kendi alan adında, Markdown ile yazılan teknoloji haberleri ve rehberleri.',
+      en: 'Technology and gaming guides on its own domain: getting more out of the hardware and software you already own.',
+      tr: 'Kendi alan adında teknoloji ve oyun rehberleri: elindeki donanım ve yazılımdan daha fazlasını almak üzerine.',
     },
-    stack: ['Next.js 16', 'React 19', 'TypeScript', 'Markdown'],
+    stack: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Markdown'],
     started: '2026-04',
-    rev: 'A',
+    rev: 'B',
     live: 'https://www.infodaily.net',
     code: gh('info-daily'),
   },
@@ -223,7 +223,7 @@ export const PROJECTS: Project[] = [
       en: 'Wood-fired pizzeria site with a menu and a reservation flow.',
       tr: 'Menüsü ve rezervasyon akışı olan odun fırınlı pizzacı sitesi.',
     },
-    stack: ['Next.js 15', 'React 19', 'Tailwind CSS'],
+    stack: ['Next.js 15', 'React 19'],
     started: '2026-06',
     rev: 'A',
     live: 'https://fornace-next.vercel.app/',
@@ -268,8 +268,8 @@ export const PROJECTS: Project[] = [
       en: 'Dream, coffee-cup and tarot readings behind Firebase sign-in.',
       tr: 'Firebase girişi arkasında rüya, kahve ve tarot yorumları.',
     },
-    stack: ['React 19', 'TypeScript', 'Firebase', 'Framer Motion'],
-    started: '2026',
+    stack: ['React 19', 'TypeScript', 'Firebase', 'Tailwind CSS 4', 'Framer Motion'],
+    started: '2026-05',
     rev: 'A',
     live: 'https://mystic-app-gules.vercel.app/',
   },
@@ -336,15 +336,15 @@ export const PROJECTS: Project[] = [
   {
     id: 'moneyguard',
     name: 'Money Guard',
-    kind: { en: 'Finance tracker', tr: 'Bütçe takibi' },
+    kind: { en: 'Personal ledger', tr: 'Kişisel hesap defteri' },
     standing: 'demo',
     blurb: {
-      en: 'Personal finance tracker: income, expenses, categories and charts.',
-      tr: 'Kişisel bütçe takibi: gelir, gider, kategoriler ve grafikler.',
+      en: 'Income and expenses kept as rows in a ledger, with category totals and a demo that needs no account.',
+      tr: 'Gelir ve giderlerin satır satır tutulduğu bir hesap defteri; kategori toplamları ve hesap gerektirmeyen demo.',
     },
-    stack: ['React 19', 'Redux Toolkit', 'Express', 'MongoDB'],
+    stack: ['React 19', 'Redux Toolkit', 'React Router 7', 'Chart.js'],
     started: '2026-02',
-    rev: 'A',
+    rev: 'B',
     live: 'https://money-guard-pi.vercel.app/',
     code: gh('Money-Guard'),
   },

@@ -102,8 +102,8 @@ export const PARTS = {
   live: { en: 'Site', tr: 'Site' },
   code: { en: 'Code', tr: 'Kod' },
   legend: {
-    en: 'Started is the month of the first commit. Rev B means the project was later rebuilt from scratch.',
-    tr: 'Başlangıç, ilk commit’in ayıdır. Rev B, projenin sonradan sıfırdan yeniden kurulduğunu gösterir.',
+    en: 'Started is the month of the first commit. Rev B means the project was rebuilt or redesigned after its first version.',
+    tr: 'Başlangıç, ilk commit’in ayıdır. Rev B, projenin ilk sürümünden sonra yeniden kurulduğunu ya da yeniden tasarlandığını gösterir.',
   },
   preview: { en: 'Preview', tr: 'Önizleme' },
 } satisfies Record<string, L>;
@@ -230,15 +230,15 @@ export const PATH_SOFTWARE: PathRow[] = [
   {
     date: { en: '2026-08', tr: '2026-08' },
     text: {
-      en: 'Started Rainbow Design, a site builder for small businesses.',
-      tr: 'Küçük işletmeler için site kurucu Rainbow Design’a başladım.',
+      en: 'Started Rainbow Design, a site builder for small businesses. Money Guard redesigned as a ledger.',
+      tr: 'Küçük işletmeler için site kurucu Rainbow Design’a başladım. Money Guard bir hesap defteri olarak yeniden tasarlandı.',
     },
   },
   {
     date: { en: '2026-09', tr: '2026-09' },
     text: {
-      en: 'Spectra CRM rebuilt as Rev B.',
-      tr: 'Spectra CRM, Rev B olarak yeniden kuruldu.',
+      en: 'Spectra CRM and MISE rebuilt on Next.js 16. InfoDaily redesigned.',
+      tr: 'Spectra CRM ve MISE, Next.js 16 ile yeniden kuruldu. InfoDaily yeniden tasarlandı.',
     },
   },
   {
