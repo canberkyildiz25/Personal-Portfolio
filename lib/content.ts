@@ -244,8 +244,8 @@ export const PATH_SOFTWARE: PathRow[] = [
   {
     date: { en: '2026-10', tr: '2026-10' },
     text: {
-      en: 'Rainbow Design running on its own domain, rainbowdesign.com.tr.',
-      tr: 'Rainbow Design kendi alan adında çalışıyor: rainbowdesign.com.tr.',
+      en: 'Rainbow Design running on its own domain, rainbowdesign.com.tr. Book-Shelf rebuilt as Shelfmark.',
+      tr: 'Rainbow Design kendi alan adında çalışıyor: rainbowdesign.com.tr. Book-Shelf, Shelfmark olarak yeniden kuruldu.',
     },
   },
 ];
