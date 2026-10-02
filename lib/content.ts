@@ -31,8 +31,8 @@ export const HERO = {
     tr: 'Bir makine mühendisinin elinden çıkan yazılım.',
   },
   intro: {
-    en: 'I’m Canberk Yıldız, a full-stack developer in İstanbul. I ranked first in my mechanical engineering department, worked on gas turbines and production lines, then spent years selling technical systems across borders. Now I design and build web products end to end: interface, API, database, deploy.',
-    tr: 'Ben Canberk Yıldız, İstanbul’da yaşayan bir full-stack geliştiriciyim. Makine mühendisliğini bölüm birincisi olarak bitirdim, gaz türbinlerinde ve üretim hatlarında çalıştım, sonra yıllarca teknik sistemleri yurt dışına sattım. Şimdi web ürünlerini uçtan uca tasarlayıp geliştiriyorum: arayüz, API, veritabanı, yayın.',
+    en: 'I’m Canberk Yıldız, a full-stack developer in İstanbul. I trained as a mechanical engineer, worked on gas turbines and production lines, then spent years selling technical systems across borders. Now I design and build web products end to end: interface, API, database, deploy.',
+    tr: 'Ben Canberk Yıldız, İstanbul’da yaşayan bir full-stack geliştiriciyim. Makine mühendisliği okudum, gaz türbinlerinde ve üretim hatlarında çalıştım, sonra yıllarca teknik sistemleri yurt dışına sattım. Şimdi web ürünlerini uçtan uca tasarlayıp geliştiriyorum: arayüz, API, veritabanı, yayın.',
   },
   work: { en: 'See the work', tr: 'İşleri gör' },
   mail: { en: 'Send an email', tr: 'E-posta gönder' },
@@ -129,8 +129,8 @@ export const PATH_BEFORE: PathRow[] = [
   {
     date: { en: '2009 to 2013', tr: '2009–2013' },
     text: {
-      en: 'B.Eng. Mechanical Engineering, Design and Management. Odesa Polytechnic National University. Ranked first in the department.',
-      tr: 'Makine Mühendisliği lisansı, Tasarım ve Yönetim. Odesa Politeknik Ulusal Üniversitesi. Bölüm birincisi.',
+      en: 'B.Eng. Mechanical Engineering, Design and Management. Odesa Polytechnic National University.',
+      tr: 'Makine Mühendisliği lisansı, Tasarım ve Yönetim. Odesa Politeknik Ulusal Üniversitesi.',
     },
   },
   {
