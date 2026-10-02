@@ -1,11 +1,11 @@
 @import 'tailwindcss';
 
-/* Hallmark · theme: custom "drawing sheet" · genre: editorial-technical
- * pre-emit critique: P5 H4 E4 S5 R5 V4
+/* Hallmark · theme: custom "drawing sheet, plotted in 1985" · genre: editorial-technical
+ * pre-emit critique: P5 H4 E4 S5 R4 V5
  *
- * Paper and ink. The page itself has no colour: colour arrives only inside
- * the project screenshots. Red is the one exception and it means one thing,
- * a revision, the way a redline does on a drawing.
+ * Still a drawing sheet, but plotted the way an eighties pen plotter drew:
+ * cream paper, indigo ink and five loud pens. The pens are laid down flat
+ * (stripes, tabs, offset blocks). They are never blended and never glow.
  */
 
 @theme static {
@@ -19,19 +19,45 @@
   --color-rule: var(--rule);
   --color-rule-2: var(--rule-2);
   --color-red: var(--red);
+  --color-pen-yellow: var(--pen-yellow);
+  --color-pen-orange: var(--pen-orange);
+  --color-pen-pink: var(--pen-pink);
+  --color-pen-teal: var(--pen-teal);
+  --color-pen-blue: var(--pen-blue);
 
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 :root {
-  --paper: oklch(0.977 0.003 250);
-  --paper-2: oklch(0.945 0.004 250);
-  --ink: oklch(0.2 0.012 255);
-  --ink-2: oklch(0.42 0.012 255);
-  --rule: oklch(0.2 0.012 255);
-  --rule-2: oklch(0.82 0.006 255);
-  --red: oklch(0.5 0.19 27);
+  --paper: oklch(0.951 0.027 92);
+  --paper-2: oklch(0.915 0.04 92);
+  --ink: oklch(0.225 0.05 285);
+  --ink-2: oklch(0.42 0.045 285);
+  --rule: oklch(0.225 0.05 285);
+  --rule-2: oklch(0.83 0.035 92);
+  /* red as text: a revision note */
+  --red: oklch(0.52 0.2 28);
+
+  /* The five pens. The same in both themes. */
+  --pen-yellow: oklch(0.868 0.17 88);
+  --pen-orange: oklch(0.7 0.19 45);
+  --pen-pink: oklch(0.7 0.2 358);
+  --pen-teal: oklch(0.72 0.125 185);
+  --pen-blue: oklch(0.44 0.23 272);
+  /* text laid over a pen: indigo on the four bright ones, cream on blue */
+  --on-pen: oklch(0.225 0.05 285);
+  --on-blue: oklch(0.951 0.027 92);
+  --on-blue-rule: oklch(0.951 0.027 92 / 0.45);
+
+  /* the one reversed band (the checklist) */
+  --band: oklch(0.225 0.05 285);
+  --on-band: oklch(0.951 0.027 92);
+  --on-band-2: oklch(0.84 0.03 92);
+  --band-rule: oklch(0.45 0.05 285);
+
+  --focus: var(--ink);
+  --block: 0.8rem;
 
   --header-h: 3.5rem;
   --gutter: clamp(1rem, 3.4vw, 3rem);
@@ -39,28 +65,37 @@
 
   color-scheme: light;
 }
+@media (max-width: 40rem) {
+  :root {
+    --block: 0.5rem;
+  }
+}
 
-/* Dark is the CAD model space: the same drawing, lines reversed. */
+/* Dark is the same sheet at night: indigo ground, cream lines, same pens. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --paper: oklch(0.185 0.008 255);
-    --paper-2: oklch(0.235 0.009 255);
-    --ink: oklch(0.94 0.004 255);
-    --ink-2: oklch(0.74 0.008 255);
-    --rule: oklch(0.72 0.006 255);
-    --rule-2: oklch(0.35 0.008 255);
-    --red: oklch(0.74 0.15 27);
+    --paper: oklch(0.2 0.045 285);
+    --paper-2: oklch(0.255 0.055 285);
+    --ink: oklch(0.951 0.027 92);
+    --ink-2: oklch(0.82 0.03 92);
+    --rule: oklch(0.82 0.03 92);
+    --rule-2: oklch(0.36 0.05 285);
+    --red: oklch(0.78 0.15 35);
+    --band: oklch(0.275 0.07 285);
+    --band-rule: oklch(0.48 0.06 285);
     color-scheme: dark;
   }
 }
 :root[data-theme='dark'] {
-  --paper: oklch(0.185 0.008 255);
-  --paper-2: oklch(0.235 0.009 255);
-  --ink: oklch(0.94 0.004 255);
-  --ink-2: oklch(0.74 0.008 255);
-  --rule: oklch(0.72 0.006 255);
-  --rule-2: oklch(0.35 0.008 255);
-  --red: oklch(0.74 0.15 27);
+  --paper: oklch(0.2 0.045 285);
+  --paper-2: oklch(0.255 0.055 285);
+  --ink: oklch(0.951 0.027 92);
+  --ink-2: oklch(0.82 0.03 92);
+  --rule: oklch(0.82 0.03 92);
+  --rule-2: oklch(0.36 0.05 285);
+  --red: oklch(0.78 0.15 35);
+  --band: oklch(0.275 0.07 285);
+  --band-rule: oklch(0.48 0.06 285);
   color-scheme: dark;
 }
 
@@ -105,11 +140,11 @@
     color: inherit;
   }
   ::selection {
-    background: var(--ink);
-    color: var(--paper);
+    background: var(--pen-pink);
+    color: var(--on-pen);
   }
   :focus-visible {
-    outline: 2px solid var(--ink);
+    outline: 2px solid var(--focus);
     outline-offset: 3px;
   }
 }
@@ -165,43 +200,42 @@
     text-decoration-color: currentColor;
   }
 
+  /* A key off an eighties keyboard: flat colour, hard edge, a block of ink
+     behind it that the press pushes the button into. */
   .btn {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
     min-height: 2.75rem;
     padding: 0.55rem 1rem;
-    border: 1px solid var(--ink);
-    background: var(--ink);
-    color: var(--paper);
-    font-weight: 560;
+    border: 2px solid var(--ink);
+    background: var(--pen-yellow);
+    color: var(--on-pen);
+    box-shadow: 4px 4px 0 var(--ink);
+    font-weight: 600;
     font-size: 0.98rem;
     line-height: 1.2;
     white-space: nowrap;
     text-decoration: none;
     transition:
-      background-color 160ms ease,
-      color 160ms ease,
-      transform 120ms var(--ease-out);
+      transform 120ms var(--ease-out),
+      box-shadow 120ms var(--ease-out),
+      background-color 160ms ease;
   }
   .btn--plain {
-    background: transparent;
+    background: var(--paper);
     color: var(--ink);
-  }
-  .btn:active {
-    transform: scale(0.97);
   }
   .btn .arrow {
     transition: transform 200ms var(--ease-out);
   }
   @media (hover: hover) and (pointer: fine) {
     .btn:hover {
-      background: transparent;
-      color: var(--ink);
+      background: var(--pen-pink);
     }
     .btn--plain:hover {
-      background: var(--ink);
-      color: var(--paper);
+      background: var(--pen-teal);
+      color: var(--on-pen);
     }
     .btn:hover .arrow {
       transform: translate(2px, -2px);
@@ -209,6 +243,44 @@
     .btn:hover .arrow--down {
       transform: translateY(3px);
     }
+  }
+  .btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 var(--ink);
+  }
+
+  /* The speed stripe: five pens laid side by side. */
+  .stripe {
+    display: grid;
+  }
+  .stripe span {
+    height: 0.4rem;
+    transform-origin: left center;
+  }
+  .stripe span:nth-child(1) {
+    background: var(--pen-yellow);
+  }
+  .stripe span:nth-child(2) {
+    background: var(--pen-orange);
+  }
+  .stripe span:nth-child(3) {
+    background: var(--pen-pink);
+  }
+  .stripe span:nth-child(4) {
+    background: var(--pen-blue);
+  }
+  .stripe span:nth-child(5) {
+    background: var(--pen-teal);
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: var(--pen-orange);
+    color: var(--on-pen);
+  }
+  .tag[data-pen='teal'] {
+    background: var(--pen-teal);
   }
 
   /* ---------- Header ---------- */
@@ -218,7 +290,7 @@
     z-index: 50;
     height: var(--header-h);
     background: var(--paper);
-    border-bottom: 1px solid var(--rule);
+    border-bottom: 2px solid var(--rule);
   }
   .site-header__row {
     display: flex;
@@ -241,6 +313,7 @@
   }
   .brand svg {
     flex: none;
+    color: var(--red);
   }
   .site-nav {
     display: none;
@@ -252,12 +325,12 @@
     text-decoration: none;
     white-space: nowrap;
     padding-block: 0.75rem;
-    background: linear-gradient(currentColor, currentColor) left calc(100% - 0.6rem) / 0 1px no-repeat;
+    background: linear-gradient(var(--pen-pink), var(--pen-pink)) left calc(100% - 0.55rem) / 0 3px no-repeat;
     transition: background-size 220ms var(--ease-out);
   }
   @media (hover: hover) and (pointer: fine) {
     .site-nav a:hover {
-      background-size: 100% 1px;
+      background-size: 100% 3px;
     }
   }
   @media (min-width: 52rem) {
@@ -289,7 +362,9 @@
   .lang a[aria-current='true'] {
     color: var(--ink);
     text-decoration: underline;
-    text-underline-offset: 0.35em;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--pen-pink);
+    text-underline-offset: 0.4em;
   }
   .lang a:hover {
     color: var(--ink);
@@ -325,12 +400,11 @@
     line-height: 0.9;
     letter-spacing: -0.02em;
     max-width: 20ch;
+    /* block lettering: one flat pen offset behind the ink */
+    text-shadow: 0.045em 0.045em 0 var(--pen-pink);
   }
-  .hero__rule {
-    height: 1px;
-    background: var(--rule);
+  .hero__stripe {
     margin-block: clamp(1.75rem, 3.5vw, 3rem);
-    transform-origin: left center;
   }
   .hero__grid {
     display: grid;
@@ -359,8 +433,10 @@
   /* ---------- Title block ---------- */
   .title-block {
     width: 100%;
-    border: 1px solid var(--rule);
+    border: 2px solid var(--rule);
     border-collapse: collapse;
+    background: var(--paper);
+    box-shadow: var(--block) var(--block) 0 var(--pen-teal);
   }
   .title-block caption {
     caption-side: top;
@@ -381,6 +457,7 @@
   .title-block th {
     width: 7.5rem;
     border-right: 1px solid var(--rule);
+    background: var(--paper-2);
     font-weight: 400;
     padding-top: 0.78rem;
   }
@@ -400,7 +477,7 @@
 
   /* ---------- Section heads ---------- */
   .section {
-    border-top: 1px solid var(--rule);
+    border-top: 2px solid var(--rule);
     padding-block: clamp(3rem, 7vw, 6.5rem);
   }
   .section-head {
@@ -411,6 +488,13 @@
   }
   .section-head h2 {
     font-size: clamp(2.1rem, 5.4vw, 4.5rem);
+    text-shadow: 0.05em 0.05em 0 var(--shade, var(--pen-yellow));
+  }
+  #parts {
+    --shade: var(--pen-teal);
+  }
+  #background {
+    --shade: var(--pen-orange);
   }
   .section-head p {
     max-width: 36rem;
@@ -426,32 +510,54 @@
 
   /* ---------- Featured sheets ---------- */
   .work-head {
-    border-top: 1px solid var(--rule);
+    border-top: 2px solid var(--rule);
     padding-block: clamp(3rem, 7vw, 6.5rem) clamp(2rem, 4vw, 3.5rem);
   }
   .work-head .section-head {
     margin-bottom: 0;
   }
   .sheet {
+    --pen: var(--pen-yellow);
+    --on: var(--on-pen);
     background: var(--paper);
-    border-top: 1px solid var(--rule);
+  }
+  .sheet[data-pen='pink'] {
+    --pen: var(--pen-pink);
+  }
+  .sheet[data-pen='teal'] {
+    --pen: var(--pen-teal);
+  }
+  .sheet[data-pen='orange'] {
+    --pen: var(--pen-orange);
+  }
+  .sheet[data-pen='blue'] {
+    --pen: var(--pen-blue);
+    --on: var(--on-blue);
+  }
+  /* Each sheet carries a tab in its own pen, like dividers in a binder. */
+  .sheet__tab {
+    background: var(--pen);
+    border-block: 2px solid var(--rule);
+  }
+  .sheet__tab .lettering {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 0.6rem;
+    color: var(--on);
+    font-weight: 500;
+  }
+  .sheet__tab span:last-child {
+    flex: none;
+    white-space: nowrap;
   }
   .sheet__inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 1.75rem;
-    padding-block: 1.25rem clamp(2.5rem, 5vw, 4rem);
+    padding-block: clamp(1.5rem, 3vw, 2.25rem) clamp(2.5rem, 5vw, 4rem);
     transform-origin: 50% 0;
-  }
-  .sheet__bar {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  .sheet__bar span:last-child {
-    flex: none;
-    white-space: nowrap;
   }
   .sheet__figure {
     min-width: 0;
@@ -465,26 +571,28 @@
     height: auto;
     aspect-ratio: 16 / 10;
     object-fit: cover;
-    border: 1px solid var(--rule);
+    border: 2px solid var(--rule);
     background: var(--paper-2);
+    /* the pen, printed out of register behind the capture */
+    box-shadow: var(--block) var(--block) 0 var(--pen);
   }
   .sheet__phone {
     position: absolute;
     right: 4%;
-    bottom: -1px;
+    bottom: 0;
     width: 19%;
     min-width: 5rem;
     height: auto;
     aspect-ratio: 390 / 844;
     object-fit: cover;
     object-position: top;
-    border: 1px solid var(--rule);
+    border: 2px solid var(--rule);
     background: var(--paper-2);
   }
   .sheet__dims {
     display: grid;
     gap: 0.35rem;
-    margin-top: 0.7rem;
+    margin-top: calc(var(--block) + 0.7rem);
   }
   /* A dimension line: extension ticks at both ends, the figure in the middle. */
   .dim {
@@ -492,7 +600,8 @@
     align-items: center;
     gap: 0.5rem;
     height: 0.8rem;
-    border-inline: 1px solid var(--ink-2);
+    border-inline: 1px solid var(--red);
+    color: var(--red);
     white-space: nowrap;
   }
   .dim::before,
@@ -500,7 +609,7 @@
     content: '';
     flex: 1;
     height: 1px;
-    background: var(--ink-2);
+    background: var(--red);
   }
   .dim--phone {
     width: 19%;
@@ -555,13 +664,8 @@
   @media (min-width: 64rem) {
     .sheet__inner {
       grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-      grid-template-rows: auto 1fr;
-      column-gap: clamp(2rem, 4vw, 4rem);
-      row-gap: 1.5rem;
-      padding-block: 1rem 2.5rem;
-    }
-    .sheet__bar {
-      grid-column: 1 / -1;
+      column-gap: clamp(2.5rem, 4.5vw, 4.5rem);
+      padding-block: 2rem 2.5rem;
     }
     .sheet--flip .sheet__figure {
       order: 2;
@@ -581,7 +685,7 @@
       margin-bottom: 26svh;
     }
     .sheet__figure {
-      max-width: calc((100svh - var(--header-h) - 12rem) * 1.6);
+      max-width: calc((100svh - var(--header-h) - 14rem) * 1.6);
     }
   }
 
@@ -609,8 +713,9 @@
   .parts__frame {
     position: relative;
     aspect-ratio: 16 / 10;
-    border: 1px solid var(--rule);
+    border: 2px solid var(--rule);
     background: var(--paper-2);
+    box-shadow: var(--block) var(--block) 0 var(--pen-teal);
     overflow: hidden;
   }
   .parts__frame img {
@@ -629,7 +734,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    margin-top: 0.6rem;
+    margin-top: calc(var(--block) + 0.7rem);
   }
   .parts__caption span {
     min-width: 0;
@@ -641,13 +746,15 @@
   .parts-table {
     width: 100%;
     border-collapse: collapse;
-    border-top: 1px solid var(--rule);
+  }
+  .parts-table thead tr.lettering {
+    background: var(--ink);
+    color: var(--paper);
   }
   .parts-table th {
     text-align: left;
     font-weight: 400;
-    padding: 0.6rem 0.75rem 0.6rem 0;
-    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 0.75rem 0.7rem 0;
     white-space: nowrap;
   }
   .parts-table td {
@@ -658,12 +765,11 @@
   .parts-table tbody tr {
     transition: background-color 120ms ease;
   }
-  .parts-table tbody tr[data-active='true'] {
-    background: var(--paper-2);
-  }
   .parts-table .c-no {
     width: 3rem;
     padding-left: 0.5rem;
+  }
+  .parts-table td.c-no {
     color: var(--ink-2);
   }
   .parts-table .c-thumb {
@@ -704,8 +810,14 @@
   .parts-table .c-rev {
     white-space: nowrap;
   }
-  .parts-table .c-rev[data-rev='B'] {
-    color: var(--red);
+  .rev-chip {
+    display: inline-block;
+    min-width: 1.5rem;
+    padding-inline: 0.35rem;
+    background: var(--pen-pink);
+    color: var(--on-pen);
+    font-weight: 500;
+    text-align: center;
   }
   .parts-table .c-links {
     white-space: nowrap;
@@ -724,6 +836,17 @@
   @media (min-width: 72rem) {
     .parts-table .c-thumb {
       display: none;
+    }
+    /* The row whose capture is showing is run over with the yellow pen. */
+    .parts-table tbody tr[data-active='true'] {
+      background: var(--pen-yellow);
+      color: var(--on-pen);
+    }
+    .parts-table tbody tr[data-active='true'] :is(.c-no, .c-name span, td.c-stack) {
+      color: var(--on-pen);
+    }
+    .parts-table tbody tr[data-active='true'] .link {
+      text-decoration-color: var(--on-pen);
     }
   }
   @media (max-width: 71.99rem) and (min-width: 48rem) {
@@ -818,6 +941,7 @@
   }
   .split__lead h2 {
     font-size: clamp(2.1rem, 5.4vw, 4.5rem);
+    text-shadow: 0.05em 0.05em 0 var(--shade, var(--pen-yellow));
   }
   .split__lead p {
     margin-top: 1.25rem;
@@ -827,7 +951,7 @@
   .rev-table {
     width: 100%;
     border-collapse: collapse;
-    border-top: 1px solid var(--rule);
+    border-top: 2px solid var(--rule);
   }
   .rev-table + .rev-table {
     margin-top: 2.5rem;
@@ -932,23 +1056,76 @@
     }
   }
 
+  /* The checklist is the one reversed band: cream on indigo. */
+  .section--band {
+    --focus: var(--on-band);
+    background: var(--band);
+    color: var(--on-band);
+    border-top: 0;
+  }
+  .section--band .split__lead h2 {
+    color: var(--pen-yellow);
+    text-shadow: none;
+  }
+  .section--band .split__lead p,
+  .section--band .lettering,
+  .section--band .check-table td:last-child {
+    color: var(--on-band-2);
+  }
+  .section--band .check-table {
+    border-top-color: var(--on-band);
+  }
+  .section--band .check-table th,
+  .section--band .check-table td,
+  .section--band .check-table tr {
+    border-bottom-color: var(--band-rule);
+  }
+  .section--band .check-table thead th {
+    border-bottom-color: var(--on-band);
+  }
+  .check-table tbody th::before {
+    content: '';
+    display: inline-block;
+    width: 0.62rem;
+    height: 0.62rem;
+    margin-right: 0.65rem;
+    background: var(--pen-yellow);
+  }
+  .check-table tbody tr:nth-child(5n + 2) th::before {
+    background: var(--pen-orange);
+  }
+  .check-table tbody tr:nth-child(5n + 3) th::before {
+    background: var(--pen-pink);
+  }
+  .check-table tbody tr:nth-child(5n + 4) th::before {
+    background: var(--pen-teal);
+  }
+
   /* ---------- Contact ---------- */
+  .contact {
+    --focus: var(--on-blue);
+    background: var(--pen-blue);
+    color: var(--on-blue);
+    border-top: 0;
+  }
   .contact h2 {
     font-size: clamp(2.3rem, 7.4vw, 6.5rem);
     max-width: 16ch;
+    text-shadow: 0.045em 0.045em 0 var(--on-pen);
   }
   .contact__mail {
     display: inline-block;
     margin-top: clamp(1.75rem, 4vw, 3rem);
+    color: var(--pen-yellow);
     font-stretch: 78%;
-    font-weight: 560;
+    font-weight: 600;
     font-size: clamp(1.2rem, 4.4vw, 3rem);
     line-height: 1.15;
     overflow-wrap: anywhere;
     text-decoration: underline;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 2px;
     text-underline-offset: 0.18em;
-    text-decoration-color: var(--rule-2);
+    text-decoration-color: var(--on-blue-rule);
     transition: text-decoration-color 160ms ease;
   }
   .contact__mail:hover {
@@ -956,7 +1133,7 @@
   }
   .contact__list {
     margin-top: clamp(2rem, 4vw, 3rem);
-    border-top: 1px solid var(--rule);
+    border-top: 2px solid var(--on-blue);
     max-width: 44rem;
   }
   .contact__list > div {
@@ -964,7 +1141,16 @@
     grid-template-columns: 6.5rem minmax(0, 1fr);
     gap: 0.75rem;
     align-items: center;
-    border-bottom: 1px solid var(--rule-2);
+    border-bottom: 1px solid var(--on-blue-rule);
+  }
+  .contact .lettering {
+    color: var(--on-blue);
+  }
+  .contact .link {
+    text-decoration-color: var(--on-blue-rule);
+  }
+  .contact .link:hover {
+    text-decoration-color: currentColor;
   }
   .contact__list dd a {
     display: inline-flex;
@@ -973,13 +1159,14 @@
     overflow-wrap: anywhere;
   }
 
-  .site-footer {
-    border-top: 1px solid var(--rule);
+  .site-footer__row {
     padding-block: 1.5rem 2rem;
+  }
+  .site-footer {
     color: var(--ink-2);
     font-size: 0.92rem;
   }
-  .site-footer__row {
+  .site-footer .site-footer__row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -994,7 +1181,7 @@
 }
 
 /* ---------- Motion ----------
-   Load: the headline is set word by word and the first rule is drawn, once.
+   Load: the headline is set word by word and the stripe is drawn pen by pen.
    Scroll: blocks rise as they arrive and figures are wiped in from the left
    edge, the way a plot comes off the roller. All of it is skipped under
    reduced motion, where content is simply present. */
@@ -1028,8 +1215,10 @@
     animation: rise 720ms var(--ease-out) both;
     animation-delay: calc(var(--i) * 55ms + 80ms);
   }
-  .hero__rule {
-    animation: draw 900ms var(--ease-in-out) 260ms both;
+  /* the pens draw the stripe one after another */
+  .hero .stripe span {
+    animation: draw 800ms var(--ease-in-out) both;
+    animation-delay: calc(var(--i) * 80ms + 240ms);
   }
   .hero__grid > * {
     animation: fade 600ms ease 520ms both;
@@ -1046,7 +1235,7 @@
     transform: none;
   }
   html.js [data-reveal='plot'] .sheet__plot {
-    clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% -1rem 0);
   }
   /* If the script never arrives, nothing stays hidden. */
   html.js:not(.motion) [data-reveal],
@@ -1061,7 +1250,8 @@
       transform 600ms var(--ease-out);
   }
   html.motion [data-reveal='plot'].is-in .sheet__plot {
-    clip-path: inset(0 0 0 0);
+    /* negative insets leave room for the offset block */
+    clip-path: inset(0 -1rem -1rem 0);
     transition: clip-path 900ms var(--ease-in-out);
   }
 }

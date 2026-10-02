@@ -19,7 +19,7 @@ await page.addStyleTag({
     .site-nav, .header-tools, .hero__actions, .skip-link { display: none !important; }
     .hero { padding-top: 3.25rem !important; }
     .hero h1 { font-size: 8.4rem !important; }
-    .hero__rule { margin-block: 2rem !important; }
+    .hero__stripe { margin-block: 1.75rem !important; }
     .hero__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) !important; gap: 3.5rem !important; }
     .hero__intro { font-size: 1.2rem !important; }
   `,

@@ -57,9 +57,7 @@ export function PartsList({ lang }: { lang: Lang }) {
                 </td>
                 <td className="c-stack">{p.stack.slice(0, 4).join(', ')}</td>
                 <td className="c-date figure-text">{p.started}</td>
-                <td className="c-rev figure-text" data-rev={p.rev}>
-                  {p.rev}
-                </td>
+                <td className="c-rev figure-text">{p.rev === 'B' ? <span className="rev-chip">B</span> : p.rev}</td>
                 <td className="c-links">
                   <a className="link" href={p.live} target="_blank" rel="noopener noreferrer" aria-label={`${p.name}: ${PARTS.live[lang]}`}>
                     {PARTS.live[lang]}&nbsp;

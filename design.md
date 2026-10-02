@@ -19,7 +19,7 @@ That is a structure, not a costume. Each drawing device carries real content:
 | Dimension lines | The two widths each project was captured at (1440 px, 390 px) |
 | Parts list | All nineteen projects as one table |
 | Revision history | The career, dated, in two tables |
-| Redline | A project that was rebuilt from scratch (Rev B) |
+| Revision mark | A project that was rebuilt from scratch (Rev B chip, red revision note) |
 | Inspection checklist | The checks run before a site is called finished |
 | Weld symbol | The mark: a fillet weld symbol, from his inspection certificate |
 
@@ -28,27 +28,52 @@ grid background, no coordinates, no zone letters, no decorative stamps.
 
 ## Genre
 
-editorial / technical document. Paper, ink, tables.
+editorial / technical document, printed in eighties colour. Paper, ink,
+tables, five pens.
 
 ## Colour
 
-The page has no colour of its own. **Colour arrives only inside the project
-screenshots**, so the work is the only vivid thing on the sheet.
+Changed 2026-10-02 at Canberk's request: livelier, eighties, retro. The sheet
+is now **plotted the way a 1985 pen plotter drew**: cream paper, indigo ink
+and five loud pens. The reference is flat print (speed stripes on packaging,
+binder dividers, out-of-register ink), not synthwave. Nothing glows and
+nothing blends.
 
-| Token | Light (paper) | Dark (CAD model space) | Use |
+| Token | Light (paper) | Dark (night) | Use |
 | --- | --- | --- | --- |
-| `--paper` | `oklch(0.977 0.003 250)` | `oklch(0.185 0.008 255)` | ground |
-| `--paper-2` | `oklch(0.945 0.004 250)` | `oklch(0.235 0.009 255)` | active table row, image placeholder |
-| `--ink` | `oklch(0.2 0.012 255)` | `oklch(0.94 0.004 255)` | text, primary button |
-| `--ink-2` | `oklch(0.42 0.012 255)` | `oklch(0.74 0.008 255)` | secondary text, lettering |
-| `--rule` | `oklch(0.2 0.012 255)` | `oklch(0.72 0.006 255)` | object lines: section rules, table frames |
-| `--rule-2` | `oklch(0.82 0.006 255)` | `oklch(0.35 0.008 255)` | thin lines: table rows |
-| `--red` | `oklch(0.5 0.19 27)` | `oklch(0.74 0.15 27)` | a revision, and nothing else |
+| `--paper` | `oklch(0.951 0.027 92)` | `oklch(0.2 0.045 285)` | ground |
+| `--paper-2` | `oklch(0.915 0.04 92)` | `oklch(0.255 0.055 285)` | title block labels, image placeholder |
+| `--ink` | `oklch(0.225 0.05 285)` | `oklch(0.951 0.027 92)` | text, button edges |
+| `--ink-2` | `oklch(0.42 0.045 285)` | `oklch(0.82 0.03 92)` | secondary text, lettering |
+| `--rule` | `oklch(0.225 0.05 285)` | `oklch(0.82 0.03 92)` | object lines |
+| `--rule-2` | `oklch(0.83 0.035 92)` | `oklch(0.36 0.05 285)` | thin lines: table rows |
+| `--red` | `oklch(0.52 0.2 28)` | `oklch(0.78 0.15 35)` | red as text: revision notes, dimensions, the mark |
 
-Red means one thing: this was revised. It marks Rev B in the parts list and
-the revision note on a sheet. It is never used for emphasis, links or errors.
+The five pens are the same in both themes:
 
-Every colour in CSS is a token. No inline hex, no gradients, no shadows.
+| Pen | Value | Where it is laid down |
+| --- | --- | --- |
+| `--pen-yellow` | `oklch(0.868 0.17 88)` | primary button, active parts row, checklist heading, sheet 1 and 6 |
+| `--pen-orange` | `oklch(0.7 0.19 45)` | sheet 4, "Engineering and sales" tag |
+| `--pen-pink` | `oklch(0.7 0.2 358)` | headline block, Rev B chip, nav underline, sheet 2 |
+| `--pen-teal` | `oklch(0.72 0.125 185)` | title block and preview offset, "Software" tag, sheet 3 |
+| `--pen-blue` | `oklch(0.44 0.23 272)` | the contact band, sheet 5 |
+
+Text over a pen is `--on-pen` (indigo) on the four bright ones and `--on-blue`
+(cream) on blue, in both themes. The checklist is the one reversed band
+(`--band`, `--on-band`).
+
+How the pens may be used, and only these ways:
+
+- **Stripe**: the five pens side by side, under the headline and above the
+  footer.
+- **Tab**: a full-width band heading each featured sheet, one pen per sheet.
+- **Offset block**: one flat pen printed out of register behind a capture,
+  the title block or a heading (`box-shadow` or `text-shadow` with no blur).
+- **Fill**: a button, a chip, a tag, the active row, the contact band.
+
+Every colour in CSS is a token. No inline hex, no gradients between pens, no
+blur, no glow.
 
 ## Type
 
@@ -93,12 +118,12 @@ things drawn across the page.
 
 | Where | What | Why |
 | --- | --- | --- |
-| Hero, on load | headline set word by word; rule drawn left to right | first-visit, once |
+| Hero, on load | headline set word by word; the stripe drawn pen by pen | first-visit, once |
 | Sheets, on scroll | screenshot wiped in from the left edge | a plot coming off the roller |
 | Sheets, wide and tall screens | each sheet sticks under the header; the covered one recedes (GSAP scrub) | the set reads as stacked sheets |
 | Blocks, on scroll | rise 20px and fade in | keeps content from teleporting |
 | Parts list | preview crossfades in 200ms | state change |
-| Buttons | press scales to 0.97; arrow nudges on hover | feedback |
+| Buttons | press pushes the key into its ink block; arrow nudges on hover | feedback |
 
 Under `prefers-reduced-motion` nothing moves and nothing starts hidden.
 Without JavaScript nothing starts hidden either: pre-states only apply once
@@ -127,6 +152,7 @@ language.
 
 ## Bans
 
-Gradients, glass, glow, drop shadows, rounded cards, emoji, icon libraries,
-logo walls, stat counters, custom cursors, background grids, fake browser or
-phone frames, italic headings.
+Gradients, glass, glow, neon, blurred shadows, chrome lettering, grid
+horizons and sunsets, scanlines, rounded cards, emoji, icon libraries, logo
+walls, stat counters, custom cursors, background grids, fake browser or phone
+frames, italic headings.

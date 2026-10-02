@@ -1,6 +1,6 @@
 import { CHECKS, CHECK_ROWS, CONTACT, PARTS, PATH, PATH_BEFORE, PATH_SOFTWARE, type PathRow } from '@/lib/content';
 import { SITE, type Lang } from '@/lib/site';
-import { Arrow } from './Icons';
+import { Arrow, Stripe } from './Icons';
 import { PartsList } from './PartsList';
 
 export function Parts({ lang }: { lang: Lang }) {
@@ -17,10 +17,14 @@ export function Parts({ lang }: { lang: Lang }) {
   );
 }
 
-function RevTable({ caption, rows, lang }: { caption: string; rows: PathRow[]; lang: Lang }) {
+function RevTable({ caption, pen, rows, lang }: { caption: string; pen: 'orange' | 'teal'; rows: PathRow[]; lang: Lang }) {
   return (
     <table className="rev-table" data-reveal>
-      <caption>{caption}</caption>
+      <caption>
+        <span className="tag" data-pen={pen}>
+          {caption}
+        </span>
+      </caption>
       <thead>
         <tr className="lettering">
           <th scope="col">{PATH.date[lang]}</th>
@@ -50,8 +54,8 @@ export function Background({ lang }: { lang: Lang }) {
           <p>{PATH.intro[lang]}</p>
         </div>
         <div>
-          <RevTable caption={PATH.before[lang]} rows={PATH_BEFORE} lang={lang} />
-          <RevTable caption={PATH.software[lang]} rows={PATH_SOFTWARE} lang={lang} />
+          <RevTable caption={PATH.before[lang]} pen="orange" rows={PATH_BEFORE} lang={lang} />
+          <RevTable caption={PATH.software[lang]} pen="teal" rows={PATH_SOFTWARE} lang={lang} />
         </div>
       </div>
     </section>
@@ -60,7 +64,7 @@ export function Background({ lang }: { lang: Lang }) {
 
 export function Checklist({ lang }: { lang: Lang }) {
   return (
-    <section className="section" id="checks" aria-labelledby="checks-h">
+    <section className="section section--band" id="checks" aria-labelledby="checks-h">
       <div className="wrap split">
         <div className="split__lead" data-reveal>
           <h2 id="checks-h">{CHECKS.h2[lang]}</h2>
@@ -125,6 +129,7 @@ export function Contact({ lang }: { lang: Lang }) {
 export function Footer({ lang }: { lang: Lang }) {
   return (
     <footer className="site-footer">
+      <Stripe />
       <div className="wrap site-footer__row">
         <span>© 2026 {SITE.name}</span>
         <span>{CONTACT.set[lang]}</span>

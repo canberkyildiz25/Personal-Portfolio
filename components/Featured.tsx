@@ -5,14 +5,17 @@ import { FEATURED, STANDING, type Project } from '@/lib/projects';
 import type { Lang } from '@/lib/site';
 import { Arrow } from './Icons';
 
+// One pen per sheet, in binder order.
+const PENS = ['yellow', 'pink', 'teal', 'orange', 'blue'] as const;
+
 function Sheet({ project, index, lang }: { project: Project; index: number; lang: Lang }) {
   const f = project.feature!;
   const shot = `/work/${project.id}`;
 
   return (
-    <article className={index % 2 ? 'sheet sheet--flip' : 'sheet'} data-sheet>
-      <div className="wrap sheet__inner">
-        <div className="sheet__bar lettering">
+    <article className={index % 2 ? 'sheet sheet--flip' : 'sheet'} data-sheet data-pen={PENS[index % PENS.length]}>
+      <div className="sheet__tab">
+        <div className="wrap lettering">
           <span>
             {project.kind[lang]} · {STANDING[project.standing][lang]}
           </span>
@@ -20,6 +23,8 @@ function Sheet({ project, index, lang }: { project: Project; index: number; lang
             {WORK.sheet[lang]} {index + 1} {WORK.of[lang]} {FEATURED.length}
           </span>
         </div>
+      </div>
+      <div className="wrap sheet__inner">
 
         <figure className="sheet__figure" data-reveal="plot">
           <div className="sheet__plot">

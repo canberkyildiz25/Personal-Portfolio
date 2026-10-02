@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react';
 import { HERO, TITLE_BLOCK } from '@/lib/content';
 import { SITE, type Lang } from '@/lib/site';
-import { Arrow } from './Icons';
+import { Arrow, Stripe } from './Icons';
 
 export function Hero({ lang }: { lang: Lang }) {
   const words = HERO.h1[lang].split(' ');
@@ -18,7 +18,7 @@ export function Hero({ lang }: { lang: Lang }) {
           </span>
         ))}
       </h1>
-      <div className="hero__rule" />
+      <Stripe className="hero__stripe" />
       <div className="hero__grid">
         <div>
           <p className="hero__intro">{HERO.intro[lang]}</p>

@@ -12,5 +12,14 @@
     "motion": "CSS: headline word rise, rule draw, block rise, figure wipe. GSAP scrub: covered sheet recedes. Reduced-motion and no-JS safe.",
     "verification": "tsc + eslint clean; next build clean; 47/47 checks on the exported build: no sideways scroll at 320/375/414/768/1024/1440 in en and tr, console clean, AA contrast in both themes, keyboard reaches every control with visible unobscured focus, reduced motion, no-JS",
     "critique": "P5 H4 E4 S5 R5 V4"
+  },
+  {
+    "date": "2026-10-02",
+    "scope": "site (palette)",
+    "theme": "custom: 1985 pen plotter. Cream paper, indigo ink, five flat pens (yellow, orange, pink, teal, blue) as stripe, sheet tabs, offset blocks and fills. Replaces the colourless paper-and-ink palette at the owner's request.",
+    "type": "unchanged: Archivo variable width + IBM Plex Mono",
+    "motion": "stripe drawn pen by pen on load; button press pushes into its ink block",
+    "verification": "tsc + eslint clean; next build clean; 47/47 checks on the exported build, including AA contrast on every pen fill in both themes",
+    "critique": "P5 H4 E4 S5 R4 V5"
   }
 ]
