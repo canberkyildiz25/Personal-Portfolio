@@ -294,8 +294,8 @@ export const PROJECTS: Project[] = [
     kind: { en: 'Notice board', tr: 'İlan panosu' },
     standing: 'demo',
     blurb: {
-      en: 'Lost and found pet notices for Istanbul on a split-flap board: sightings anybody can add, and every notice prints as a poster.',
-      tr: 'İstanbul için kayıp ve bulunan evcil hayvan ilanları, harf harf dönen bir panoda: herkesin ekleyebildiği görüldü bildirimleri ve her ilan için basılabilir afiş.',
+      en: 'Lost and found pet notices for Istanbul, laid out like a magazine: a film on the cover, sightings anybody can add, and every notice prints as a poster.',
+      tr: 'İstanbul için kayıp ve bulunan evcil hayvan ilanları, bir dergi gibi dizilmiş: kapakta bir film, herkesin ekleyebildiği görüldü bildirimleri ve her ilan için basılabilir afiş.',
     },
     stack: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'MongoDB'],
     started: '2026-03',
