@@ -275,17 +275,17 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'epharmacy',
-    name: 'E-Pharmacy',
+    name: 'NÖBET',
     kind: { en: 'Marketplace', tr: 'Pazar yeri' },
     standing: 'demo',
     blurb: {
-      en: 'Pharmacy marketplace with location search and a dashboard for owners.',
-      tr: 'Konuma göre arama ve eczacı paneli olan eczane pazar yeri.',
+      en: 'The pharmacy in Istanbul that is open now, nearest first: a film of a night street on the cover, a shelf with prices for every pharmacy, and orders followed a step at a time, with a counter for the pharmacist.',
+      tr: 'İstanbul’da şu an açık olan eczane, en yakından başlayarak: kapakta bir gece sokağı filmi, her eczanenin fiyatlı rafı, adım adım izlenen siparişler ve eczacı için bir tezgâh.',
     },
-    stack: ['React 18', 'Node.js', 'Express', 'MongoDB', 'JWT'],
+    stack: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'MongoDB'],
     started: '2026-03',
-    rev: 'A',
-    live: 'https://e-pharmacy-1.onrender.com/',
+    rev: 'B',
+    live: 'https://nobet-istanbul.vercel.app/',
     code: gh('E-Pharmacy'),
   },
   {
