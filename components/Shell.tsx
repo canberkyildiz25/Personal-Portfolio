@@ -1,21 +1,19 @@
 import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import { META, NAV } from '@/lib/content';
-import { archivo, plexMono } from '@/lib/fonts';
+import { funnelDisplay, funnelSans, martianMono } from '@/lib/fonts';
 import { PATHS, SITE, type Lang } from '@/lib/site';
 
-/* Runs before first paint: resolves the theme (stored choice, else the
-   system setting) and marks the document as scripted so reveal pre-states
-   only apply when the script that undoes them can run. */
-const BOOT = `(function(){var d=document.documentElement;var t=null;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}d.dataset.theme=t;d.classList.add('js')})()`;
+/* Runs before first paint: marks the document as scripted, so the stage
+   (which needs the script to change colour) and the reveal pre-states only
+   apply when the code that drives them can run. */
+const BOOT = `document.documentElement.classList.add('js')`;
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f6efdc' },
-    { media: '(prefers-color-scheme: dark)', color: '#17132b' },
-  ],
+  themeColor: '#100e0c',
+  colorScheme: 'dark',
 };
 
 export function buildMetadata(lang: Lang): Metadata {
@@ -70,7 +68,7 @@ const person = {
 
 export function Shell({ lang, children }: { lang: Lang; children: ReactNode }) {
   return (
-    <html lang={lang} className={`${archivo.variable} ${plexMono.variable}`} suppressHydrationWarning>
+    <html lang={lang} className={`${funnelDisplay.variable} ${funnelSans.variable} ${martianMono.variable}`} suppressHydrationWarning>
       <body>
         <script dangerouslySetInnerHTML={{ __html: BOOT }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />

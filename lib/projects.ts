@@ -258,6 +258,20 @@ export const PROJECTS: Project[] = [
     rev: 'B',
     live: 'https://pokedueltr.netlify.app/',
     code: gh('PokeDuel'),
+    feature: {
+      lede: {
+        en: 'The Pokémon card game against the computer, by its own rules.',
+        tr: 'Pokémon kart oyunu, bilgisayara karşı ve kendi kurallarıyla.',
+      },
+      detail: {
+        en: 'Every card does what is printed on it. Each attack’s text is read into a short list of instructions, and a card joins the game only if every word under its attacks is understood. The rules are pure functions over a seeded shuffle, held in place by thirty tests; the opponent plays through the same two functions as the page and never looks at a hidden card. Attacks are drawn on a canvas, and a coach talks a newcomer through the first match.',
+        tr: 'Her kart üstünde yazanı yapıyor. Her saldırının metni kısa bir talimat listesine çevriliyor; saldırılarının altındaki her kelime anlaşılmayan kart oyuna alınmıyor. Kurallar, tohumlu bir karıştırma üzerinde çalışan saf fonksiyonlar ve otuz test onları yerinde tutuyor. Rakip, sayfanın kullandığı aynı iki fonksiyonla oynuyor ve gizli hiçbir karta bakmıyor. Saldırılar bir canvas üzerinde çiziliyor, ilk maçı yeni başlayana bir koç anlatıyor.',
+      },
+      revision: {
+        en: 'Rev B, October 2026: began in April 2026 as a five-card duel against a trainer.',
+        tr: 'Rev B, Ekim 2026: Nisan 2026’da bir antrenöre karşı beş kartlık bir düello olarak başladı.',
+      },
+    },
   },
   {
     id: 'mystic',
@@ -287,6 +301,20 @@ export const PROJECTS: Project[] = [
     rev: 'B',
     live: 'https://nobet-istanbul.vercel.app/',
     code: gh('E-Pharmacy'),
+    feature: {
+      lede: {
+        en: 'The pharmacy in Istanbul that is open now, nearest first.',
+        tr: 'İstanbul’da şu an açık olan eczane, en yakından başlayarak.',
+      },
+      detail: {
+        en: 'Who keeps the night watch is worked out from the clock in Istanbul, and a lamp beside each name is lit while that pharmacy is open. Every pharmacy keeps its own shelf at its own prices; an order goes to one of them and is followed a step at a time, while the pharmacist moves it on from a counter of their own. Without a database the whole thing runs in the browser; with MongoDB the same pages talk to an API with signed sessions.',
+        tr: 'Nöbeti kimin tuttuğu İstanbul saatinden hesaplanıyor; eczane açıkken adının yanındaki lamba yanıyor. Her eczanenin kendi fiyatlarıyla kendi rafı var. Sipariş tek bir eczaneye gidiyor ve adım adım izleniyor, eczacı da onu kendi tezgâhından ilerletiyor. Veritabanı yokken her şey tarayıcıda çalışıyor; MongoDB tanımlıysa aynı sayfalar imzalı oturumlarla bir API’ye bağlanıyor.',
+      },
+      revision: {
+        en: 'Rev B, October 2026: began in March 2026 as E-Pharmacy, four separate apps on a stock design.',
+        tr: 'Rev B, Ekim 2026: Mart 2026’da hazır bir tasarım üzerinde dört ayrı uygulamadan oluşan E-Pharmacy olarak başladı.',
+      },
+    },
   },
   {
     id: 'petlove',
@@ -395,4 +423,14 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export const FEATURED = PROJECTS.filter((p) => p.feature);
+/* The projects that get a scene of their own, in the order they come on.
+   Each id needs a `feature`, a phone capture (<id>-m-520.webp) and a stage
+   colour in app/globals.css. Aperture and Forge keep their text so either
+   can be swapped back in. */
+const STAGED = ['rainbow', 'spectra', 'pokeduel', 'epharmacy', 'mise', 'verdant'] as const;
+
+export const FEATURED = STAGED.map((id) => {
+  const project = PROJECTS.find((p) => p.id === id);
+  if (!project?.feature) throw new Error(`${id} has no feature text`);
+  return project;
+});

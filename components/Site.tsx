@@ -3,7 +3,8 @@ import { Featured } from './Featured';
 import { Header } from './Header';
 import { Hero } from './Hero';
 import { Motion } from './Motion';
-import { Background, Checklist, Contact, Footer, Parts } from './Sections';
+import { PartsList } from './PartsList';
+import { Background, Contact, Hire } from './Sections';
 
 /** The whole page. Both language routes render this with a different `lang`. */
 export function Site({ lang }: { lang: Lang }) {
@@ -13,12 +14,11 @@ export function Site({ lang }: { lang: Lang }) {
       <main id="main">
         <Hero lang={lang} />
         <Featured lang={lang} />
-        <Parts lang={lang} />
+        <PartsList lang={lang} />
         <Background lang={lang} />
-        <Checklist lang={lang} />
-        <Contact lang={lang} />
+        <Hire lang={lang} />
       </main>
-      <Footer lang={lang} />
+      <Contact lang={lang} />
       <Motion />
     </>
   );

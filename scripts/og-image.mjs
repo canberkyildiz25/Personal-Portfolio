@@ -5,26 +5,27 @@
    Needs playwright-core available to Node (it is not a project dependency). */
 import { chromium } from 'playwright-core';
 
-const [url = 'http://127.0.0.1:5351/', executablePath] = process.argv.slice(2);
+const [url = 'http://127.0.0.1:5421/', executablePath] = process.argv.slice(2);
 
 const browser = await chromium.launch(executablePath ? { executablePath } : {});
 const page = await browser.newPage({
   viewport: { width: 1200, height: 630 },
-  colorScheme: 'light',
   reducedMotion: 'reduce',
 });
 await page.goto(url, { waitUntil: 'networkidle' });
 await page.addStyleTag({
   content: `
-    .site-nav, .header-tools, .hero__actions, .skip-link { display: none !important; }
-    .hero { padding-top: 3.25rem !important; }
-    .hero h1 { font-size: 8.4rem !important; }
-    .hero__stripe { margin-block: 1.75rem !important; }
-    .hero__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) !important; gap: 3.5rem !important; }
-    .hero__intro { font-size: 1.2rem !important; }
+    .bar, .reel-toggle, .hero__about, .hero__actions, .skip-link { display: none !important; }
+    .hero { padding: 2.5rem 3rem 2.75rem !important; gap: 1.25rem !important; }
+    .hero__role { font-size: 0.9rem !important; }
+    .hero__stage { margin-inline: -3rem !important; }
+    .hero__name { padding-inline: 3rem !important; font-size: 10rem !important; }
+    .rail { height: 9.5rem !important; }
+    .hero__line { font-size: 2.25rem !important; max-width: none !important; }
   `,
 });
-await page.waitForTimeout(300);
+await page.evaluate(() => document.fonts.ready);
+await page.waitForTimeout(400);
 await page.screenshot({ path: 'public/og-image.png' });
 await browser.close();
 console.log('wrote public/og-image.png');

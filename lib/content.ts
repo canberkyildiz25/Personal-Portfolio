@@ -9,40 +9,77 @@ export const META = {
     tr: 'Canberk Yıldız · Full-stack geliştirici',
   },
   description: {
-    en: 'Full-stack developer in İstanbul with a mechanical engineering degree. Nineteen live projects in Next.js, React, TypeScript and Node.js.',
-    tr: 'İstanbul’da yaşayan, makine mühendisliği mezunu full-stack geliştirici. Next.js, React, TypeScript ve Node.js ile yayında on dokuz proje.',
+    en: 'Full-stack developer in İstanbul with a mechanical engineering degree. Nineteen live projects in Next.js, React, TypeScript and Node.js, and websites for small businesses.',
+    tr: 'İstanbul’da yaşayan, makine mühendisliği mezunu full-stack geliştirici. Next.js, React, TypeScript ve Node.js ile yayında on dokuz proje; küçük işletmeler için web siteleri.',
   },
 } satisfies Record<string, L>;
 
 export const NAV = {
-  work: { en: 'Work', tr: 'İşler' },
-  parts: { en: 'All projects', tr: 'Tüm projeler' },
-  path: { en: 'Background', tr: 'Geçmiş' },
-  contact: { en: 'Contact', tr: 'İletişim' },
   skip: { en: 'Skip to content', tr: 'İçeriğe geç' },
-  theme: { en: 'Switch colour theme', tr: 'Renk temasını değiştir' },
   language: { en: 'Language', tr: 'Dil' },
   home: { en: 'Canberk Yıldız, top of page', tr: 'Canberk Yıldız, sayfa başı' },
+  onStage: { en: 'On stage', tr: 'Sahnede' },
 } satisfies Record<string, L>;
 
 export const HERO = {
-  h1: {
+  role: {
+    en: 'Full-stack developer, İstanbul',
+    tr: 'Full-stack geliştirici, İstanbul',
+  },
+  line: {
     en: 'Software built by a mechanical engineer.',
     tr: 'Bir makine mühendisinin elinden çıkan yazılım.',
   },
   intro: {
-    en: 'I’m Canberk Yıldız, a full-stack developer in İstanbul. I trained as a mechanical engineer, worked on gas turbines and production lines, then spent years selling technical systems across borders. Now I design and build web products end to end: interface, API, database, deploy.',
-    tr: 'Ben Canberk Yıldız, İstanbul’da yaşayan bir full-stack geliştiriciyim. Makine mühendisliği okudum, gaz türbinlerinde ve üretim hatlarında çalıştım, sonra yıllarca teknik sistemleri yurt dışına sattım. Şimdi web ürünlerini uçtan uca tasarlayıp geliştiriyorum: arayüz, API, veritabanı, yayın.',
+    en: 'I trained as a mechanical engineer, worked on gas turbines and production lines, then spent years selling technical systems across borders. Now I design and build web products end to end: interface, API, database, deploy.',
+    tr: 'Makine mühendisliği okudum, gaz türbinlerinde ve üretim hatlarında çalıştım, sonra yıllarca teknik sistemleri yurt dışına sattım. Şimdi web ürünlerini uçtan uca tasarlayıp geliştiriyorum: arayüz, API, veritabanı, yayın.',
   },
+  roles: { en: 'Open to developer roles.', tr: 'Yazılım rollerine açığım.' },
+  sites: { en: 'Building websites for small businesses.', tr: 'Küçük işletmelere web sitesi yapıyorum.' },
   work: { en: 'See the work', tr: 'İşleri gör' },
-  mail: { en: 'Send an email', tr: 'E-posta gönder' },
-  blockCaption: { en: 'Title block', tr: 'Antet' },
+  mail: { en: 'Write to me', tr: 'Bana yazın' },
+  pause: { en: 'Pause the reel', tr: 'Akışı durdur' },
+  play: { en: 'Play the reel', tr: 'Akışı başlat' },
 } satisfies Record<string, L>;
 
-export const TITLE_BLOCK: { label: L; value: L }[] = [
-  { label: { en: 'Name', tr: 'Ad' }, value: { en: 'Canberk Yıldız', tr: 'Canberk Yıldız' } },
-  { label: { en: 'Role', tr: 'Görev' }, value: { en: 'Full-stack developer', tr: 'Full-stack geliştirici' } },
-  { label: { en: 'Based in', tr: 'Konum' }, value: { en: 'İstanbul, Türkiye', tr: 'İstanbul, Türkiye' } },
+export const WORK = {
+  h2: { en: 'Selected work', tr: 'Seçili işler' },
+  sub: {
+    en: 'Six of the nineteen. Every picture was taken from the live address.',
+    tr: 'On dokuz işten altısı. Bütün görüntüler yayındaki adresten alındı.',
+  },
+  stack: { en: 'Stack', tr: 'Araçlar' },
+  started: { en: 'Started', tr: 'Başlangıç' },
+  revision: { en: 'Revision', tr: 'Revizyon' },
+  firstIssue: { en: 'Rev A: first version.', tr: 'Rev A: ilk sürüm.' },
+  open: { en: 'Open site', tr: 'Siteyi aç' },
+  source: { en: 'Source', tr: 'Kaynak kod' },
+  desktopAlt: { en: 'desktop view', tr: 'masaüstü görünümü' },
+  phoneAlt: { en: 'phone view', tr: 'telefon görünümü' },
+} satisfies Record<string, L>;
+
+export const PARTS = {
+  h2: { en: 'Every project', tr: 'Bütün projeler' },
+  sub: {
+    en: 'All nineteen are deployed, and each link opens the running site. Started is the month of the first commit; rev B means the project was rebuilt or redesigned after its first version.',
+    tr: 'On dokuzu da yayında; bağlantılar çalışan siteyi açıyor. Başlangıç, ilk commit’in ayı; rev B, projenin ilk sürümünden sonra yeniden kurulduğunu ya da yeniden tasarlandığını gösteriyor.',
+  },
+  live: { en: 'Site', tr: 'Site' },
+  code: { en: 'Code', tr: 'Kod' },
+} satisfies Record<string, L>;
+
+export const PATH = {
+  h2: { en: 'From gas turbines to TypeScript', tr: 'Gaz türbinlerinden TypeScript’e' },
+  intro: {
+    en: 'I studied mechanical engineering in Odesa and worked in power generation and manufacturing in Russia and Ukraine. In İstanbul I moved into technical sales, where the job was to stand between a client and an engineering team and make each understand the other. In 2025 I started building the software myself.',
+    tr: 'Odesa’da makine mühendisliği okudum, Rusya ve Ukrayna’da enerji üretimi ve imalat alanlarında çalıştım. İstanbul’da teknik satışa geçtim; işim müşteri ile mühendislik ekibinin arasında durup ikisinin birbirini anlamasını sağlamaktı. 2025’te yazılımı kendim yazmaya başladım.',
+  },
+  before: { en: 'Engineering and sales', tr: 'Mühendislik ve satış' },
+  software: { en: 'Software', tr: 'Yazılım' },
+  facts: { en: 'In short', tr: 'Kısaca' },
+} satisfies Record<string, L>;
+
+export const FACTS: { label: L; value: L }[] = [
   {
     label: { en: 'Works with', tr: 'Araçlar' },
     value: {
@@ -64,61 +101,7 @@ export const TITLE_BLOCK: { label: L; value: L }[] = [
       tr: 'Türkçe, İngilizce, Rusça. Temel Almanca ve İtalyanca.',
     },
   },
-  { label: { en: 'Status', tr: 'Durum' }, value: { en: 'Open to developer roles', tr: 'Yazılım rollerine açık' } },
-  { label: { en: 'Revised', tr: 'Revizyon' }, value: { en: 'October 2026', tr: 'Ekim 2026' } },
 ];
-
-export const WORK = {
-  h2: { en: 'Selected work', tr: 'Seçili işler' },
-  sub: {
-    en: 'Six of nineteen. Each sheet shows the site at desktop width and on a phone, captured from the live address.',
-    tr: 'On dokuz projeden altısı. Her paftada sitenin masaüstü ve telefon görünümü var; görüntüler yayındaki adresten alındı.',
-  },
-  sheet: { en: 'Sheet', tr: 'Pafta' },
-  of: { en: 'of', tr: '/' },
-  type: { en: 'Type', tr: 'Tür' },
-  stack: { en: 'Stack', tr: 'Araçlar' },
-  started: { en: 'Started', tr: 'Başlangıç' },
-  revision: { en: 'Revision', tr: 'Revizyon' },
-  firstIssue: { en: 'Rev A: first issue.', tr: 'Rev A: ilk sürüm.' },
-  open: { en: 'Open site', tr: 'Siteyi aç' },
-  source: { en: 'Source', tr: 'Kaynak kod' },
-  desktopAlt: { en: 'desktop view', tr: 'masaüstü görünümü' },
-  phoneAlt: { en: 'phone view', tr: 'telefon görünümü' },
-} satisfies Record<string, L>;
-
-export const PARTS = {
-  h2: { en: 'Parts list', tr: 'Parça listesi' },
-  sub: {
-    en: 'All nineteen projects. Every one is deployed, and each link opens the running site.',
-    tr: 'On dokuz projenin tamamı. Hepsi yayında; bağlantılar çalışan siteyi açıyor.',
-  },
-  no: { en: 'No.', tr: 'No' },
-  project: { en: 'Project', tr: 'Proje' },
-  stack: { en: 'Stack', tr: 'Araçlar' },
-  started: { en: 'Started', tr: 'Başlangıç' },
-  rev: { en: 'Rev', tr: 'Rev' },
-  links: { en: 'Links', tr: 'Bağlantılar' },
-  live: { en: 'Site', tr: 'Site' },
-  code: { en: 'Code', tr: 'Kod' },
-  legend: {
-    en: 'Started is the month of the first commit. Rev B means the project was rebuilt or redesigned after its first version.',
-    tr: 'Başlangıç, ilk commit’in ayıdır. Rev B, projenin ilk sürümünden sonra yeniden kurulduğunu ya da yeniden tasarlandığını gösterir.',
-  },
-  preview: { en: 'Preview', tr: 'Önizleme' },
-} satisfies Record<string, L>;
-
-export const PATH = {
-  h2: { en: 'Revision history', tr: 'Revizyon geçmişi' },
-  intro: {
-    en: 'I studied mechanical engineering in Odesa and worked in power generation and manufacturing in Russia and Ukraine. In İstanbul I moved into technical sales, where the job was to stand between a client and an engineering team and make each understand the other. In 2025 I started building the software myself.',
-    tr: 'Odesa’da makine mühendisliği okudum, Rusya ve Ukrayna’da enerji üretimi ve imalat alanlarında çalıştım. İstanbul’da teknik satışa geçtim; işim müşteri ile mühendislik ekibinin arasında durup ikisinin birbirini anlamasını sağlamaktı. 2025’te yazılımı kendim yazmaya başladım.',
-  },
-  date: { en: 'Date', tr: 'Tarih' },
-  change: { en: 'Change', tr: 'Değişiklik' },
-  before: { en: 'Engineering and sales', tr: 'Mühendislik ve satış' },
-  software: { en: 'Software', tr: 'Yazılım' },
-} satisfies Record<string, L>;
 
 export interface PathRow {
   date: L;
@@ -250,16 +233,48 @@ export const PATH_SOFTWARE: PathRow[] = [
   },
 ];
 
-export const CHECKS = {
-  h2: { en: 'Inspection checklist', tr: 'Muayene listesi' },
+export const HIRE = {
+  h2: { en: 'Need a website for your business?', tr: 'İşletmeniz için bir site mi lazım?' },
   intro: {
-    en: 'In weld inspection a part is not accepted because it looks right. These are the checks I run on a site before I call it finished. This page passes all five.',
-    tr: 'Kaynak muayenesinde bir parça, iyi göründüğü için kabul edilmez. Bir siteye bitti demeden önce yaptığım kontroller bunlar. Bu sayfa beşinden de geçiyor.',
+    en: 'I also build websites for small businesses: a restaurant, a clinic, a workshop, a shop. You deal with one person from the first conversation to the day it goes live, in Turkish or in English.',
+    tr: 'Küçük işletmelere de site yapıyorum: bir restoran, bir klinik, bir atölye, bir dükkân. İlk konuşmadan sitenin yayına girdiği güne kadar karşınızda tek bir kişi var; Türkçe ya da İngilizce.',
   },
-  check: { en: 'Check', tr: 'Kontrol' },
-  method: { en: 'Method', tr: 'Yöntem' },
-  accept: { en: 'Accepted when', tr: 'Kabul ölçütü' },
+  cta: { en: 'Write to me', tr: 'Bana yazın' },
+  subject: { en: 'A website for my business', tr: 'İşletmem için web sitesi' },
+  checksH: { en: 'Five checks before I hand a site over', tr: 'Bir siteyi teslim etmeden önce beş kontrol' },
+  checksIntro: {
+    en: 'In weld inspection a part is not accepted because it looks right. These are the checks I run on every site before I call it finished. This page passes all five.',
+    tr: 'Kaynak muayenesinde bir parça, iyi göründüğü için kabul edilmez. Her siteye bitti demeden önce yaptığım kontroller bunlar. Bu sayfa beşinden de geçiyor.',
+  },
+  self: {
+    en: 'Rather set it up yourself? Rainbow Design, my site builder for small businesses, walks you through it in five steps.',
+    tr: 'Kendiniz kurmayı mı tercih edersiniz? Küçük işletmeler için yaptığım site kurucu Rainbow Design, beş adımda yol gösteriyor.',
+  },
 } satisfies Record<string, L>;
+
+export const HIRE_STEPS: { title: L; text: L }[] = [
+  {
+    title: { en: 'Tell me about the business', tr: 'İşinizi anlatın' },
+    text: {
+      en: 'What you sell, who comes to you, and what they should be able to do on the site: call, book, order or find the door.',
+      tr: 'Ne sattığınızı, size kimlerin geldiğini ve sitede ne yapabilmeleri gerektiğini: aramak, randevu almak, sipariş vermek ya da kapıyı bulmak.',
+    },
+  },
+  {
+    title: { en: 'Try it before it goes live', tr: 'Yayından önce deneyin' },
+    text: {
+      en: 'I design and build it, then send you a working address to open on your own phone. Changes are made on the site itself, not on a picture of it.',
+      tr: 'Tasarlayıp kuruyorum, sonra kendi telefonunuzda açabileceğiniz çalışan bir adres gönderiyorum. Değişiklikler sitenin resmi üzerinde değil, kendisinde yapılıyor.',
+    },
+  },
+  {
+    title: { en: 'On an address of your own', tr: 'Kendi adresinizde' },
+    text: {
+      en: 'It goes up on your own domain, and after launch I am an email away for changes.',
+      tr: 'Site kendi alan adınızda yayına giriyor; yayından sonra değişiklikler için bir e-posta kadar uzaktayım.',
+    },
+  },
+];
 
 export const CHECK_ROWS: { check: L; method: L; accept: L }[] = [
   {
@@ -275,7 +290,7 @@ export const CHECK_ROWS: { check: L; method: L; accept: L }[] = [
   {
     check: { en: 'Contrast', tr: 'Kontrast' },
     method: { en: 'Measure text against its background.', tr: 'Metni zeminine karşı ölç.' },
-    accept: { en: 'WCAG AA or better, in both themes.', tr: 'İki temada da WCAG AA veya üstü.' },
+    accept: { en: 'WCAG AA or better, everywhere.', tr: 'Her yerde WCAG AA veya üstü.' },
   },
   {
     check: { en: 'Reduced motion', tr: 'Azaltılmış hareket' },
@@ -294,22 +309,19 @@ export const CONTACT = {
     en: 'Have a role or a project? Write to me.',
     tr: 'Bir pozisyon ya da proje mi var? Bana yazın.',
   },
-  email: { en: 'Email', tr: 'E-posta' },
   github: { en: 'GitHub', tr: 'GitHub' },
   linkedin: { en: 'LinkedIn', tr: 'LinkedIn' },
   source: { en: 'Source of this site', tr: 'Bu sitenin kaynak kodu' },
-  set: { en: 'Set in Archivo and IBM Plex Mono.', tr: 'Archivo ve IBM Plex Mono ile dizildi.' },
+  set: { en: 'Set in Funnel Display, Funnel Sans and Martian Mono.', tr: 'Funnel Display, Funnel Sans ve Martian Mono ile dizildi.' },
+  top: { en: 'Back to the top', tr: 'Başa dön' },
 } satisfies Record<string, L>;
 
 export const NOT_FOUND = {
-  title: { en: 'This sheet is not in the set.', tr: 'Bu pafta sette yok.' },
+  title: { en: 'Nothing is on stage here.', tr: 'Bu sahnede kimse yok.' },
   body: {
-    en: 'The address may be mistyped, or the page was withdrawn in a later revision.',
-    tr: 'Adres yanlış yazılmış olabilir ya da sayfa sonraki bir revizyonda kaldırılmış olabilir.',
+    en: 'The address may be mistyped, or the page was taken down in a later version of the site.',
+    tr: 'Adres yanlış yazılmış olabilir ya da sayfa sitenin sonraki bir sürümünde kaldırılmış olabilir.',
   },
-  home: { en: 'Go to the first sheet', tr: 'İlk paftaya git' },
+  home: { en: 'Go to the front page', tr: 'Ön sayfaya git' },
   requested: { en: 'Requested', tr: 'İstenen' },
-  status: { en: 'Status', tr: 'Durum' },
-  statusValue: { en: 'Not found', tr: 'Bulunamadı' },
 } satisfies Record<string, L>;
-

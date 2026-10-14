@@ -1,32 +1,31 @@
 'use client';
 
+import { ArrowRight } from '@phosphor-icons/react';
 import { useSyncExternalStore } from 'react';
 import { NAV, NOT_FOUND } from '@/lib/content';
 import { PATHS, SITE, type Lang } from '@/lib/site';
-import { Arrow, Mark, Stripe } from './Icons';
-import { ThemeToggle } from './ThemeToggle';
 
 const subscribe = () => () => {};
 
 /** The address that was asked for. Only known in the browser, so the
-    prerendered page leaves the cell empty until it hydrates. */
+    prerendered page leaves it empty until it hydrates. */
 function RequestedPath() {
   const path = useSyncExternalStore(
     subscribe,
     () => window.location.pathname,
     () => '',
   );
-  return <span className="figure-text nf__path">{path}</span>;
+  return <span className="nf__path mono">{path}</span>;
 }
 
 function Message({ lang }: { lang: Lang }) {
   return (
     <div className="nf__msg" lang={lang}>
-      <p className="nf__lede">{NOT_FOUND.title[lang]}</p>
-      <p className="nf__body">{NOT_FOUND.body[lang]}</p>
-      <a className="btn" href={PATHS[lang]}>
+      <p className="nf__title">{NOT_FOUND.title[lang]}</p>
+      <p>{NOT_FOUND.body[lang]}</p>
+      <a className="btn btn--light" href={PATHS[lang]}>
         {NOT_FOUND.home[lang]}
-        <Arrow />
+        <ArrowRight size={16} weight="bold" aria-hidden="true" />
       </a>
     </div>
   );
@@ -37,52 +36,28 @@ function Message({ lang }: { lang: Lang }) {
 export function NotFound() {
   return (
     <>
-      <header className="site-header">
-        <div className="wrap site-header__row">
-          <a className="brand" href={PATHS.en} aria-label={NAV.home.en}>
-            <Mark />
-            {SITE.name}
+      <header className="bar">
+        <a className="chip chip--name" href={PATHS.en} aria-label={NAV.home.en}>
+          <span className="chip__name">{SITE.name}</span>
+        </a>
+        <nav className="chip chip--lang mono" aria-label={NAV.language.en}>
+          <a href={PATHS.en} hrefLang="en" lang="en" aria-label="English">
+            EN
           </a>
-          <div className="header-tools">
-            <nav className="lang" aria-label={NAV.language.en}>
-              <a href={PATHS.en} hrefLang="en" lang="en" aria-label="English">
-                EN
-              </a>
-              <a href={PATHS.tr} hrefLang="tr" lang="tr" aria-label="Türkçe">
-                TR
-              </a>
-            </nav>
-            <ThemeToggle label={NAV.theme.en} />
-          </div>
-        </div>
+          <a href={PATHS.tr} hrefLang="tr" lang="tr" aria-label="Türkçe">
+            TR
+          </a>
+        </nav>
       </header>
-      <main id="main" className="hero hero--nf wrap">
-        <h1>404</h1>
-        <Stripe className="hero__stripe" />
+      <main id="main" className="nf">
+        <h1 className="nf__code">404</h1>
+        <p className="nf__asked mono">
+          {NOT_FOUND.requested.en} · <span lang="tr">{NOT_FOUND.requested.tr}</span> <RequestedPath />
+        </p>
         <div className="nf__msgs">
           <Message lang="en" />
           <Message lang="tr" />
         </div>
-        <table className="title-block">
-          <tbody>
-            <tr>
-              <th scope="row" className="lettering">
-                {NOT_FOUND.requested.en} · <span lang="tr">{NOT_FOUND.requested.tr}</span>
-              </th>
-              <td>
-                <RequestedPath />
-              </td>
-            </tr>
-            <tr>
-              <th scope="row" className="lettering">
-                {NOT_FOUND.status.en} · <span lang="tr">{NOT_FOUND.status.tr}</span>
-              </th>
-              <td>
-                404. {NOT_FOUND.statusValue.en} · <span lang="tr">{NOT_FOUND.statusValue.tr}</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </main>
     </>
   );

@@ -1,17 +1,23 @@
-import { Archivo, IBM_Plex_Mono } from 'next/font/google';
+import { Funnel_Display, Funnel_Sans, Martian_Mono } from 'next/font/google';
 
-// Archivo carries a width axis: headings are set condensed and body text at
-// normal width from the same family. Plex Mono is the lettering for figures.
-export const archivo = Archivo({
+// Funnel Display for the name and the project names, Funnel Sans for
+// reading, Martian Mono (narrowed on its width axis) for dates, labels and
+// the stage cue.
+export const funnelDisplay = Funnel_Display({
   subsets: ['latin', 'latin-ext'],
-  axes: ['wdth'],
-  variable: '--font-archivo',
+  variable: '--font-funnel-display',
   display: 'swap',
 });
 
-export const plexMono = IBM_Plex_Mono({
+export const funnelSans = Funnel_Sans({
   subsets: ['latin', 'latin-ext'],
-  weight: ['400', '500'],
-  variable: '--font-plex-mono',
+  variable: '--font-funnel-sans',
+  display: 'swap',
+});
+
+export const martianMono = Martian_Mono({
+  subsets: ['latin', 'latin-ext'],
+  axes: ['wdth'],
+  variable: '--font-martian-mono',
   display: 'swap',
 });
