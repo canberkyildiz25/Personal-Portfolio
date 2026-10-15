@@ -227,8 +227,8 @@ export const PATH_SOFTWARE: PathRow[] = [
   {
     date: { en: '2026-10', tr: '2026-10' },
     text: {
-      en: 'Rainbow Design running on its own domain, rainbowdesign.com.tr. Book-Shelf rebuilt as Shelfmark, Psychologist Services as FIFTY, Purr Pedia as Catalogue, PetLove as Yuva, E-Pharmacy as Nöbet, and PokéDuel became a table for the real card game.',
-      tr: 'Rainbow Design kendi alan adında çalışıyor: rainbowdesign.com.tr. Book-Shelf, Shelfmark olarak; Psychologist Services, FIFTY olarak; Purr Pedia, Catalogue olarak; PetLove, Yuva olarak; E-Pharmacy, Nöbet olarak yeniden kuruldu; PokéDuel gerçek kart oyununun masası oldu.',
+      en: 'Rainbow Design running on its own domain, rainbowdesign.com.tr. Book-Shelf rebuilt as Shelfmark, Psychologist Services as FIFTY, Purr Pedia as Catalogue, PetLove as Yuva, E-Pharmacy as Nöbet; PokéDuel became a table for the real card game, and Apex Engineering an exhibition of three machines modelled in code.',
+      tr: 'Rainbow Design kendi alan adında çalışıyor: rainbowdesign.com.tr. Book-Shelf, Shelfmark olarak; Psychologist Services, FIFTY olarak; Purr Pedia, Catalogue olarak; PetLove, Yuva olarak; E-Pharmacy, Nöbet olarak yeniden kuruldu; PokéDuel gerçek kart oyununun masası, Apex Engineering ise kodla modellenmiş üç makinenin sergisi oldu.',
     },
   },
 ];
