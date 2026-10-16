@@ -275,16 +275,16 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'mystic',
-    name: 'Mystic',
-    kind: { en: 'Web app', tr: 'Web uygulaması' },
+    name: 'Mistik',
+    kind: { en: 'Fortune table', tr: 'Fal masası' },
     standing: 'concept',
     blurb: {
-      en: 'Dream, coffee-cup and tarot readings behind Firebase sign-in.',
-      tr: 'Firebase girişi arkasında rüya, kahve ve tarot yorumları.',
+      en: 'A fortune teller’s table at night: Turkish coffee, the 1909 Rider-Waite tarot, dreams and the zodiac, each read from the traditional meanings onto a slip of paper on green velvet, with a notebook to keep them.',
+      tr: 'Gece bir fal masası: kahve falı, 1909 Rider-Waite tarotu, rüya tabiri ve burçlar; her fal geleneksel anlamlarıyla yeşil kadifenin üstündeki bir kâğıda yazılıyor, isteyen fal defterinde saklıyor.',
     },
-    stack: ['React 19', 'TypeScript', 'Firebase', 'Tailwind CSS 4', 'Framer Motion'],
+    stack: ['Next.js 16', 'React 19', 'TypeScript', 'Firebase', 'Tailwind CSS 4'],
     started: '2026-05',
-    rev: 'A',
+    rev: 'B',
     live: 'https://mystic-app-gules.vercel.app/',
   },
   {
