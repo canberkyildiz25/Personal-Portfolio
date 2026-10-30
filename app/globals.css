@@ -41,6 +41,9 @@
   --stage-spectra: oklch(0.74 0.12 248);
   --stage-spectra-ink: oklch(0.17 0.03 258);
   --stage-spectra-ink-2: oklch(0.27 0.04 258);
+  --stage-vending: oklch(0.87 0.04 180);
+  --stage-vending-ink: oklch(0.2 0.02 90);
+  --stage-vending-ink-2: oklch(0.32 0.03 90);
   --stage-pokeduel: oklch(0.67 0.19 33);
   --stage-pokeduel-ink: oklch(0.15 0.03 30);
   --stage-pokeduel-ink-2: oklch(0.22 0.04 30);
@@ -95,6 +98,11 @@
   --scene: var(--stage-pokeduel);
   --scene-ink: var(--stage-pokeduel-ink);
   --scene-ink-2: var(--stage-pokeduel-ink-2);
+}
+[data-tone='vending'] {
+  --scene: var(--stage-vending);
+  --scene-ink: var(--stage-vending-ink);
+  --scene-ink-2: var(--stage-vending-ink-2);
 }
 [data-tone='epharmacy'] {
   --scene: var(--stage-epharmacy);

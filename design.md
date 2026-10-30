@@ -20,10 +20,10 @@ Every device carries real content:
 
 | Device | What it holds |
 | --- | --- |
-| The reel | Captures of all nineteen live sites, in two lines moving in opposite directions under the name |
-| The stage | Six featured projects, one full screen each, in their own colours |
+| The reel | Captures of all twenty live sites, in two lines moving in opposite directions under the name |
+| The stage | Seven featured projects, one full screen each, in their own colours |
 | The stage cue | The header chip names the project on stage, with a dot of its colour |
-| The wall | All nineteen as a grid of captures; the six staged ones keep a bar of their colour |
+| The wall | All twenty as a grid of captures; the seven staged ones keep a bar of their colour |
 | The timeline | The career in two lists: engineering and sales, then software |
 | The limelight section | Work for small businesses: three steps, five checks, Rainbow Design |
 | The closing line | One sentence, the email in limelight, two profile links |
@@ -42,7 +42,7 @@ There are no counters (`01 / 06`), no "scroll" hints, no invented numbers.
    other edge with the phone capture overlapping its inner corner. The
    capture side alternates.
 3. **Every project** (`#parts`, night). Heading and note side by side, then
-   the wall of nineteen.
+   the wall of twenty.
 4. **Background** (`#background`, night). Heading, introduction and three
    facts in a sticky column; the two timelines beside it.
 5. **For businesses** (`#hire`, limelight). Heading, introduction and one

@@ -6,9 +6,9 @@ My own site. I am a full-stack developer with a degree in mechanical engineering
 
 ## What is on the page
 
-- **The name over the reel.** Captures of all nineteen live sites run in two lines, in opposite directions, under my name. They stop under the pointer, when the top of the page is off screen, and with the pause button; with the system's reduced-motion setting on they never move.
-- **The stage.** Six projects, one full screen each. While a project holds the middle of the screen the whole stage takes the colour its own site is built round (Rainbow Design's yellow, Spectra's cold blue, PokéDuel's baize, Nöbet's sodium lamp, MISE's lilac, Verdant's field), and the chip in the header names it. Each one shows the site at desktop width and on a phone, what it does, its stack, when it was started and how it was revised.
-- **Every project**, all nineteen, as a wall of captures with links to the running site and the code.
+- **The name over the reel.** Captures of all twenty live sites run in two lines, in opposite directions, under my name. They stop under the pointer, when the top of the page is off screen, and with the pause button; with the system's reduced-motion setting on they never move.
+- **The stage.** Seven projects, one full screen each. While a project holds the middle of the screen the whole stage takes the colour its own site is built round (Rainbow Design's yellow, Spectra's cold blue, PokéDuel's baize, Nöbet's sodium lamp, MISE's lilac, Verdant's field), and the chip in the header names it. Each one shows the site at desktop width and on a phone, what it does, its stack, when it was started and how it was revised.
+- **Every project**, all twenty, as a wall of captures with links to the running site and the code.
 - **The background**: from mechanical engineering through sales to software, dated.
 - **For businesses**: how a site gets made, the five checks every site I hand over passes, and Rainbow Design for anyone who would rather set one up alone.
 - **Two languages**, English and Turkish, as two routes with their own `<html lang>`. Every sentence lives in one file.

@@ -88,6 +88,31 @@ export const PROJECTS: Project[] = [
     },
   },
   {
+    id: 'vending',
+    name: 'Cashless Vending Payback',
+    kind: { en: 'Sales tool', tr: 'Satış aracı' },
+    standing: 'demo',
+    blurb: {
+      en: 'Shows a vending operator when card readers pay for themselves, using their own figures, and turns it into a proposal.',
+      tr: 'Otomat işletmecisine kart okuyucuların kendini ne zaman ödediğini kendi rakamlarıyla gösteriyor ve bunu teklife çeviriyor.',
+    },
+    stack: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS 4', 'Vitest', 'D3'],
+    started: '2026-10',
+    rev: 'A',
+    live: 'https://vending-payback.vercel.app',
+    code: gh('vending-payback'),
+    feature: {
+      lede: {
+        en: 'A sales tool that answers “I don’t believe that number” before anyone argues.',
+        tr: '“O rakama inanmıyorum” itirazına tartışma başlamadan cevap veren bir satış aracı.',
+      },
+      detail: {
+        en: 'Buyers decide when they can defend the numbers to their own finance team, so the tool only counts margin as gain and marks every estimate as an estimate. It shows the smallest sales increase that still pays the readers back, what waiting costs, and walks a seller through the meeting question by question. A pilot’s sales file replaces the estimates with measured figures, and the result prints as a client proposal in English, Turkish or Dutch.',
+        tr: 'Alıcı, rakamları kendi finans ekibine savunabildiğinde karar verir; bu yüzden araç kazanç olarak yalnızca marjı sayıyor ve her tahmini tahmin diye işaretliyor. Okuyucuları hâlâ amorti eden en küçük satış artışını ve beklemenin maliyetini gösteriyor, satışçıyı görüşme boyunca soru soru yönlendiriyor. Pilotun satış dosyası tahminlerin yerine ölçülmüş rakamları koyuyor; sonuç İngilizce, Türkçe veya Hollandaca müşteri teklifi olarak basılıyor.',
+      },
+    },
+  },
+  {
     id: 'mise',
     name: 'MISE',
     kind: { en: 'Recipe planner', tr: 'Tarif planlayıcı' },
@@ -427,7 +452,7 @@ export const PROJECTS: Project[] = [
    Each id needs a `feature`, a phone capture (<id>-m-520.webp) and a stage
    colour in app/globals.css. Aperture and Forge keep their text so either
    can be swapped back in. */
-const STAGED = ['rainbow', 'spectra', 'pokeduel', 'epharmacy', 'mise', 'verdant'] as const;
+const STAGED = ['rainbow', 'spectra', 'vending', 'pokeduel', 'epharmacy', 'mise', 'verdant'] as const;
 
 export const FEATURED = STAGED.map((id) => {
   const project = PROJECTS.find((p) => p.id === id);
