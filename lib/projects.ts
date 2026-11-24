@@ -124,7 +124,7 @@ export const PROJECTS: Project[] = [
     stack: ['Next.js 16', 'React 19', 'TypeScript', 'WebAssembly', 'pdf.js', 'Vitest'],
     started: '2026-11',
     rev: 'A',
-    live: 'https://line-check-r102.vercel.app',
+    live: 'https://line-check-kitchen.vercel.app',
     code: gh('line-check'),
     feature: {
       lede: {
