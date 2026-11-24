@@ -9,8 +9,8 @@ export const META = {
     tr: 'Canberk Yıldız · Full-stack geliştirici',
   },
   description: {
-    en: 'Full-stack developer in İstanbul with a mechanical engineering degree. Twenty live projects in Next.js, React, TypeScript and Node.js, and websites for small businesses.',
-    tr: 'İstanbul’da yaşayan, makine mühendisliği mezunu full-stack geliştirici. Next.js, React, TypeScript ve Node.js ile yayında yirmi proje; küçük işletmeler için web siteleri.',
+    en: 'Full-stack developer in İstanbul with a mechanical engineering degree. Twenty-one live projects in Next.js, React, TypeScript and Node.js, and websites for small businesses.',
+    tr: 'İstanbul’da yaşayan, makine mühendisliği mezunu full-stack geliştirici. Next.js, React, TypeScript ve Node.js ile yayında yirmi bir proje; küçük işletmeler için web siteleri.',
   },
 } satisfies Record<string, L>;
 
@@ -45,8 +45,8 @@ export const HERO = {
 export const WORK = {
   h2: { en: 'Selected work', tr: 'Seçili işler' },
   sub: {
-    en: 'Seven of the twenty. Every picture was taken from the live address.',
-    tr: 'Yirmi işten yedisi. Bütün görüntüler yayındaki adresten alındı.',
+    en: 'Eight of the twenty-one. Every picture was taken from the live address.',
+    tr: 'Yirmi bir işten sekizi. Bütün görüntüler yayındaki adresten alındı.',
   },
   stack: { en: 'Stack', tr: 'Araçlar' },
   started: { en: 'Started', tr: 'Başlangıç' },
@@ -61,8 +61,8 @@ export const WORK = {
 export const PARTS = {
   h2: { en: 'Every project', tr: 'Bütün projeler' },
   sub: {
-    en: 'All twenty are deployed, and each link opens the running site. Started is the month of the first commit; rev B means the project was rebuilt or redesigned after its first version.',
-    tr: 'Yirmisi de yayında; bağlantılar çalışan siteyi açıyor. Başlangıç, ilk commit’in ayı; rev B, projenin ilk sürümünden sonra yeniden kurulduğunu ya da yeniden tasarlandığını gösteriyor.',
+    en: 'All twenty-one are deployed, and each link opens the running site. Started is the month of the first commit; rev B means the project was rebuilt or redesigned after its first version.',
+    tr: 'Yirmi birinin hepsi yayında; bağlantılar çalışan siteyi açıyor. Başlangıç, ilk commit’in ayı; rev B, projenin ilk sürümünden sonra yeniden kurulduğunu ya da yeniden tasarlandığını gösteriyor.',
   },
   live: { en: 'Site', tr: 'Site' },
   code: { en: 'Code', tr: 'Kod' },

@@ -113,6 +113,31 @@ export const PROJECTS: Project[] = [
     },
   },
   {
+    id: 'linecheck',
+    name: 'Line Check',
+    kind: { en: 'Engineering tool', tr: 'Mühendislik aracı' },
+    standing: 'demo',
+    blurb: {
+      en: 'Reads a kitchen drawing, finds the hoods and the cooking line, and lays out a wet chemical fire suppression system for each hood.',
+      tr: 'Mutfak çizimini okuyor, davlumbazları ve pişirme hattını buluyor, her davlumbaz için yaş kimyasal söndürme sistemini yerleştiriyor.',
+    },
+    stack: ['Next.js 16', 'React 19', 'TypeScript', 'WebAssembly', 'pdf.js', 'Vitest'],
+    started: '2026-11',
+    rev: 'A',
+    live: 'https://line-check-r102.vercel.app',
+    code: gh('line-check'),
+    feature: {
+      lede: {
+        en: 'Drop a kitchen plan and get the first draft of the fire suppression design.',
+        tr: 'Mutfak planını bırakın, yangın söndürme tasarımının ilk taslağını alın.',
+      },
+      detail: {
+        en: 'A DWG, DXF or PDF is read in the browser and leaves the machine only if you ask for an AI suggestion. The tool finds the equipment from the drawing’s own blocks and tags, groups it under each hood and works out nozzles, flow numbers, tanks, detectors and pipe runs from the published design limits, each check citing the manual page. The result is a front elevation, a design sheet and a DXF to put back in the drawing. I built it for the pre-design work I see every day in fire safety.',
+        tr: 'DWG, DXF ya da PDF tarayıcıda okunuyor; yalnızca AI önerisi istenirse bilgisayardan çıkıyor. Araç ekipmanı çizimin kendi blok ve etiketlerinden buluyor, her davlumbazın altında topluyor; nozulları, akış numaralarını, tankları, dedektörleri ve boru hatlarını yayımlanmış tasarım sınırlarından hesaplıyor, her kontrol kılavuzdaki sayfasını gösteriyor. Sonuç bir ön görünüş, bir tasarım föyü ve çizime geri konacak bir DXF. Yangın güvenliğinde her gün gördüğüm ön tasarım işi için yaptım.',
+      },
+    },
+  },
+  {
     id: 'mise',
     name: 'MISE',
     kind: { en: 'Recipe planner', tr: 'Tarif planlayıcı' },
@@ -452,7 +477,7 @@ export const PROJECTS: Project[] = [
    Each id needs a `feature`, a phone capture (<id>-m-520.webp) and a stage
    colour in app/globals.css. Aperture and Forge keep their text so either
    can be swapped back in. */
-const STAGED = ['rainbow', 'spectra', 'vending', 'pokeduel', 'epharmacy', 'mise', 'verdant'] as const;
+const STAGED = ['rainbow', 'spectra', 'vending', 'linecheck', 'pokeduel', 'epharmacy', 'mise', 'verdant'] as const;
 
 export const FEATURED = STAGED.map((id) => {
   const project = PROJECTS.find((p) => p.id === id);
